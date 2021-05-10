@@ -13,11 +13,6 @@
         android:theme="@style/Theme.LoanGrounds">
         <activity android:name=".MainActivityContacto"></activity>
         <activity android:name=".MainActivityInicio" />
-        <activity android:name=".MainActivityRegistrarse4" />
-        <activity android:name=".MainActivityRegistrarse3" />
-        <activity android:name=".MainActivityRegistrarse2" />
-        <activity android:name=".MainActivityRegistrase1" />
-        <activity android:name=".MainActivityIniciarSesion" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

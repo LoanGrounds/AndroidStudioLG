@@ -1363,6 +1363,8 @@ drawable editar
 drawable et_style
 drawable et_style2
 drawable frame_270
+drawable frame_rojo
+drawable frame_verde
 drawable helper_note
 drawable ic_baseline_fingerprint_24
 drawable ic_calendar_black_24dp
@@ -1425,6 +1427,9 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id LinearLayout2
+id LinearLayout3
+id LinearLayout4
 id META
 id SHIFT
 id SYM
@@ -1502,7 +1507,6 @@ id btnIniciarSesion
 id btnOmitir
 id btnRegistrarse
 id btnSig
-id btnSig1
 id btnSig3
 id buttonPanel
 id cancel_action
@@ -1574,6 +1578,7 @@ id fixed
 id forever
 id fragment
 id frameLayout
+id frameLayout1
 id frame_270
 id gabriel_dec
 id gabriel_dec1
@@ -1598,8 +1603,8 @@ id imageButton3
 id imageButton5
 id imageButton6
 id imageButton9
-id imageView
 id imageView2
+id imgPrestamista
 id info
 id ingreseHuella
 id invisible
@@ -1611,13 +1616,12 @@ id left
 id line1
 id line3
 id line_93
+id linearLayout1
 id linearLayout2
 id linearLayout3
-id linearLayout4
 id listMode
 id list_item
 id loangrounds
-id luka_portno
 id masked
 id media_actions
 id message
@@ -1671,6 +1675,8 @@ id peekHeight
 id percent
 id pin
 id plazo
+id precio1
+id precio2
 id progress_circular
 id progress_horizontal
 id radio
@@ -1711,8 +1717,6 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
-id some_id
-id some_id2
 id spacer
 id split_action_bar
 id spread
@@ -1762,6 +1766,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tvMeses
 id tvMsaje
+id tvNombreApellido
 id unchecked
 id uniform
 id unlabeled
@@ -1834,12 +1839,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_main_contacto
-layout activity_main_iniciar_sesion
 layout activity_main_inicio
-layout activity_main_registrarse2
-layout activity_main_registrarse3
-layout activity_main_registrarse4
-layout activity_main_registrase1
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1858,7 +1858,12 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_contacto
 layout fragment_footer
+layout fragment_inicio__registrarse
+layout fragment_inicio_sesion
+layout fragment_lupa
 layout fragment_menu
+layout fragment_registro
+layout lista_prestamos
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

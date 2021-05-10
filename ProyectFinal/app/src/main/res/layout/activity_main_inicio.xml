@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/fragment"
-        android:name="com.example.ProyectoFinal.loangrounds.Footer"
+        android:name="com.example.ProyectoFinal.loangrounds.Navbar.Footer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Registro.RegistroFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/loangrounds"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="73dp"
+            android:layout_marginEnd="73dp"
+            android:fontFamily="@font/play"
+            android:gravity="center"
+            android:text="LoanGrounds"
+            android:textColor="#D417A4B7 "
+            android:textColorHint="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loangrounds">
+
+
+            <EditText
+
+                android:id="@+id/edtNombre"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:width="1dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese nombre"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/edtApelllido"
+                app:layout_constraintEnd_toEndOf="@+id/edtApelllido"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edtApelllido" />
+
+            <EditText
+
+                android:id="@+id/edtApelllido"
+                android:layout_width="316.88dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese apellido"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                app:layout_constraintBottom_toTopOf="@+id/edtCorreo"
+                app:layout_constraintEnd_toEndOf="@+id/edtCorreo"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edtCorreo" />
+
+            <EditText
+
+                android:id="@+id/edtCorreo"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese correo electronico"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loangrounds">
+
+
+            <EditText
+
+                android:id="@+id/edtTelefono"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_marginBottom="24dp"
+                android:width="1dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese telefono"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                android:textStyle="normal" />
+
+            <EditText
+
+                android:id="@+id/edtCiudad"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_marginBottom="24dp"
+                android:width="1dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese ciudad"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                android:textStyle="normal" />
+
+            <EditText
+
+                android:id="@+id/edtCodPostal"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese codigo postal"
+                android:inputType="textPersonName"
+                android:padding="10dip" />
+
+            <EditText
+
+                android:id="@+id/edtProv"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_marginBottom="28dp"
+                android:width="1dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese provincia"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                android:textStyle="normal" />
+
+            <EditText
+
+                android:id="@+id/edtDireccion"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese direccion"
+                android:inputType="textPersonName"
+                android:padding="10dip" />
+
+            <EditText
+
+                android:id="@+id/edtDni"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_marginBottom="24dp"
+                android:width="1dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese D.N.I"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loangrounds">
+
+
+            <EditText
+
+                android:id="@+id/edtCBU"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_marginBottom="24dp"
+                android:width="1dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese CBU"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/edtAlias"
+                app:layout_constraintEnd_toEndOf="@+id/edtAlias"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edtAlias" />
+
+            <EditText
+
+                android:id="@+id/edtAlias"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese alias"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                app:layout_constraintBottom_toTopOf="@+id/edtCuit"
+                app:layout_constraintEnd_toEndOf="@+id/edtCuit"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/edtCuit" />
+
+            <EditText
+
+                android:id="@+id/edtCuit"
+                android:layout_width="316.88dp"
+                android:layout_height="47.98dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:fontFamily="@font/noto_sans"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Ingrese C.U.I.T"
+                android:inputType="textPersonName"
+                android:padding="10dip"
+                app:layout_constraintBottom_toTopOf="@+id/btnOmitir"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <Button
+                android:id="@+id/btnOmitir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="56dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Omitir"
+                android:textColor="#70BDD6"
+                app:layout_constraintBottom_toTopOf="@+id/btnSig3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loangrounds">
+
+
+            <TextView
+                android:id="@+id/ingreseHuella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Ingresar huella"
+                android:textColor="#70BDD6"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.462"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.254" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.46"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.355"
+                app:srcCompat="@drawable/ic_baseline_fingerprint_24" />
+
+            <TextView
+                android:id="@+id/tvMsaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/checkBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.163" />
+
+            <Button
+                android:id="@+id/btnHuela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Button"
+                app:layout_constraintBottom_toTopOf="@+id/checkBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.984" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="288dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="40dp"
+                android:text="Terminos y condiciones"
+                android:textColor="#70BDD6"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/btnCrearCuenta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="257dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="40dp"
+            android:background="#00000000"
+            android:backgroundTint="#70BDD6"
+            android:fontFamily="@font/noto_sans_bold"
+            android:foregroundGravity="center_vertical"
+
+            android:gravity="center|center_vertical"
+            android:text="Siguiente"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.58"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_conversion_absoluteHeight="52dp"
+            tools:layout_conversion_absoluteWidth="257dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

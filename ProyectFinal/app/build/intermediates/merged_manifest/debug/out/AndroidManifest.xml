@@ -23,11 +23,6 @@
         android:theme="@style/Theme.LoanGrounds" >
         <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityContacto" />
         <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityInicio" />
-        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse4" />
-        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse3" />
-        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse2" />
-        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityRegistrase1" />
-        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityIniciarSesion" />
         <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

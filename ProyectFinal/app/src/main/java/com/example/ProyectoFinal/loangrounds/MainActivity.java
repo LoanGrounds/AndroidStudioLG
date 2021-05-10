@@ -1,62 +1,75 @@
 package com.example.ProyectoFinal.loangrounds;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.ProyectoFinal.loangrounds.Registro.InicioSesionFragment;
+import com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment;
+import com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment;
+
 public class MainActivity extends AppCompatActivity {
 
-    Button btnIniciarSesion;
-    Button btnRegistrarse;
+   InicioSesionFragment fragmentInicioSesion;
+   RegistroFragment fragmentRegistro;
+    Inicio_RegistrarseFragment fragmentSesionRegistro;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ObtenerReferencias();
-        setearListeners();
 
-    }
-    private void setearListeners(){
-        btnIniciarSesion.setOnClickListener(btnIniciarSesion_Click);
-        btnRegistrarse.setOnClickListener(btnRegistrarse_Click);
+        crearFragments();
+        reemplazarFragmenbts(fragmentSesionRegistro,false);
 
     }
 
-    View.OnClickListener btnIniciarSesion_Click = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-
-            Intent intent;
-
-                intent = new Intent ( MainActivity.this, MainActivityIniciarSesion.class);
-                startActivity(intent);
 
 
-            }
-    };
+    public void reemplazarFragmenbts(Fragment fragmento){
+        reemplazarFragmenbts(fragmento,true);
+    }
 
-   View.OnClickListener btnRegistrarse_Click = new View.OnClickListener() {
-       @Override
-        public void onClick(View view) {
+    public void reemplazarFragmenbts(Fragment fragmento, Boolean blnAddToBackStack){
+        FragmentManager manager= getSupportFragmentManager();
+        FragmentTransaction transision = manager.beginTransaction();
 
-            Intent intent1;
-
-                intent1 = new Intent ( MainActivity.this, MainActivityRegistrase1.class);
-                startActivity(intent1);
-
-
-            }
-    };
-
-
-
-    private void ObtenerReferencias() {
-        btnIniciarSesion= (Button) findViewById(R.id.btnIniciarSesion);
-        btnRegistrarse= (Button) findViewById(R.id.btnRegistrarse);
+        transision.replace(R.id.frameLayout1, fragmento, null );
+        transision.addToBackStack(null);
+        transision.commit();
 
     }
+    private void crearFragments() {
+        fragmentInicioSesion = new InicioSesionFragment();
+        fragmentRegistro = new RegistroFragment();
+        fragmentSesionRegistro = new Inicio_RegistrarseFragment();
+
+
+    }
+
+
+    public  void setFragmentInicioSesion(){
+
+        reemplazarFragmenbts(fragmentInicioSesion);
+    }
+
+    public  void setFragmentRegistro(){
+        reemplazarFragmenbts(fragmentRegistro);
+    }
+
+    public  void setFragmentSesionRegistro(){
+        reemplazarFragmenbts(fragmentSesionRegistro);
+
+    }
+
+
+
+
 
 }

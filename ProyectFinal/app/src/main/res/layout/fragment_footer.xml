@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Footer">
+    tools:context=".Navbar.Footer">
 
     <View
         android:id="@+id/rectangle_"
@@ -23,7 +23,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="318dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
