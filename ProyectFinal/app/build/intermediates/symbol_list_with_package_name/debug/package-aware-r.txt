@@ -1427,6 +1427,7 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id LinearLayout1
 id LinearLayout2
 id LinearLayout3
 id LinearLayout4
@@ -1506,8 +1507,8 @@ id btnIn
 id btnIniciarSesion
 id btnOmitir
 id btnRegistrarse
-id btnSig
 id btnSig3
+id btnSiguiente
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1616,7 +1617,6 @@ id left
 id line1
 id line3
 id line_93
-id linearLayout1
 id linearLayout2
 id linearLayout3
 id listMode

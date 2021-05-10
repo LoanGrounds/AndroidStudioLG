@@ -6,12 +6,11 @@ com/example/ProyectoFinal/loangrounds/ListaAdaptora.java
  com.example.ProyectoFinal.loangrounds.ListaAdaptora
 com/example/ProyectoFinal/loangrounds/Prestamo.java
  com.example.ProyectoFinal.loangrounds.Prestamo
-com/example/ProyectoFinal/loangrounds/Registro/Inicio_RegistrarseFragment.java
- com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment
- com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment$1
- com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment$2
-com/example/ProyectoFinal/loangrounds/MainActivity.java
- com.example.ProyectoFinal.loangrounds.MainActivity
+com/example/ProyectoFinal/loangrounds/Registro/RegistroFragment.java
+ com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment
+ com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment$1
+com/example/ProyectoFinal/loangrounds/BuildConfig.java
+ com.example.ProyectoFinal.loangrounds.BuildConfig
 com/example/ProyectoFinal/loangrounds/MainActivityContacto.java
  com.example.ProyectoFinal.loangrounds.MainActivityContacto
 com/example/ProyectoFinal/loangrounds/Registro/InicioSesionFragment.java
@@ -22,7 +21,11 @@ com/example/ProyectoFinal/loangrounds/Menu/MenuFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.MenuFragment
 com/example/ProyectoFinal/loangrounds/ContactoFragment.java
  com.example.ProyectoFinal.loangrounds.ContactoFragment
-com/example/ProyectoFinal/loangrounds/Registro/RegistroFragment.java
- com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment
-com/example/ProyectoFinal/loangrounds/BuildConfig.java
- com.example.ProyectoFinal.loangrounds.BuildConfig
+com/example/ProyectoFinal/loangrounds/Utilidades/toastes.java
+ com.example.ProyectoFinal.loangrounds.Utilidades.toastes
+com/example/ProyectoFinal/loangrounds/Registro/Inicio_RegistrarseFragment.java
+ com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment
+ com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment$1
+ com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment$2
+com/example/ProyectoFinal/loangrounds/MainActivity.java
+ com.example.ProyectoFinal.loangrounds.MainActivity

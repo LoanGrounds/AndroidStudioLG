@@ -5,26 +5,25 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
 import android.text.Layout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.ProyectoFinal.loangrounds.MainActivity;
 import com.example.ProyectoFinal.loangrounds.R;
+import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link RegistroFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class RegistroFragment extends Fragment {
 
     Button btnSiguiente;
     View layoutRhoot;
     LinearLayout item1;
+    LinearLayout item2;
     int contador = 0;
 
 
@@ -63,16 +62,20 @@ public class RegistroFragment extends Fragment {
 
     public void SetearListners() {
         btnSiguiente.setOnClickListener(btnSiguiente_Click);
-
+        Log.i("Hola",""+ contador);
     }
     View.OnClickListener btnSiguiente_Click = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
          contador++;
 
+            Log.i("Hola",""+ contador);
          if(contador == 1){
              item1 =   layoutRhoot.findViewById(R.id.LinearLayout1);
-             item1.setVisibility();
+             item1.setVisibility(View.INVISIBLE);
+             item2 =   layoutRhoot.findViewById(R.id.LinearLayout2);
+             item2.setVisibility(View.VISIBLE);
+
          }
 
 
