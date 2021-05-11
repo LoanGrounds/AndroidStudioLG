@@ -80,12 +80,12 @@ public class MainActivityInicio extends AppCompatActivity {
 
     }
 
-   /* public ListaAdaptora listas(){
+    public void listas(){
         prestamoList= new ArrayList<>();
         prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
         ListaAdaptora adapter= new ListaAdaptora(this,R.layout.lista_prestamos,prestamoList);
-
-    }*/
+        fragmentMenu.setMensaje(adapter);
+    }
 
 
 
