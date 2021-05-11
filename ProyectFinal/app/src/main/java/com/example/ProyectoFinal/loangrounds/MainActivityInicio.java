@@ -6,11 +6,16 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.widget.ListView;
 
 import com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.Menu.MenuFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.LupaFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivityInicio extends AppCompatActivity {
 
@@ -18,6 +23,8 @@ public class MainActivityInicio extends AppCompatActivity {
     MenuFragment fragmentMenu;
     LupaFragment fragmentLupa;
     SolicitadosFragment fragmentSolicitados;
+    List<Prestamo> prestamoList;
+    ListView listView;
 
 
     @Override
@@ -53,6 +60,7 @@ public class MainActivityInicio extends AppCompatActivity {
     public  void setFragmentMenu(){
 
         reemplazarFragmenbts(fragmentMenu);
+
     }
 
     public  void setFragmentLupa(){
@@ -68,6 +76,13 @@ public class MainActivityInicio extends AppCompatActivity {
         reemplazarFragmenbts(fragmentContacto);
 
     }
+
+   /* public ListaAdaptora listas(){
+        prestamoList= new ArrayList<>();
+        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
+        ListaAdaptora adapter= new ListaAdaptora(this,R.layout.lista_prestamos,prestamoList);
+
+    }*/
 
 
 

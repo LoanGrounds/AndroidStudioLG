@@ -37,7 +37,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R58M942E8NM]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_4_API_26]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -176,22 +176,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1620694963575" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1620693983559">
+    <state width="1322" height="338" key="GridCell.Tab.0.bottom" timestamp="1620705160303">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620693983559" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1620693983559">
+    <state width="1322" height="338" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620705160303" />
+    <state width="1322" height="338" key="GridCell.Tab.0.center" timestamp="1620705160302">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620693983559" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1620693983559">
+    <state width="1322" height="338" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620705160302" />
+    <state width="1322" height="338" key="GridCell.Tab.0.left" timestamp="1620705160302">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620693983559" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1620693983559">
+    <state width="1322" height="338" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620705160302" />
+    <state width="1322" height="338" key="GridCell.Tab.0.right" timestamp="1620705160302">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620693983559" />
+    <state width="1322" height="338" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620705160302" />
     <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1620686229967">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

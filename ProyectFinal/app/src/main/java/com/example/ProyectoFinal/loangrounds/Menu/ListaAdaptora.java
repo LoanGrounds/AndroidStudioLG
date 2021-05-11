@@ -1,6 +1,7 @@
 package com.example.ProyectoFinal.loangrounds.Menu;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,7 +36,7 @@ public class ListaAdaptora extends ArrayAdapter<Prestamo> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater=LayoutInflater.from(mCtx) ;
-        View view=inflater.inflate(R.layout.lista_prestamos,null);
+        View view=inflater.inflate(resource,null);
         TextView tvNombre=view.findViewById(R.id.tvNombreApellido);
         TextView tvMeses=view.findViewById(R.id.tvMeses);
         TextView tvPrecioMin=view.findViewById(R.id.precio1);
