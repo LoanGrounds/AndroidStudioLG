@@ -14,6 +14,7 @@
         android:background="@drawable/rectangle_1"
 
 
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -37,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#7EDCE9"
+            android:background="#FFFFFF"
             android:src="@drawable/substract" />
 
         <ImageButton
@@ -45,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#7EDCE9"
+            android:background="#FFFFFF"
             android:src="@drawable/lupa" />
 
         <ImageButton
@@ -53,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#7EDCE9"
+            android:background="#FFFFFF"
             android:src="@drawable/money" />
 
         <ImageButton
@@ -61,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#7EDCE9"
+            android:background="#FFFFFF"
             android:src="@drawable/user" />
     </LinearLayout>
 

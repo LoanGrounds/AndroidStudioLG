@@ -1366,6 +1366,7 @@ drawable frame_270
 drawable frame_rojo
 drawable frame_verde
 drawable helper_note
+drawable home
 drawable ic_baseline_fingerprint_24
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
@@ -1382,7 +1383,6 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable line_93
 drawable loan
-drawable log
 drawable logo
 drawable logonombre
 drawable lupa
