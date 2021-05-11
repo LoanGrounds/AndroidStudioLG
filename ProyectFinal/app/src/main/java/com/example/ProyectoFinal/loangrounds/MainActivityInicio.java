@@ -45,7 +45,10 @@ public class MainActivityInicio extends AppCompatActivity {
         FragmentTransaction transision = manager.beginTransaction();
 
         transision.replace(R.id.frameLayout2, fragmento, null );
-        transision.addToBackStack(null);
+        if(blnAddToBackStack){
+
+            transision.addToBackStack(null);
+        }
         transision.commit();
 
     }

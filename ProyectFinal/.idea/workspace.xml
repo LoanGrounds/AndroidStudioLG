@@ -65,7 +65,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-05-10T22:23:22.724Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../TP3DeFragments/TP3 fragments" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunManager">
@@ -172,10 +172,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1620699242390" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1620694963575">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1620730692699">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1620694963575" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1620730692699" />
     <state width="1322" height="338" key="GridCell.Tab.0.bottom" timestamp="1620705160303">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

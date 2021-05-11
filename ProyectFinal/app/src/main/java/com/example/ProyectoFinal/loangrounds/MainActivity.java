@@ -42,7 +42,10 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transision = manager.beginTransaction();
 
         transision.replace(R.id.frameLayout1, fragmento, null );
-        transision.addToBackStack(null);
+        if(blnAddToBackStack){
+
+            transision.addToBackStack(null);
+        }
         transision.commit();
 
     }
@@ -70,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void cambioActivity(){
         Intent intent=new Intent(MainActivity.this, MainActivityInicio.class);
+      //  FragmentTransaction ft = this.getSupportFragmentManager().beginTransaction(); ft.remove(fragmentRegistro).commit();
         startActivity(intent);
     }
 

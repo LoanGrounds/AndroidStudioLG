@@ -96,6 +96,7 @@ public class RegistroFragment extends Fragment {
                 item3.setVisibility(View.INVISIBLE);
                 item4 =   layoutRhoot.findViewById(R.id.LinearLayout4);
                 item4.setVisibility(View.VISIBLE);
+                btnSiguiente.setText("Crear cuenta");
 
             }
             if(contador == 4){
@@ -103,6 +104,7 @@ public class RegistroFragment extends Fragment {
                 MainActivity actividadContenedora;
                 actividadContenedora = (MainActivity) getActivity();
                 actividadContenedora.cambioActivity();
+
 
             }
 
