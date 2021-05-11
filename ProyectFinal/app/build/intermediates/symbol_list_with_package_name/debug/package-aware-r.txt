@@ -1383,6 +1383,7 @@ drawable ic_mtrl_chip_close_circle
 drawable line_93
 drawable loan
 drawable log
+drawable logo
 drawable logonombre
 drawable lupa
 drawable money
