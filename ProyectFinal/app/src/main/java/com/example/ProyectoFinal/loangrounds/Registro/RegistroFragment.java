@@ -24,6 +24,8 @@ public class RegistroFragment extends Fragment {
     View layoutRhoot;
     LinearLayout item1;
     LinearLayout item2;
+    LinearLayout item3;
+    LinearLayout item4;
     int contador = 0;
 
 
@@ -43,7 +45,12 @@ public class RegistroFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_registro, container, false);
+        contador = 0;
+       layoutRhoot= inflater.inflate(R.layout.fragment_registro, container, false);
+
+        ObtenerReferencias();
+        SetearListners();
+        return layoutRhoot;
     }
 
 
@@ -62,7 +69,7 @@ public class RegistroFragment extends Fragment {
 
     public void SetearListners() {
         btnSiguiente.setOnClickListener(btnSiguiente_Click);
-        Log.i("Hola",""+ contador);
+
     }
     View.OnClickListener btnSiguiente_Click = new View.OnClickListener() {
         @Override
@@ -77,6 +84,28 @@ public class RegistroFragment extends Fragment {
              item2.setVisibility(View.VISIBLE);
 
          }
+            if(contador == 2){
+                item2 =   layoutRhoot.findViewById(R.id.LinearLayout2);
+                item2.setVisibility(View.INVISIBLE);
+                item3 =   layoutRhoot.findViewById(R.id.LinearLayout3);
+                item3.setVisibility(View.VISIBLE);
+
+            }
+            if(contador == 3){
+                item3 =   layoutRhoot.findViewById(R.id.LinearLayout3);
+                item3.setVisibility(View.INVISIBLE);
+                item4 =   layoutRhoot.findViewById(R.id.LinearLayout4);
+                item4.setVisibility(View.VISIBLE);
+
+            }
+            if(contador == 4){
+
+                MainActivity actividadContenedora;
+                actividadContenedora = (MainActivity) getActivity();
+                actividadContenedora.cambioActivity();
+
+            }
+
 
 
 

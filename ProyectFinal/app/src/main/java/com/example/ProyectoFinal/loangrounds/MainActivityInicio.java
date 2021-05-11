@@ -1,49 +1,77 @@
 package com.example.ProyectoFinal.loangrounds;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.TextView;
+
+import com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.MenuFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.LupaFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment;
 
 public class MainActivityInicio extends AppCompatActivity {
-    ImageButton imageButton2;
-    TextView textView3;
-    EditText name;
-    Button PROBAR;
+
+    ContactoFragment fragmentContacto;
+    MenuFragment fragmentMenu;
+    LupaFragment fragmentLupa;
+    SolicitadosFragment fragmentSolicitados;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_inicio);
-       /* ObtenerReferencias();
-        setearListeners();*/
+        crearFragments();
+        reemplazarFragmenbts(fragmentMenu,false);
+
 
     }
-    /*private void setearListeners(){
-        PROBAR.setOnClickListener(PROBAR_Click);
+    public void reemplazarFragmenbts(Fragment fragmento){
+        reemplazarFragmenbts(fragmento,true);
+    }
+
+    public void reemplazarFragmenbts(Fragment fragmento, Boolean blnAddToBackStack){
+        FragmentManager manager= getSupportFragmentManager();
+        FragmentTransaction transision = manager.beginTransaction();
+
+        transision.replace(R.id.frameLayout2, fragmento, null );
+        transision.addToBackStack(null);
+        transision.commit();
 
     }
 
-    View.OnClickListener PROBAR_Click = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            String texto;
-            texto=name.getText().toString();
-        textView3.setText(texto);
+    private void crearFragments() {
+        fragmentMenu = new MenuFragment();
+        fragmentLupa = new LupaFragment();
+        fragmentSolicitados = new SolicitadosFragment();
+        fragmentContacto = new ContactoFragment();
 
-        }
-    };
+    }
+    public  void setFragmentMenu(){
 
-    private void ObtenerReferencias() {
-      imageButton2= (ImageButton) findViewById(R.id.imageButton2);
-        textView3= (TextView) findViewById(R.id.textView3);
-        name= (EditText) findViewById(R.id.name);
-        PROBAR= (Button) findViewById(R.id.PROBAR);
+        reemplazarFragmenbts(fragmentMenu);
+    }
 
-    }*/
+    public  void setFragmentLupa(){
+        reemplazarFragmenbts(fragmentLupa);
+    }
+
+    public  void setFragmentSolicitados(){
+        reemplazarFragmenbts(fragmentSolicitados);
+
+    }
+
+    public  void setFragmentContacto(){
+        reemplazarFragmenbts(fragmentContacto);
+
+    }
+
+
+
+
+
 
 }

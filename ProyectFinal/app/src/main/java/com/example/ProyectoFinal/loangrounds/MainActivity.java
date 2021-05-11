@@ -68,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
         reemplazarFragmenbts(fragmentSesionRegistro);
 
     }
+    public void cambioActivity(){
+        Intent intent=new Intent(MainActivity.this, MainActivityInicio.class);
+        startActivity(intent);
+    }
+
 
 
 

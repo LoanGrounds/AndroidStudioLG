@@ -6,8 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Hola" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BranchesTreeState">
@@ -156,26 +155,26 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="119" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1620686783857">
+    <state x="119" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1620694066528">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="119" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1620686783857" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1620686872310">
+    <state x="119" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1620694066528" />
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1620693983559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620686872310" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1620686872310">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1620693983559" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1620693983559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620686872310" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1620686872310">
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1620693983559" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1620693983559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620686872310" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1620686872310">
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1620693983559" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1620693983559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620686872310" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1620693983559" />
     <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1620686229967">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
