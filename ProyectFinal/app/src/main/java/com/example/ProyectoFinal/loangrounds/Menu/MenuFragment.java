@@ -8,10 +8,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.ArrayList;
@@ -56,15 +58,26 @@ public class MenuFragment extends Fragment {
 
 
         listView = (ListView) layoutRhoot.findViewById(R.id.listView);
-
         ListaAdaptora adapter= new ListaAdaptora(getActivity(),R.layout.my_list_item,prestamoList);
-
-
-
         listView.setAdapter(adapter);
-        Log.i("Hola",""+ adapter);
-        Log.i("Hola",""+ prestamoList);
-        Log.i("Hola",""+ listView);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+
+
+                MainActivityInicio actividadContenedora;
+                actividadContenedora = (MainActivityInicio) getActivity();
+
+                actividadContenedora.setFragmentCadaPrestamo();
+                actividadContenedora.EnviarMensaje(position);
+
+
+
+            }
+        });
         return layoutRhoot;
 
     }

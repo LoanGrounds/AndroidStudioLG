@@ -100,13 +100,14 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="60dp"
             android:gravity="top"
 
-            android:text="x meses"
+            android:text="xx"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/line_93" />
+            app:layout_constraintTop_toBottomOf="@+id/line_93"
+            app:layout_constraintVertical_bias="0.59" />
 
         <TextView
             android:id="@+id/precio1"
@@ -114,17 +115,16 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:gravity="top"
 
-            android:text="x$"
+            android:layout_marginStart="4dp"
+            android:gravity="top"
+            android:text="xxxxx"
             android:textColor="#2F2F2F"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/line_93"
-            app:layout_constraintEnd_toStartOf="@+id/precio2"
-            app:layout_constraintHorizontal_bias="0.108"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/frame_270"
-            app:layout_constraintVertical_bias="0.529" />
+            app:layout_constraintVertical_bias="0.473" />
 
         <TextView
             android:id="@+id/precio2"
@@ -132,14 +132,59 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:gravity="top"
 
-            android:text="x$"
+            android:layout_marginEnd="16dp"
+            android:gravity="top"
+            android:text="xxxx"
             android:textColor="#2F2F2F"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/line_93"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_270"
+            app:layout_constraintVertical_bias="0.473" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="9dp"
+            android:text="meses"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvMeses"
+            app:layout_constraintTop_toBottomOf="@+id/line_93" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="10dp"
+            android:text="$"
+            app:layout_constraintBottom_toTopOf="@+id/line_93"
+            app:layout_constraintEnd_toStartOf="@+id/precio1"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frame_270" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="11dp"
+            android:text="$"
+            app:layout_constraintBottom_toTopOf="@+id/line_93"
+            app:layout_constraintEnd_toStartOf="@+id/precio2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/precio1"
+            app:layout_constraintTop_toBottomOf="@+id/frame_270"
+            app:layout_constraintVertical_bias="1.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

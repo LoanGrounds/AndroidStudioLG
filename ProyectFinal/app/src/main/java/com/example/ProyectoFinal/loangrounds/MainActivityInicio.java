@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.MenuFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.LupaFragment;
@@ -22,8 +23,7 @@ public class MainActivityInicio extends AppCompatActivity {
     MenuFragment fragmentMenu;
     LupaFragment fragmentLupa;
     SolicitadosFragment fragmentSolicitados;
-    List<Prestamo> prestamoList;
-    ListView listView;
+    CadaPrestamoFragment fragmentCadaPrestamo;
 
 
     @Override
@@ -57,6 +57,7 @@ public class MainActivityInicio extends AppCompatActivity {
         fragmentLupa = new LupaFragment();
         fragmentSolicitados = new SolicitadosFragment();
         fragmentContacto = new ContactoFragment();
+        fragmentCadaPrestamo= new CadaPrestamoFragment();
 
     }
     public  void setFragmentMenu(){
@@ -77,6 +78,15 @@ public class MainActivityInicio extends AppCompatActivity {
     public  void setFragmentContacto(){
         reemplazarFragmenbts(fragmentContacto);
 
+    }
+    public  void setFragmentCadaPrestamo(){
+        reemplazarFragmenbts(fragmentCadaPrestamo);
+
+    }
+
+
+    public void EnviarMensaje(int position){
+        fragmentCadaPrestamo.enviarPosition(position);
     }
 
 

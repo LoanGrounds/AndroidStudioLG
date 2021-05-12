@@ -64,6 +64,10 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\deck.png"
     },
     {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cada_prestamo.xml.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_cada_prestamo.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_et_style2.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\et_style2.xml"
     },

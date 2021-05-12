@@ -1749,6 +1749,9 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView2
+id textView4
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1766,6 +1769,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv1
 id tvMeses
 id tvMsaje
 id tvNombreApellido
@@ -1858,6 +1862,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_cada_prestamo
 layout fragment_contacto
 layout fragment_footer
 layout fragment_inicio__registrarse
