@@ -42,7 +42,7 @@ public class Inicio_RegistrarseFragment extends Fragment {
         SetearListners();
 
         return layoutRhoot;
-        
+
     }
 
     private void ObtenerReferencias(){

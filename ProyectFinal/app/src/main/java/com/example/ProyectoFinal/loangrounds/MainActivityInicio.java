@@ -8,13 +8,12 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
 import com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment;
-import com.example.ProyectoFinal.loangrounds.Menu.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.Menu.MenuFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.LupaFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivityInicio extends AppCompatActivity {
@@ -80,12 +79,7 @@ public class MainActivityInicio extends AppCompatActivity {
 
     }
 
-    public void listas(){
-        prestamoList= new ArrayList<>();
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
-        ListaAdaptora adapter= new ListaAdaptora(this,R.layout.lista_prestamos,prestamoList);
-        fragmentMenu.setMensaje(adapter);
-    }
+
 
 
 

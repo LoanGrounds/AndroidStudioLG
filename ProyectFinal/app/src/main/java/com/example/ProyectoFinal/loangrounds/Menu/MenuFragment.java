@@ -1,6 +1,5 @@
 package com.example.ProyectoFinal.loangrounds.Menu;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,14 +8,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import com.example.ProyectoFinal.loangrounds.MainActivity;
-import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
-import com.example.ProyectoFinal.loangrounds.Prestamo;
+import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
+import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.ArrayList;
@@ -26,8 +21,11 @@ import java.util.List;
 public class MenuFragment extends Fragment {
 
     ListView listView;
-    ListaAdaptora lista;
     View layoutRhoot;
+    List<Prestamo> prestamoList;
+
+
+
 
 
     public MenuFragment() {
@@ -45,33 +43,32 @@ public class MenuFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         layoutRhoot= inflater.inflate(R.layout.fragment_menu, container, false);
 
-       ObtenerReferencias();
 
 
-        listView.setAdapter(lista);
+        prestamoList= new ArrayList<>();
+        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
+
+
+        listView = (ListView) layoutRhoot.findViewById(R.id.listView);
+
+        ListaAdaptora adapter= new ListaAdaptora(getActivity(),R.layout.my_list_item,prestamoList);
+
+
+
+        listView.setAdapter(adapter);
+        Log.i("Hola",""+ adapter);
+        Log.i("Hola",""+ prestamoList);
         Log.i("Hola",""+ listView);
         return layoutRhoot;
 
     }
-    public void setMensaje(ListaAdaptora mensaje){
 
 
-        lista = mensaje;
-
-
-
-    }
-    private void ObtenerReferencias(){
-        listView = (ListView) layoutRhoot.findViewById(R.id.listView);
-        MainActivityInicio actividadContenedora;
-        actividadContenedora = (MainActivityInicio) getActivity();
-
-
-        actividadContenedora.listas();
-
-    }
 
 }

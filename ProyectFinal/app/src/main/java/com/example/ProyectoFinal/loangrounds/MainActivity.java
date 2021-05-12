@@ -17,8 +17,8 @@ import com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-   InicioSesionFragment fragmentInicioSesion;
-   RegistroFragment fragmentRegistro;
+    InicioSesionFragment fragmentInicioSesion;
+    RegistroFragment fragmentRegistro;
     Inicio_RegistrarseFragment fragmentSesionRegistro;
 
     @Override
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void cambioActivity(){
         Intent intent=new Intent(MainActivity.this, MainActivityInicio.class);
-      //  FragmentTransaction ft = this.getSupportFragmentManager().beginTransaction(); ft.remove(fragmentRegistro).commit();
+        //  FragmentTransaction ft = this.getSupportFragmentManager().beginTransaction(); ft.remove(fragmentRegistro).commit();
         startActivity(intent);
     }
 

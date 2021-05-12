@@ -1866,7 +1866,6 @@ layout fragment_lupa
 layout fragment_menu
 layout fragment_registro
 layout fragment_solicitados
-layout lista_prestamos
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -1895,6 +1894,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout my_list_item
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action

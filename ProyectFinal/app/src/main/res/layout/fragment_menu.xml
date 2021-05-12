@@ -10,10 +10,8 @@
         android:id="@+id/loangrounds"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/play"
-        android:gravity="center|top"
         android:text="Recomendados"
         android:textColor="#D417A4B7 "
         android:textColorHint="#FFFFFF"
@@ -26,7 +24,9 @@
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="300dp"
+        android:layout_height="561dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="96dp" />
 
 </RelativeLayout>

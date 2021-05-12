@@ -1,18 +1,18 @@
-package com.example.ProyectoFinal.loangrounds;
+package com.example.ProyectoFinal.loangrounds.ListaRecomendados;
 
 public class Prestamo {
     int image;
     String name;
     int precio1;
     int precio2;
-    int plazo;
+    int meses;
 
-    public Prestamo(int image, String name, int precio1, int precio2, int plazo) {
+    public Prestamo(int image, String name, int precio1, int precio2, int meses) {
         this.image = image;
         this.name = name;
         this.precio1 = precio1;
         this.precio2 = precio2;
-        this.plazo = plazo;
+        this.meses = meses;
     }
 
     public int getImage() {
@@ -31,7 +31,7 @@ public class Prestamo {
         return precio2;
     }
 
-    public int getPlazo() {
-        return plazo;
+    public int getMeses() {
+        return meses;
     }
 }
