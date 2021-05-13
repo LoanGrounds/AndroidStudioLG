@@ -9,13 +9,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
 import com.example.ProyectoFinal.loangrounds.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class CadaPrestamoFragment extends Fragment {
 
     TextView tv1;
     int intPos;
+    List<Prestamo> prest;
     View layoutRhoot;
     public CadaPrestamoFragment() {
         // Required empty public constructor
@@ -35,7 +40,8 @@ public class CadaPrestamoFragment extends Fragment {
         // Inflate the layout for this fragment
          layoutRhoot=inflater.inflate(R.layout.fragment_cada_prestamo, container, false);
          obtenerReferencias();
-         tv1.setText(String.valueOf(intPos));
+         String nombre=prest.get(intPos).getName();
+         tv1.setText(String.valueOf(nombre));
          return layoutRhoot;
 
     }
@@ -45,9 +51,9 @@ public class CadaPrestamoFragment extends Fragment {
     }
 
 
-    public void enviarPosition(int position){
+    public void enviarPosition(int position, List<Prestamo> prestamoList ){
 
-
+       prest = prestamoList;
         intPos = position;
 
 

@@ -4,20 +4,20 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\lupa.png"
     },
     {
-        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_money.png.flat",
-        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\money.png"
-    },
-    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_user.png.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\user.png"
     },
     {
-        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_money.png.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\money.png"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_foreground.xml.flat",
@@ -52,10 +52,6 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\play.ttf"
     },
     {
-        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_helper_note.xml.flat",
-        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\helper_note.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_my_list_item.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\my_list_item.xml"
     },
@@ -80,12 +76,20 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle_c.xml.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\rectangle_c.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_editar.png.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\editar.png"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_et_style.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\et_style.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_yo.jpg.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\yo.jpg"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -130,6 +134,10 @@
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mask.xml.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\mask.xml"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
@@ -242,6 +250,10 @@
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_lupa.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_lupa.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logonombre2.png.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\logonombre2.png"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",

@@ -38,11 +38,11 @@
         app:layout_constraintTop_toBottomOf="@+id/loangrounds">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/helper_note"
+            android:id="@+id/helper_note2"
             android:layout_width="364dp"
             android:layout_height="149dp"
             android:layout_gravity="center"
-            android:background="@drawable/helper_note"
+            android:background="@drawable/rectangle_c"
             android:elevation="4dp">
 
             <View

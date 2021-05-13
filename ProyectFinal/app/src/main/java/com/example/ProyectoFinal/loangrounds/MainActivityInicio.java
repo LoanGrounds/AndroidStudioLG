@@ -85,8 +85,8 @@ public class MainActivityInicio extends AppCompatActivity {
     }
 
 
-    public void EnviarMensaje(int position){
-        fragmentCadaPrestamo.enviarPosition(position);
+    public void EnviarMensaje(int position,  List<Prestamo> prestamoList){
+        fragmentCadaPrestamo.enviarPosition(position, prestamoList);
     }
 
 

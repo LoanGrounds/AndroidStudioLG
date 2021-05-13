@@ -1365,7 +1365,6 @@ drawable et_style2
 drawable frame_270
 drawable frame_rojo
 drawable frame_verde
-drawable helper_note
 drawable home
 drawable ic_baseline_fingerprint_24
 drawable ic_calendar_black_24dp
@@ -1385,7 +1384,9 @@ drawable line_93
 drawable loan
 drawable logo
 drawable logonombre
+drawable logonombre2
 drawable lupa
+drawable mask
 drawable money
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1412,12 +1413,14 @@ drawable notify_panel_notification_icon_bg
 drawable pago
 drawable prestamo
 drawable rectangle_1
+drawable rectangle_c
 drawable send
 drawable substract
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
+drawable yo
 font lato_bold
 font noto_sans
 font noto_sans_bold
@@ -1529,6 +1532,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -1591,7 +1595,7 @@ id gone
 id group
 id group_divider
 id groups
-id helper_note
+id helper_note2
 id hideable
 id home
 id homeAsUp
@@ -1605,6 +1609,7 @@ id imBtnSol
 id image
 id imageButton10
 id imageButton9
+id imageView
 id imageView2
 id imgPrestamista
 id info
@@ -1618,12 +1623,16 @@ id left
 id line1
 id line3
 id line_93
+id linearLayout
 id linearLayout2
 id linearLayout3
+id linearLayout4
 id listMode
 id listView
 id list_item
 id loangrounds
+id loangrounds2
+id mask
 id masked
 id media_actions
 id message
@@ -1683,6 +1692,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id rectangle_
+id rectangle_c
 id right
 id right_icon
 id right_side
@@ -1751,6 +1761,7 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
+id textView3
 id textView4
 id text_input_end_icon
 id text_input_start_icon

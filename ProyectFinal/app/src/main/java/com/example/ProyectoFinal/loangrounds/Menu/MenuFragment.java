@@ -52,8 +52,8 @@ public class MenuFragment extends Fragment {
 
         prestamoList= new ArrayList<>();
         prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Jose pedro",1000,1500,3));
+        prestamoList.add(new Prestamo(R.drawable.yo,"Damian cuk",1000,1500,3));
         prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
 
 
@@ -72,7 +72,7 @@ public class MenuFragment extends Fragment {
                 actividadContenedora = (MainActivityInicio) getActivity();
 
                 actividadContenedora.setFragmentCadaPrestamo();
-                actividadContenedora.EnviarMensaje(position);
+                actividadContenedora.EnviarMensaje(position, prestamoList);
 
 
 
