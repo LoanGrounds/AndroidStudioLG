@@ -86,18 +86,18 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Us
 		ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:13:9-49
-activity#com.example.ProyectoFinal.loangrounds.MainActivityContacto
-ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:14:9-67
+activity#com.example.ProyectoFinal.loangrounds.MainActivity
+ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:14:9-59
 	android:name
-		ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:14:19-55
+		ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:14:19-47
 activity#com.example.ProyectoFinal.loangrounds.MainActivityInicio
 ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:15:9-56
 	android:name
 		ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:15:19-53
-activity#com.example.ProyectoFinal.loangrounds.MainActivity
+activity#com.example.ProyectoFinal.loangrounds.MainActivityStart
 ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:16:19-47
+		ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:16:19-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN

@@ -6,129 +6,213 @@
     android:layout_height="match_parent"
     tools:context=".Menu.ContactoFragment">
 
-    <View
-        android:id="@+id/card"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="315dp"
         android:layout_height="209dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/card"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="171dp"
-        android:layout_height="160dp"
-        android:layout_marginBottom="180dp"
-        android:src="@drawable/deck"
-        app:layout_constraintBottom_toBottomOf="@+id/card"
-        app:layout_constraintEnd_toEndOf="@+id/card"
-        app:layout_constraintStart_toStartOf="@+id/card"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.91" />
-
-    <TextView
-        android:id="@+id/gabriel_dec"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:fontFamily="@font/play"
-        android:gravity="top"
-
-        android:text="Nombre y ape"
-        android:textColor="#D4AF37"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/gabriel_dec2"
-        app:layout_constraintEnd_toEndOf="@+id/card"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/card"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:lineHeight="28sp" />
-
-    <TextView
-        android:id="@+id/gabriel_dec2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/play"
-
-        android:gravity="top"
-        android:text="Profesíon"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/gabriel_dec1"
-        app:layout_constraintEnd_toEndOf="@+id/card"
-        app:layout_constraintStart_toStartOf="@+id/card"
-        app:lineHeight="15sp" />
-
-    <TextView
-        android:id="@+id/gabriel_dec1"
-        android:layout_width="269dp"
-        android:layout_height="100dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:fontFamily="@font/play"
-        android:gravity="top"
-        android:text="Informacion de nuestro cliente"
-
-        android:textColor="#FFFFFF"
-        android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/card"
-        app:layout_constraintEnd_toEndOf="@+id/card"
-        app:layout_constraintStart_toStartOf="@+id/card"
-        app:lineHeight="18sp" />
-
-    <ImageButton
-        android:id="@+id/btnAyuda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:src="@drawable/ayuda"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton10"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
-
-    <ImageButton
-        android:id="@+id/btnEditar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:src="@drawable/editar"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton9"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageButton
-        android:id="@+id/imageButton9"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="91dp"
+            android:layout_height="100dp"
+            android:src="@drawable/deck"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/gabriel_dec2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.192" />
+
+        <View
+            android:id="@+id/line_9"
+            android:layout_width="160dp"
+            android:layout_height="2dp"
+            android:alpha="0.5"
+            android:background="@drawable/line_93"
+            app:layout_constraintBottom_toTopOf="@+id/gabriel_dec2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/gabriel_dec"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/line_"
+            android:layout_width="160dp"
+            android:layout_height="2dp"
+            android:alpha="0.5"
+            android:background="@drawable/line_93"
+            app:layout_constraintBottom_toTopOf="@+id/gabriel_dec1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/gabriel_dec2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/gabriel_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            android:fontFamily="@font/lato_bold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="Nombre y ape"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/gabriel_dec2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.531"
+            app:lineHeight="28sp" />
+
+        <TextView
+            android:id="@+id/gabriel_dec2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="@font/play"
+            android:gravity="top"
+            android:text="Profesíon"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/gabriel_dec1"
+            app:layout_constraintStart_toStartOf="@+id/gabriel_dec"
+            app:lineHeight="15sp" />
+
+        <TextView
+            android:id="@+id/gabriel_dec1"
+            android:layout_width="189dp"
+            android:layout_height="103dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/play"
+
+            android:gravity="top"
+            android:text="Informacion de nuestro cliente"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/gabriel_dec2"
+            app:lineHeight="18sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:src="@drawable/pago"
-        app:layout_constraintBottom_toTopOf="@+id/btnAyuda"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnEditar"
-        app:layout_constraintTop_toBottomOf="@+id/card" />
-
-    <ImageButton
-        android:id="@+id/imageButton10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FFFFFF"
-        android:src="@drawable/prestamo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnAyuda"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEditar" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout6.4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle_3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
+                android:text="Editar perfil"
+                android:textAlignment="textStart"
+                android:textColor="#17A4B7"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rectangle_3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
+                android:text="Prestamos recientes"
+                android:textAlignment="textStart"
+                android:textColor="#17A4B7"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle_3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
+                android:text="Configuracion"
+                android:textAlignment="textStart"
+                android:textColor="#17A4B7"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle_3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
+                android:text="Atencion al cliente"
+                android:textAlignment="textStart"
+                android:textColor="#17A4B7"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

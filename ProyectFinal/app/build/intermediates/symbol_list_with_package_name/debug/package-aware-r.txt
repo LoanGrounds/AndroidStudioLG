@@ -1413,6 +1413,7 @@ drawable pago
 drawable prestamo
 drawable rectangle_1
 drawable rectangle_2
+drawable rectangle_3
 drawable rectangle_c
 drawable send
 drawable substract
@@ -1504,9 +1505,7 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btnAyuda
 id btnCrearCuenta
-id btnEditar
 id btnHuela
 id btnIn
 id btnIniciarSesion
@@ -1517,7 +1516,6 @@ id btnSiguiente
 id buttonPanel
 id cancel_action
 id cancel_button
-id card
 id center
 id center_horizontal
 id center_vertical
@@ -1535,6 +1533,7 @@ id collapseActionView
 id confirm_button
 id constraintLayout
 id constraintLayout2
+id constraintLayout3
 id container
 id content
 id contentPanel
@@ -1587,7 +1586,6 @@ id forever
 id fragment
 id frameLayout1
 id frameLayout2
-id frame_270
 id gabriel_dec
 id gabriel_dec1
 id gabriel_dec2
@@ -1597,7 +1595,6 @@ id gone
 id group
 id group_divider
 id groups
-id helper_note2
 id hideable
 id home
 id homeAsUp
@@ -1609,10 +1606,9 @@ id imBtnHouse
 id imBtnLupa
 id imBtnSol
 id image
-id imageButton10
-id imageButton9
 id imageView
 id imageView2
+id imageView3
 id imgPrestamista
 id info
 id ingreseHuella
@@ -1624,12 +1620,18 @@ id largeLabel
 id left
 id line1
 id line3
+id line_
+id line_9
 id line_93
 id linearLayout
 id linearLayout2
-id linearLayout3
 id linearLayout4
 id linearLayout5
+id linearLayout6_1
+id linearLayout6_2
+id linearLayout6_3
+id linearLayout6_4
+id linearLayout8
 id listMode
 id listView
 id list_item
@@ -1767,6 +1769,10 @@ id textStart
 id textView
 id textView2
 id textView4
+id textView5
+id textView6
+id textView7
+id textView9
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1863,8 +1869,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
-layout activity_main_contacto
 layout activity_main_inicio
+layout activity_main_start
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

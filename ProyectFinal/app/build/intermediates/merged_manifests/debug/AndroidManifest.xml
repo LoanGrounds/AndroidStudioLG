@@ -21,9 +21,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.LoanGrounds" >
-        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityContacto" />
+        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivity" />
         <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityInicio" />
-        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivity" >
+        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityStart" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
