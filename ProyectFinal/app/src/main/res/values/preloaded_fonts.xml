@@ -2,6 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/</item>
+        <item>@font/lato_black</item>
         <item>@font/noto_sans_bold</item>
         <item>@font/play_bold</item>
     </array>

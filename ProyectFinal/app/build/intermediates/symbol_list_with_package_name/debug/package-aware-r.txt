@@ -1423,6 +1423,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
 drawable yo
+font lato_black
 font lato_bold
 font noto_sans
 font noto_sans_bold
@@ -1896,6 +1897,7 @@ layout fragment_lupa
 layout fragment_menu
 layout fragment_registro
 layout fragment_solicitados
+layout mi_list_item2
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

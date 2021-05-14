@@ -50,7 +50,7 @@ public class LupaFragment extends Fragment {
 
 
         listView = (ListView) layoutRhoot.findViewById(R.id.listView);
-        ListaAdaptora adapter= new ListaAdaptora(getActivity(),R.layout.my_list_item,prestamoList);
+        ListaAdaptora adapter= new ListaAdaptora(getActivity(),R.layout.mi_list_item2,prestamoList);
         listView.setAdapter(adapter);
         return layoutRhoot;
     }
