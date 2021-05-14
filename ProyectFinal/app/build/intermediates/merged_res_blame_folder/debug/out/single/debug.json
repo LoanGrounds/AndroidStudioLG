@@ -24,12 +24,12 @@
         "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\et_style.xml"
     },
     {
-        "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
     },
     {
         "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle_c.xml.flat",
@@ -48,12 +48,12 @@
         "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\user.png"
     },
     {
-        "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_menu.xml.flat",
-        "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_menu.xml"
-    },
-    {
         "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
         "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_menu.xml.flat",
+        "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_menu.xml"
     },
     {
         "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lupa.png.flat",
@@ -68,12 +68,12 @@
         "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_deck.png.flat",
-        "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\deck.png"
-    },
-    {
         "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_deck.png.flat",
+        "source": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\deck.png"
     },
     {
         "merged": "Z:\\Progamacion\\5to\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cada_prestamo.xml.flat",
