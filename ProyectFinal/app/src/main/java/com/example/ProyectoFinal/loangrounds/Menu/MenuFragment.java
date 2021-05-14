@@ -3,6 +3,7 @@ package com.example.ProyectoFinal.loangrounds.Menu;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -49,12 +50,11 @@ public class MenuFragment extends Fragment {
         layoutRhoot= inflater.inflate(R.layout.fragment_menu, container, false);
 
 
-
         prestamoList= new ArrayList<>();
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Jose pedro",1000,1500,3));
-        prestamoList.add(new Prestamo(R.drawable.yo,"Damian cuk",1000,1500,3));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Jose pedro",1500));
+        prestamoList.add(new Prestamo(R.drawable.yo,"Damian cuk",1200));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",7000));
 
 
         listView = (ListView) layoutRhoot.findViewById(R.id.listView);

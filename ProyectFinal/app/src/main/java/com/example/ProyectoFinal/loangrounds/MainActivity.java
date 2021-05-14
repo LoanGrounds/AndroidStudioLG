@@ -74,7 +74,9 @@ public class MainActivity extends AppCompatActivity {
     public void cambioActivity(){
         Intent intent=new Intent(MainActivity.this, MainActivityInicio.class);
         //  FragmentTransaction ft = this.getSupportFragmentManager().beginTransaction(); ft.remove(fragmentRegistro).commit();
+
         startActivity(intent);
+        this.finish();
     }
 
 

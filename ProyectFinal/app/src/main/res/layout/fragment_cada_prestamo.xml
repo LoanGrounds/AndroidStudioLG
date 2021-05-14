@@ -9,176 +9,206 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/mask"
+        app:cardCornerRadius="14dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:background="@drawable/mask"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnSiguiente"
-                android:layout_width="257dp"
-                android:layout_height="60dp"
-                android:background="#00000000"
-                android:backgroundTint="#70BDD6"
-                android:fontFamily="@font/noto_sans_bold"
-
-                android:foregroundGravity="center_vertical"
-                android:gravity="center|center_vertical"
-                android:text="Solicitar"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                app:cornerRadius="50dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-                app:shapeAppearance="@style/TextAppearance.Compat.Notification.Info.Media" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout2"
-                android:layout_width="305dp"
-                android:layout_height="439dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/mask"
-                app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rectangle_2"
+                android:divider="@drawable/deck"
+                android:gravity="center|top"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tv1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:fontFamily="@font/lato_bold"
                     android:shadowColor="#CD2828"
-                    android:text="tv1"
+                    android:text="Monto"
                     android:textColor="#17A4B7"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toTopOf="@+id/plazo4"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <LinearLayout
-                    android:id="@+id/linearLayout5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rectangle_2"
-                    android:divider="@drawable/deck"
-                    android:gravity="center"
-                    app:layout_constraintBottom_toTopOf="@+id/tvCantMeses"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/skbDinero"
-                    app:layout_constraintVertical_bias="0.306">
-
-                    <TextView
-                        android:id="@+id/tvSignoPesos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="$"
-                        android:textColor="#17A4B7"
-                        android:textSize="24sp" />
-
-                    <TextView
-                        android:id="@+id/tvDinero"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="2100"
-                        android:textColor="#17A4B7"
-                        android:textSize="36sp" />
-                </LinearLayout>
+                    android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/Plazo"
+                    android:id="@+id/tvDinero"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Plazo"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="$2100"
                     android:textColor="#17A4B7"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toTopOf="@+id/plazo5"
-                    app:layout_constraintStart_toStartOf="@+id/plazo5"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_5"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/plazo5"
+                    android:id="@+id/tv4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Intereses"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Dias entre cuotas"
                     android:textColor="#17A4B7"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/tvInteres"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/Plazo" />
-
-                <TextView
-                    android:id="@+id/plazo4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Dinero"
-                    android:textColor="#17A4B7"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toTopOf="@+id/skbDinero"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv1" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tvCantMeses"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="meses"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="30 dias"
                     android:textColor="#17A4B7"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toTopOf="@+id/tvInteres"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/Plazo"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="129.12dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/line_93" />
+
+                <TextView
+                    android:id="@+id/plazo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Dias tolerancia"
+                    android:textColor="#17A4B7"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvDiaTol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="1 semana"
+                    android:textColor="#17A4B7"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="129.12dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/line_93" />
+
+                <TextView
+                    android:id="@+id/plazo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Interes por cuota"
+                    android:textColor="#17A4B7"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tvInteres"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Intereses"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:text="$120"
                     android:textColor="#17A4B7"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/plazo5"
-                    app:layout_constraintTop_toBottomOf="@+id/tvCantMeses" />
+                    android:textSize="18sp" />
 
-                <SeekBar
-                    android:id="@+id/skbDinero"
-                    style="@style/Widget.AppCompat.SeekBar.Discrete"
-                    android:layout_width="0dp"
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="129.12dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/line_93" />
+
+                <TextView
+                    android:id="@+id/plazo3"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fadeScrollbars="false"
-                    android:max="10"
-                    android:progress="3"
-                    android:scrollbarThumbHorizontal="@drawable/deck"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/plazo4" />
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:text="Cantidad de cuotas"
+                    android:textColor="#17A4B7"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvCantCuotas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="#17A4B7"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="129.12dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/line_93" />
+
+                <TextView
+                    android:id="@+id/plazo7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:text="Fecha actual"
+                    android:textColor="#17A4B7"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvFechaActual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:gravity="center"
+                    android:text="14/05/2020"
+                    android:textColor="#17A4B7"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="257dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:background="#00000000"
+
+        android:backgroundTint="#70BDD6"
+        android:fontFamily="@font/noto_sans_bold"
+        android:text="Solicitar"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:cornerRadius="50dp"
+        app:shapeAppearance="@style/TextAppearance.Compat.Notification.Info.Media" />
 
 </FrameLayout>

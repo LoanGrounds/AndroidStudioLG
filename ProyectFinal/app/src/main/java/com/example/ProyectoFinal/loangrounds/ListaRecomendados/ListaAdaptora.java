@@ -36,18 +36,15 @@ public class ListaAdaptora extends ArrayAdapter<Prestamo> {
         LayoutInflater inflater=LayoutInflater.from(mCtx) ;
         View view=inflater.inflate(resource,null);
         TextView tvNombreApellido=view.findViewById(R.id.tvNombreApellido);
-        TextView tvMeses=view.findViewById(R.id.tvMeses);
         TextView precio1=view.findViewById(R.id.precio1);
-        TextView precio2=view.findViewById(R.id.precio2);
         ImageView imgPrestamista=view.findViewById(R.id.imgPrestamista);
 
 
         Prestamo prestamo=ListaPrestamos.get(position);
         tvNombreApellido.setText(prestamo.getName());
         precio1.setText(String.valueOf(prestamo.getPrecio1()));
-        precio2.setText(String.valueOf(prestamo.getPrecio2()));
         imgPrestamista.setImageDrawable(mCtx.getResources().getDrawable(prestamo.getImage()));
-        tvMeses.setText(String.valueOf(prestamo.getMeses()));
+
         return view;
     }
 }

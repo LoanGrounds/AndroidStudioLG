@@ -24,14 +24,17 @@ public class MainActivityInicio extends AppCompatActivity {
     LupaFragment fragmentLupa;
     SolicitadosFragment fragmentSolicitados;
     CadaPrestamoFragment fragmentCadaPrestamo;
+    private Object SupportFragmentManager;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main_inicio);
         crearFragments();
         reemplazarFragmenbts(fragmentMenu,false);
+
 
 
     }

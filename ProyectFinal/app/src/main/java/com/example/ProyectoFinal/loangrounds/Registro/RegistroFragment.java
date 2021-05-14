@@ -3,6 +3,7 @@ package com.example.ProyectoFinal.loangrounds.Registro;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.text.Layout;
 import android.util.Log;
@@ -104,7 +105,11 @@ public class RegistroFragment extends Fragment {
                 MainActivity actividadContenedora;
                 actividadContenedora = (MainActivity) getActivity();
                 actividadContenedora.cambioActivity();
-
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                int count = fm.getBackStackEntryCount();
+                for(int i = 0; i < count; ++i) {
+                    fm.popBackStack();
+                }
 
             }
 

@@ -13,7 +13,6 @@ import android.widget.TextView;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
 import com.example.ProyectoFinal.loangrounds.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -21,9 +20,11 @@ public class CadaPrestamoFragment extends Fragment {
 
     TextView tv1;
     TextView tvDinero;
-    TextView tvCantMeses;
+    TextView tvDiasEntreCuota;
     SeekBar skbDinero;
     TextView tvIntereses;
+    TextView tvDiaTol;
+    TextView tvCantCuotas;
     int intPos;
     List<Prestamo> prest;
     View layoutRhoot;
@@ -52,54 +53,28 @@ public class CadaPrestamoFragment extends Fragment {
     }
 
     private void SetearListners() {
-        skbDinero.setOnSeekBarChangeListener(skbDinero_Change);
+
     }
     private void inicializarDatos(){
         String nombre=prest.get(intPos).getName();
-        int meses=prest.get(intPos).getMeses();
-        int dineroMin=prest.get(intPos).getPrecio1();
-        int dineroMax=prest.get(intPos).getPrecio2();
 
-        tv1.setText(String.valueOf(nombre));
-        tvCantMeses.setText(String.valueOf(meses)+"  meses");
-        tvDinero.setText(String.valueOf(dineroMin));
-        skbDinero.setMin(dineroMin);
-        skbDinero.setMax(dineroMax-dineroMin);
-        double interes=(dineroMin*0.2);
+        int diner=prest.get(intPos).getPrecio1();
+
+        tvDinero.setText("$"+String.valueOf(diner));
+        double interes=(diner*0.12);
         tvIntereses.setText(String.valueOf(interes));
 
 
 
     }
 
-    SeekBar.OnSeekBarChangeListener skbDinero_Change=new SeekBar.OnSeekBarChangeListener() {
-        @Override
-        public void onProgressChanged(SeekBar seekBar, int i, boolean fromUser) {
-
-
-            int min=i+prest.get(intPos).getPrecio1();
-            double interes=(min*0.2);
-            tvDinero.setText(String.valueOf(min));
-            tvIntereses.setText(String.valueOf(interes));
-        }
-
-        @Override
-        public void onStartTrackingTouch(SeekBar seekBar) {
-
-        }
-
-        @Override
-        public void onStopTrackingTouch(SeekBar seekBar) {
-
-        }
-    };
 
     private void obtenerReferencias() {
-        tv1=(TextView) layoutRhoot.findViewById(R.id.tv1);
         tvDinero= (TextView) layoutRhoot.findViewById(R.id.tvDinero);
-        tvCantMeses=(TextView) layoutRhoot.findViewById(R.id.tvCantMeses);
-        skbDinero=(SeekBar)layoutRhoot.findViewById(R.id.skbDinero);
+        tvDiasEntreCuota=(TextView) layoutRhoot.findViewById(R.id.tvCantMeses);
         tvIntereses=(TextView) layoutRhoot.findViewById(R.id.tvInteres);
+        tvDiaTol=(TextView) layoutRhoot.findViewById(R.id.tvDiaTol);
+        tvCantCuotas=(TextView) layoutRhoot.findViewById(R.id.tvCantCuotas);
     }
 
 

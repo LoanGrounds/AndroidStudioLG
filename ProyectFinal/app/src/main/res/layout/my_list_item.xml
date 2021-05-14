@@ -6,34 +6,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center|top">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="281dp"
-        android:layout_height="122dp"
-        android:layout_alignTop="@+id/line_93"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="0dp">
-
-        <View
-            android:id="@+id/rectangle_c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rectangle_c"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="55dp"
-            android:layout_height="56dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.07"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_width="281dp"
+            android:layout_height="122dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rectangle_c">
 
             <ImageView
                 android:id="@+id/imgPrestamista"
@@ -41,115 +23,59 @@
                 android:layout_height="40dp"
                 android:foregroundGravity="center_vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@drawable/deck" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="180dp"
+                android:layout_height="85dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvNombreApellido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Nombre y apellido"
+                    android:textColor="#17A4B7 "
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="141dp"
+                    android:layout_height="29dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:textColor="#17A4B7 " />
+
+                    <TextView
+                        android:id="@+id/precio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="top"
+                        android:text="xxxxx"
+                        android:textColor="#17A4B7 "
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <LinearLayout
-            android:layout_width="152dp"
-            android:layout_height="35dp"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout"
-            app:layout_constraintTop_toTopOf="@+id/rectangle_c"
-            app:layout_constraintVertical_bias="1.0">
-
-            <TextView
-                android:id="@+id/tvNombreApellido"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:fontFamily="@font/lato_bold"
-                android:text="Nombre y apellido"
-                android:textColor="#17A4B7 "
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="141dp"
-            android:layout_height="29dp"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout4"
-            app:layout_constraintTop_toTopOf="@+id/rectangle_c"
-            app:layout_constraintVertical_bias="0.721">
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="$"
-                android:textColor="#17A4B7 " />
-
-            <TextView
-                android:id="@+id/precio1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:gravity="top"
-                android:text="xxxxx"
-                android:textColor="#17A4B7 "
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:text="$"
-                android:textColor="#17A4B7 " />
-
-            <TextView
-                android:id="@+id/precio2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:gravity="top"
-                android:text="xxxx"
-                android:textColor="#17A4B7 "
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="163dp"
-            android:layout_height="32dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.767"
-            app:layout_constraintStart_toStartOf="@+id/rectangle_c">
-
-            <TextView
-                android:id="@+id/plazo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="top"
-
-                android:text="Plazo"
-                android:textColor="#17A4B7 " />
-
-            <TextView
-                android:id="@+id/tvMeses"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-
-                android:gravity="top"
-                android:text="xx"
-                android:textColor="#17A4B7" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:text="meses"
-                android:textColor="#17A4B7 " />
-        </LinearLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

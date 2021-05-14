@@ -43,10 +43,10 @@ public class LupaFragment extends Fragment {
         // Inflate the layout for this fragment
         layoutRhoot=inflater.inflate(R.layout.fragment_lupa, container, false);
         prestamoList= new ArrayList<>();
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Jose pedro",1000,1500,3));
-        prestamoList.add(new Prestamo(R.drawable.yo,"Damian cuk",1000,1500,3));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000,1500,3));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Jose pedro",1000));
+        prestamoList.add(new Prestamo(R.drawable.yo,"Damian cuk",1000));
+        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000));
 
 
         listView = (ListView) layoutRhoot.findViewById(R.id.listView);
