@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Menu.ContactoFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:id="@+id/constraintLayout3"
-        android:layout_width="315dp"
-        android:layout_height="209dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/card"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -21,97 +23,48 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="91dp"
-            android:layout_height="100dp"
-            android:src="@drawable/deck"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/gabriel_dec2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.192" />
-
-        <View
-            android:id="@+id/line_9"
-            android:layout_width="160dp"
-            android:layout_height="2dp"
-            android:alpha="0.5"
-            android:background="@drawable/line_93"
-            app:layout_constraintBottom_toTopOf="@+id/gabriel_dec2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.052"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/gabriel_dec"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <View
-            android:id="@+id/line_"
-            android:layout_width="160dp"
-            android:layout_height="2dp"
-            android:alpha="0.5"
-            android:background="@drawable/line_93"
-            app:layout_constraintBottom_toTopOf="@+id/gabriel_dec1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.052"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/gabriel_dec2"
-            app:layout_constraintVertical_bias="0.0" />
+            android:layout_width="51dp"
+            android:layout_height="52dp"
+            android:src="@drawable/deck" />
 
         <TextView
             android:id="@+id/gabriel_dec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
 
             android:fontFamily="@font/lato_bold"
             android:foregroundGravity="center"
             android:gravity="center"
             android:text="Nombre y ape"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/gabriel_dec2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.531"
-            app:lineHeight="28sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/gabriel_dec2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
 
             android:layout_marginStart="4dp"
             android:layout_marginBottom="28dp"
             android:fontFamily="@font/play"
             android:gravity="top"
             android:text="Profesíon"
-            android:textColor="#000000"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toTopOf="@+id/gabriel_dec1"
-            app:layout_constraintStart_toStartOf="@+id/gabriel_dec"
-            app:lineHeight="15sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/gabriel_dec1"
-            android:layout_width="189dp"
-            android:layout_height="103dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:fontFamily="@font/play"
 
             android:gravity="top"
             android:text="Informacion de nuestro cliente"
-            android:textColor="#000000"
-            android:textSize="13sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/gabriel_dec2"
-            app:lineHeight="18sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout8"

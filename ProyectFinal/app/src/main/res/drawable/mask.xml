@@ -3,8 +3,8 @@
 <vector
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
-    android:width="318dp"
-    android:height="454dp"
+    android:width="298dp"
+    android:height="434dp"
     android:viewportWidth="318"
     android:viewportHeight="454"
     >
@@ -17,7 +17,8 @@
 
         <path
             android:pathData="M0 0V454H318V0"
-            android:fillColor="#E2EEEF"
+            android:fillColor="#FFFFFF
+"
             />
 
     </group>

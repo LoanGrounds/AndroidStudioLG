@@ -1343,6 +1343,7 @@ drawable active
 drawable avd_hide_password
 drawable avd_show_password
 drawable ayuda
+drawable botonfav
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1429,6 +1430,7 @@ font noto_sans
 font noto_sans_bold
 font play
 font play_bold
+font rubik_medium
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1512,6 +1514,8 @@ id btnIn
 id btnIniciarSesion
 id btnOmitir
 id btnRegistrarse
+id btnSig
+id btnSig1
 id btnSig3
 id btnSiguiente
 id buttonPanel
@@ -1609,6 +1613,7 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imageView4
 id imgPrestamista
 id info
 id ingreseHuella
@@ -1620,10 +1625,9 @@ id largeLabel
 id left
 id line1
 id line3
-id line_
-id line_9
 id linearLayout
 id linearLayout2
+id linearLayout4
 id linearLayout5
 id linearLayout6_1
 id linearLayout6_2
@@ -1794,16 +1798,13 @@ id tvDinero
 id tvFechaActual
 id tvInteres
 id tvMsaje
+id tvNombre
 id tvNombreApellido
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
-id view
-id view2
-id view3
-id view4
 id view_offset_helper
 id visible
 id withText
@@ -1870,7 +1871,12 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_main_iniciar_sesion
 layout activity_main_inicio
+layout activity_main_registrarse2
+layout activity_main_registrarse3
+layout activity_main_registrarse4
+layout activity_main_registrase1
 layout activity_main_start
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1942,6 +1948,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout rectangle_3
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

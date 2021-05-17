@@ -1,5 +1,7 @@
 com/example/ProyectoFinal/loangrounds/MainActivityInicio.java
  com.example.ProyectoFinal.loangrounds.MainActivityInicio
+com/example/ProyectoFinal/loangrounds/MenuFragment.java
+ com.example.ProyectoFinal.loangrounds.MenuFragment
 com/example/ProyectoFinal/loangrounds/Navbar/Footer.java
  com.example.ProyectoFinal.loangrounds.Navbar.Footer
  com.example.ProyectoFinal.loangrounds.Navbar.Footer$1
@@ -10,6 +12,8 @@ com/example/ProyectoFinal/loangrounds/ListaRecomendados/Prestamo.java
  com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo
 com/example/ProyectoFinal/loangrounds/ListaRecomendados/ListaAdaptora.java
  com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora
+com/example/ProyectoFinal/loangrounds/Footer.java
+ com.example.ProyectoFinal.loangrounds.Footer
 com/example/ProyectoFinal/loangrounds/Utilidades/toastes.java
  com.example.ProyectoFinal.loangrounds.Utilidades.toastes
 com/example/ProyectoFinal/loangrounds/Registro/Inicio_RegistrarseFragment.java
@@ -18,6 +22,17 @@ com/example/ProyectoFinal/loangrounds/Registro/Inicio_RegistrarseFragment.java
  com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment$2
 com/example/ProyectoFinal/loangrounds/MainActivity.java
  com.example.ProyectoFinal.loangrounds.MainActivity
+com/example/ProyectoFinal/loangrounds/MainActivityRegistrase1.java
+ com.example.ProyectoFinal.loangrounds.MainActivityRegistrase1
+ com.example.ProyectoFinal.loangrounds.MainActivityRegistrase1$1
+com/example/ProyectoFinal/loangrounds/MainActivityIniciarSesion.java
+ com.example.ProyectoFinal.loangrounds.MainActivityIniciarSesion
+com/example/ProyectoFinal/loangrounds/LupaFragment.java
+ com.example.ProyectoFinal.loangrounds.LupaFragment
+com/example/ProyectoFinal/loangrounds/MainActivityRegistrarse3.java
+ com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse3
+ com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse3$1
+ com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse3$2
 com/example/ProyectoFinal/loangrounds/Menu/CadaPrestamoFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment
 com/example/ProyectoFinal/loangrounds/Registro/InicioSesionFragment.java
@@ -25,6 +40,9 @@ com/example/ProyectoFinal/loangrounds/Registro/InicioSesionFragment.java
  com.example.ProyectoFinal.loangrounds.Registro.InicioSesionFragment$1
 com/example/ProyectoFinal/loangrounds/Menu/ContactoFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment
+com/example/ProyectoFinal/loangrounds/MainActivityRegistrarse4.java
+ com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse4
+ com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse4$1
 com/example/ProyectoFinal/loangrounds/Menu/MenuFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.MenuFragment
  com.example.ProyectoFinal.loangrounds.Menu.MenuFragment$1
@@ -33,6 +51,9 @@ com/example/ProyectoFinal/loangrounds/Menu/LupaFragment.java
 com/example/ProyectoFinal/loangrounds/Registro/RegistroFragment.java
  com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment
  com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment$1
+com/example/ProyectoFinal/loangrounds/MainActivityRegistrarse2.java
+ com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse2
+ com.example.ProyectoFinal.loangrounds.MainActivityRegistrarse2$1
 com/example/ProyectoFinal/loangrounds/MainActivityStart.java
  com.example.ProyectoFinal.loangrounds.MainActivityStart
  com.example.ProyectoFinal.loangrounds.MainActivityStart$1
