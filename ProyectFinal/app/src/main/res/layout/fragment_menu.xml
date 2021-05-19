@@ -15,19 +15,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/logonombre2" />
-
             <TextView
                 android:id="@+id/loangrounds"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/lato_bold"
+                android:paddingTop="20dp"
                 android:text="¡Bienvenido! "
                 android:textAlignment="center"
                 android:textColor="#D417A4B7 "
@@ -60,7 +54,7 @@
 
             <ListView
                 android:id="@+id/listView"
-                android:layout_width="281dp"
+                android:layout_width="match_parent"
                 android:layout_height="781dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="100dp"

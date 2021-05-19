@@ -1,87 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center|top">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_c"
+        android:backgroundTintMode="multiply"
+        android:focusable="auto"
+        android:foreground="@android:drawable/divider_horizontal_dim_dark"
+        android:scrollbars="vertical"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="0dp"
-            android:background="@drawable/rectangle_c">
 
-            <ImageView
-                android:id="@+id/imgPrestamista"
-                android:layout_width="62dp"
-                android:layout_height="54dp"
-                android:foregroundGravity="center_vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@drawable/deck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_c"
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <LinearLayout
-                android:id="@+id/linearLayout7"
-                android:layout_width="180dp"
-                android:layout_height="85dp"
-                android:layout_marginEnd="32dp"
-                android:gravity="center"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingStart="24dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="20dp">
 
-                <TextView
-                    android:id="@+id/tvNombreApellido"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/lato_bold"
-                    android:text="Nombre y apellido"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/imgPrestamista"
+                    android:layout_width="51.87dp"
+                    android:layout_height="52dp"
+                    android:foregroundGravity="center_vertical"
+                    tools:srcCompat="@drawable/deck" />
 
                 <LinearLayout
-                    android:id="@+id/linearLayout"
-                    android:layout_width="141dp"
-                    android:layout_height="29dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:paddingBottom="5dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="$"
-                        android:textColor="#FBFBFB" />
-
-                    <TextView
-                        android:id="@+id/precio1"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/tvNombreApellido"
+                        android:layout_width="243dp"
                         android:layout_height="wrap_content"
 
-                        android:fontFamily="@font/lato_black"
-                        android:gravity="top"
-                        android:text="xxxxx"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18sp" />
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/rubik_medium"
+                        android:paddingLeft="24dp"
+                        android:text="Nombre y apellido"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="24dp">
+
+                        <TextView
+                            android:id="@+id/tvMont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+
+                            android:fontFamily="@font/rubik_medium"
+                            android:paddingRight="30dp"
+                            android:text="Monto:"
+                            android:textColor="#797979"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/precio1"
+                            android:layout_width="124dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/rubik_medium"
+                            android:gravity="top"
+                            android:text="xxxxx"
+                            android:textColor="#941B0C "
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

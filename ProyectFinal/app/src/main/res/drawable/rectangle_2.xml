@@ -5,7 +5,7 @@
     android:width="338dp"
     android:height="239dp"
     android:viewportWidth="368"
-    android:viewportHeight="269"
+    android:viewportHeight="189"
     >
 
     <group>
@@ -16,51 +16,10 @@
 
         <path
             android:pathData="M0 0V269H368V0"
-            android:fillColor="#FFFFFF"
+            android:fillColor="#000000"
             />
 
 
-
-        <group
-            android:translateX="-0.618"
-            android:translateY="0.322"
-            android:pivotX="184"
-            android:pivotY="134.5"
-            android:scaleX="2.047"
-            android:scaleY="3.811"
-            android:rotation="-48.222"
-            >
-
-            <path
-                android:pathData="M0 0V269H368V0"
-                >
-
-                <aapt:attr name="android:fillColor">
-
-                    <gradient
-                        android:type="radial"
-                        android:centerX="184"
-                        android:centerY="134.5"
-                        android:gradientRadius="92"
-                        >
-
-                        <item
-                            android:color="#7EDCE9"
-                            android:offset="0"
-                            />
-
-                        <item
-                            android:color="#FFFFFF"
-                            android:offset="1"
-                            />
-
-                    </gradient>
-
-                </aapt:attr>
-
-            </path>
-
-        </group>
 
 
 

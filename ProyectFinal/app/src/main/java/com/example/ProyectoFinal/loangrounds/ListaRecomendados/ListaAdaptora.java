@@ -42,7 +42,7 @@ public class ListaAdaptora extends ArrayAdapter<Prestamo> {
 
         Prestamo prestamo=ListaPrestamos.get(position);
         tvNombreApellido.setText(prestamo.getName());
-        precio1.setText(String.valueOf(prestamo.getPrecio1()));
+        precio1.setText(String.valueOf("$"+prestamo.getPrecio1()));
         imgPrestamista.setImageDrawable(mCtx.getResources().getDrawable(prestamo.getImage()));
 
         return view;

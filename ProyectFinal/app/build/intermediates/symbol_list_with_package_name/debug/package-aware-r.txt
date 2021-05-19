@@ -1353,6 +1353,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable card
+drawable corazon
 drawable deck
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1366,7 +1367,9 @@ drawable et_style2
 drawable frame_270
 drawable frame_verde
 drawable home
+drawable ic_baseline_favorite_24
 drawable ic_baseline_fingerprint_24
+drawable ic_baseline_star_24
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
@@ -1610,10 +1613,8 @@ id imBtnHouse
 id imBtnLupa
 id imBtnSol
 id image
-id imageView
 id imageView2
 id imageView3
-id imageView4
 id imgPrestamista
 id info
 id ingreseHuella
@@ -1797,6 +1798,7 @@ id tvDiaTol
 id tvDinero
 id tvFechaActual
 id tvInteres
+id tvMont
 id tvMsaje
 id tvNombre
 id tvNombreApellido

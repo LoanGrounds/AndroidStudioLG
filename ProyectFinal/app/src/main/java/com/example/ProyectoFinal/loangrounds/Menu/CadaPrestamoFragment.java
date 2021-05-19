@@ -25,6 +25,7 @@ public class CadaPrestamoFragment extends Fragment {
     TextView tvIntereses;
     TextView tvDiaTol;
     TextView tvCantCuotas;
+    TextView tvNombre;
     int intPos;
     List<Prestamo> prest;
     View layoutRhoot;
@@ -63,7 +64,7 @@ public class CadaPrestamoFragment extends Fragment {
         tvDinero.setText("$"+String.valueOf(diner));
         double interes=(diner*0.12);
         tvIntereses.setText(String.valueOf(interes));
-
+        tvNombre.setText(nombre);
 
 
     }
@@ -75,6 +76,7 @@ public class CadaPrestamoFragment extends Fragment {
         tvIntereses=(TextView) layoutRhoot.findViewById(R.id.tvInteres);
         tvDiaTol=(TextView) layoutRhoot.findViewById(R.id.tvDiaTol);
         tvCantCuotas=(TextView) layoutRhoot.findViewById(R.id.tvCantCuotas);
+        tvNombre=(TextView) layoutRhoot.findViewById(R.id.tvNombre);
     }
 
 
