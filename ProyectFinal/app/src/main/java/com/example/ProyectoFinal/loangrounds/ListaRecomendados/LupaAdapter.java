@@ -24,7 +24,7 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
     public LupaAdapter(Context context, ArrayList<Prestamo> prestamos){
 
         this.context=context;
-
+        
         this.prestamos=prestamos;
 
     }

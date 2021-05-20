@@ -21,23 +21,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="51dp"
-            android:layout_height="52dp"
-            android:src="@drawable/deck" />
-
         <TextView
             android:id="@+id/gabriel_dec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:fontFamily="@font/lato_bold"
+            android:fontFamily="@font/titillium_web_black"
             android:foregroundGravity="center"
             android:gravity="center"
+            android:paddingBottom="10dp"
             android:text="Nombre y ape"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:textColor="#0B0C1A"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/gabriel_dec2"
@@ -46,10 +41,10 @@
 
             android:layout_marginStart="4dp"
             android:layout_marginBottom="28dp"
-            android:fontFamily="@font/play"
+            android:fontFamily="@font/titillium_web_bold"
             android:gravity="top"
             android:text="Profesíon"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="15sp" />
 
         <TextView
@@ -57,11 +52,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:fontFamily="@font/play"
+            android:fontFamily="@font/titillium_web_bold"
 
             android:gravity="top"
             android:text="Informacion de nuestro cliente"
-            android:textColor="#FFFFFF"
+            android:textColor="#797979"
             android:textSize="13sp" />
 
     </LinearLayout>
@@ -76,8 +71,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:id="@+id/linearLayout6.4"
@@ -167,5 +161,16 @@
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/deck"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

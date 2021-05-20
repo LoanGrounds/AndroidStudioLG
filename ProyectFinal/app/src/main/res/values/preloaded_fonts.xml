@@ -6,5 +6,7 @@
         <item>@font/noto_sans_bold</item>
         <item>@font/play_bold</item>
         <item>@font/rubik_medium</item>
+        <item>@font/titillium_web_black</item>
+        <item>@font/titillium_web_bold</item>
     </array>
 </resources>

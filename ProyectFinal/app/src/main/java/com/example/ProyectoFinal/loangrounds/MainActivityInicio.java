@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.CadaSolicitadoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.MenuFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.LupaFragment;
@@ -24,6 +25,7 @@ public class MainActivityInicio extends AppCompatActivity {
     LupaFragment fragmentLupa;
     SolicitadosFragment fragmentSolicitados;
     CadaPrestamoFragment fragmentCadaPrestamo;
+    CadaSolicitadoFragment fragmentCadaSolicitado;
     private Object SupportFragmentManager;
 
 
@@ -61,7 +63,7 @@ public class MainActivityInicio extends AppCompatActivity {
         fragmentSolicitados = new SolicitadosFragment();
         fragmentContacto = new ContactoFragment();
         fragmentCadaPrestamo= new CadaPrestamoFragment();
-
+        fragmentCadaSolicitado=new CadaSolicitadoFragment();
     }
     public  void setFragmentMenu(){
 
@@ -87,9 +89,17 @@ public class MainActivityInicio extends AppCompatActivity {
 
     }
 
+    public  void setFragmentCadaSolicitado(){
+        reemplazarFragmenbts(fragmentCadaSolicitado);
+
+    }
+
 
     public void EnviarMensaje(int position,  List<Prestamo> prestamoList){
         fragmentCadaPrestamo.enviarPosition(position, prestamoList);
+    }
+    public void EnviarMensajeSolicitado(int position,  List<Prestamo> prestamoList){
+        fragmentCadaSolicitado.enviarPosition(position, prestamoList);
     }
 
 

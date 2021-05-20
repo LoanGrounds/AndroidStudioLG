@@ -1518,8 +1518,6 @@ id btnIn
 id btnIniciarSesion
 id btnOmitir
 id btnRegistrarse
-id btnSig
-id btnSig1
 id btnSig3
 id btnSiguiente
 id buttonPanel
@@ -1629,7 +1627,6 @@ id line1
 id line3
 id linearLayout
 id linearLayout2
-id linearLayout4
 id linearLayout5
 id linearLayout6_1
 id linearLayout6_2
@@ -1642,6 +1639,7 @@ id listView
 id list_item
 id loangrounds
 id loangrounds2
+id loangrounds3
 id masked
 id media_actions
 id message
@@ -1702,6 +1700,7 @@ id precio1
 id progress_circular
 id progress_horizontal
 id radio
+id recyclerView
 id right
 id right_icon
 id right_side
@@ -1873,12 +1872,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
-layout activity_main_iniciar_sesion
 layout activity_main_inicio
-layout activity_main_registrarse2
-layout activity_main_registrarse3
-layout activity_main_registrarse4
-layout activity_main_registrase1
 layout activity_main_start
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1897,6 +1891,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_cada_prestamo
+layout fragment_cada_solicitado
 layout fragment_contacto
 layout fragment_footer
 layout fragment_inicio__registrarse
@@ -1950,7 +1945,6 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout rectangle_3
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
