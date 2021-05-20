@@ -20,7 +20,7 @@ public class ListaAdaptora extends ArrayAdapter<Prestamo> {
     Context mCtx;
     int resource;
     List<Prestamo> ListaPrestamos;
-
+    LupaAdapter lupaAdapter;
 
 
     public ListaAdaptora(Context mCtx, int resource, List<Prestamo> ListaPrestamos){

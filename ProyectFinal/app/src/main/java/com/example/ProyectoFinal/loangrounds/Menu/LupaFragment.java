@@ -3,6 +3,9 @@ package com.example.ProyectoFinal.loangrounds.Menu;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
+import com.example.ProyectoFinal.loangrounds.ListaRecomendados.LupaAdapter;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivity;
 import com.example.ProyectoFinal.loangrounds.R;
@@ -23,8 +27,10 @@ public class LupaFragment extends Fragment {
 
     View layoutRhoot;
     ListView listView;
+    RecyclerView recyclerView;
+    LupaAdapter lupaAdapter;
 
-    List<Prestamo> prestamoList;
+    ArrayList<Prestamo> prestamoList;
     public LupaFragment() {
         // Required empty public constructor
     }
@@ -49,9 +55,16 @@ public class LupaFragment extends Fragment {
         prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000));
 
 
-        listView = (ListView) layoutRhoot.findViewById(R.id.listView);
-        ListaAdaptora adapter= new ListaAdaptora(getActivity(),R.layout.mi_list_item2,prestamoList);
-        listView.setAdapter(adapter);
+        recyclerView=(RecyclerView) layoutRhoot.findViewById(R.id.recyclerView);
+
+
+        LinearLayoutManager layoutManager=new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL,false);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+        lupaAdapter= new LupaAdapter(getActivity(), prestamoList);
+        recyclerView.setAdapter(lupaAdapter);
+
         return layoutRhoot;
     }
 

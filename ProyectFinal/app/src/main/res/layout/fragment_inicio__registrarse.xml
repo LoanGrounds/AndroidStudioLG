@@ -37,7 +37,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btnRegistrarse"
         app:strokeColor="#70BDD6 "
-        app:strokeWidth="3dp"
         tools:layout_conversion_absoluteHeight="52dp"
         tools:layout_conversion_absoluteWidth="257dp" />
 
@@ -53,8 +52,8 @@
         android:gravity="center"
         android:text="Registrarse"
         android:textColor="#ffffff"
-        android:textSize="18sp"
 
+        android:textSize="18sp"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
