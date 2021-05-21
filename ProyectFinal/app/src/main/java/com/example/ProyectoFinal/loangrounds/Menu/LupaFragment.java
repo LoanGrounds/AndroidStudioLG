@@ -10,8 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.LupaAdapter;
@@ -21,16 +23,19 @@ import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
-public class LupaFragment extends Fragment {
+public class LupaFragment extends Fragment implements SearchView.OnQueryTextListener {
 
     View layoutRhoot;
     ListView listView;
     RecyclerView recyclerView;
     LupaAdapter lupaAdapter;
+    SearchView buscarPrestamo;
 
     ArrayList<Prestamo> prestamoList;
+    ArrayList<Prestamo> original;
     public LupaFragment() {
         // Required empty public constructor
     }
@@ -47,15 +52,20 @@ public class LupaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        layoutRhoot=inflater.inflate(R.layout.fragment_lupa, container, false);
-        prestamoList= new ArrayList<>();
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Jose pedro",1000));
-        prestamoList.add(new Prestamo(R.drawable.yo,"Damian cuk",1000));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000));
+        layoutRhoot = inflater.inflate(R.layout.fragment_lupa, container, false);
+        prestamoList = new ArrayList<>();
+        prestamoList.add(new Prestamo(R.drawable.deck, "Luka Portnoi", 1000));
+        prestamoList.add(new Prestamo(R.drawable.deck, "Jose pedro", 1000));
+        prestamoList.add(new Prestamo(R.drawable.yo, "Damian cuk", 1000));
+        prestamoList.add(new Prestamo(R.drawable.deck, "Luka Portnoi", 1000));
+        prestamoList.add(new Prestamo(R.drawable.deck, "FDiego Poasdrtnoi", 1000));
+        prestamoList.add(new Prestamo(R.drawable.deck, "Maradona lupe", 1000));
+        prestamoList.add(new Prestamo(R.drawable.deck, "Tomy sinRottman", 1000));
 
 
-        recyclerView=(RecyclerView) layoutRhoot.findViewById(R.id.recyclerView);
+        ObtenerReferencias();
+        initListeners();
+
 
 
         LinearLayoutManager layoutManager=new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL,false);
@@ -68,7 +78,38 @@ public class LupaFragment extends Fragment {
         return layoutRhoot;
     }
 
+    private void ObtenerReferencias() {
+        recyclerView=(RecyclerView) layoutRhoot.findViewById(R.id.recyclerView);
+        buscarPrestamo=(SearchView) layoutRhoot.findViewById(R.id.buscarPrestamo);
+    }
 
+    private void initListeners(){
+        buscarPrestamo.setOnQueryTextListener(this);
+    }
 
+    private  void filtrar(String strSearch){
+        if(strSearch.length() == 0){
+            original.clear();
+            original.addAll(prestamoList);
+        }
+        else {
 
+            List <Prestamo> collects =  original.stream()
+                    .filter(i -> i.getName().toLowerCase().contains(strSearch))
+                    .collect(Collectors.toList());
+            original.clear();
+            original.addAll(collects);
+        }
+        notify();
+    }
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+
+        return false;
+    }
 }

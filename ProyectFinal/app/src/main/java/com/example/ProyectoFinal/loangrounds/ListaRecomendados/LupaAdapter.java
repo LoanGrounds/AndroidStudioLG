@@ -24,7 +24,7 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
     public LupaAdapter(Context context, ArrayList<Prestamo> prestamos){
 
         this.context=context;
-        
+
         this.prestamos=prestamos;
 
     }
@@ -34,7 +34,7 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.mi_list_item2,parent, false);
-        return null;
+        return new ViewHolder(view);
     }
 
     @Override

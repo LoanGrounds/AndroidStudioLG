@@ -45,11 +45,11 @@ public class CadaPrestamoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-         layoutRhoot=inflater.inflate(R.layout.fragment_cada_prestamo, container, false);
-         obtenerReferencias();
+        layoutRhoot=inflater.inflate(R.layout.fragment_cada_prestamo, container, false);
+        obtenerReferencias();
         inicializarDatos();
-         SetearListners();
-         return layoutRhoot;
+        SetearListners();
+        return layoutRhoot;
 
     }
 
@@ -82,7 +82,7 @@ public class CadaPrestamoFragment extends Fragment {
 
     public void enviarPosition(int position, List<Prestamo> prestamoList ){
 
-       prest = prestamoList;
+        prest = prestamoList;
         intPos = position;
 
 

@@ -6,28 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".Menu.LupaFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+
+        <SearchView
+
+            android:id="@+id/buscarPrestamo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+
+            android:queryHint="Buscar prestamo"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loangrounds4" />
 
         <TextView
-            android:id="@+id/loangrounds"
-            android:layout_width="391dp"
-            android:layout_height="87dp"
+            android:id="@+id/loangrounds4"
+            android:layout_width="388dp"
+            android:layout_height="129dp"
             android:fontFamily="@font/play"
-            android:gravity="center_horizontal|top"
-            android:text="Busqueda"
+            android:gravity="center"
+            android:text="Solicitados"
             android:textColor="#D417A4B7 "
             android:textColorHint="#FFFFFF"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="390dp"
+            android:layout_height="449dp"
+            android:padding="4dp"
 
-    </LinearLayout>
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loangrounds4"
+            tools:showIn="@layout/activity_main">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
+
+
