@@ -2,6 +2,7 @@ package com.example.ProyectoFinal.loangrounds.ListaRecomendados;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,17 +16,20 @@ import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
     ArrayList<Prestamo> prestamos;
+    ArrayList<Prestamo> listaOriginal;
     Context context;
     int resource;
 
     public LupaAdapter(Context context, ArrayList<Prestamo> prestamos){
 
         this.context=context;
-
         this.prestamos=prestamos;
+        listaOriginal=new ArrayList<>();
+        listaOriginal.addAll(prestamos);
 
     }
 
@@ -42,6 +46,37 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
         holder.tvNombreApellido.setText(prestamos.get(position).getName());
         holder.precio1.setText(String.valueOf("$"+prestamos.get(position).getPrecio1()));
         holder.imgPrestamista.setImageDrawable(context.getResources().getDrawable(prestamos.get(position).getImage()));
+    }
+
+    public   void filtrar(String buscarPrestamo){
+        int longitud= buscarPrestamo.length();
+        if(longitud == 0){
+            prestamos.clear();
+            prestamos.addAll(listaOriginal);
+        }
+        else {
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
+                List <Prestamo> collects =  prestamos.stream()
+                        .filter(i -> i.getName().toLowerCase().contains(buscarPrestamo.toLowerCase()))
+                        .collect(Collectors.toList());
+                prestamos.clear();
+                prestamos.addAll(collects);
+            }
+            else{
+                for (Prestamo c: listaOriginal) {
+
+                    if (c.getName().toLowerCase().contains(buscarPrestamo.toLowerCase())){
+                        prestamos.add(c);
+
+                    }
+                }
+
+            }
+
+        }
+        notifyDataSetChanged();
+
     }
 
     @Override

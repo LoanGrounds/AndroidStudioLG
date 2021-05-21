@@ -29,13 +29,13 @@ import java.util.stream.Collectors;
 public class LupaFragment extends Fragment implements SearchView.OnQueryTextListener {
 
     View layoutRhoot;
-    ListView listView;
+
     RecyclerView recyclerView;
     LupaAdapter lupaAdapter;
     SearchView buscarPrestamo;
 
     ArrayList<Prestamo> prestamoList;
-    ArrayList<Prestamo> original;
+
     public LupaFragment() {
         // Required empty public constructor
     }
@@ -84,32 +84,21 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
     }
 
     private void initListeners(){
+
         buscarPrestamo.setOnQueryTextListener(this);
     }
 
-    private  void filtrar(String strSearch){
-        if(strSearch.length() == 0){
-            original.clear();
-            original.addAll(prestamoList);
-        }
-        else {
 
-            List <Prestamo> collects =  original.stream()
-                    .filter(i -> i.getName().toLowerCase().contains(strSearch))
-                    .collect(Collectors.toList());
-            original.clear();
-            original.addAll(collects);
-        }
-        notify();
-    }
     @Override
     public boolean onQueryTextSubmit(String query) {
+
+
         return false;
     }
 
     @Override
     public boolean onQueryTextChange(String newText) {
-
+        lupaAdapter.filtrar(newText);
         return false;
     }
 }
