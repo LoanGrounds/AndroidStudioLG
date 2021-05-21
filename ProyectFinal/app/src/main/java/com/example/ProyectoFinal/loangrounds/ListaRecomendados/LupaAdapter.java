@@ -18,10 +18,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
+public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder> implements View.OnClickListener{
     ArrayList<Prestamo> prestamos;
     ArrayList<Prestamo> listaOriginal;
     Context context;
+    private View.OnClickListener listener;
+
     int resource;
 
     public LupaAdapter(Context context, ArrayList<Prestamo> prestamos){
@@ -38,6 +40,7 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.mi_list_item2,parent, false);
+        view.setOnClickListener(this);
         return new ViewHolder(view);
     }
 
@@ -82,6 +85,20 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
     @Override
     public int getItemCount() {
         return prestamos.size();
+
+    }
+
+    public void setOnClickListener(View.OnClickListener listener){
+
+        this.listener=listener;
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (listener!=null){
+            listener.onClick(v);
+        }
 
     }
 

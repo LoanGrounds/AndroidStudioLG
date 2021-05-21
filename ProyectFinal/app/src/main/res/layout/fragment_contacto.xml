@@ -74,11 +74,13 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
-            android:id="@+id/linearLayout6.4"
+            android:id="@+id/editarPerfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/rectangle_3"
+            android:clickable="true"
+            android:contextClickable="true"
             android:orientation="horizontal">
 
             <TextView
@@ -88,6 +90,7 @@
                 android:layout_gravity="center|center_horizontal"
                 android:layout_marginLeft="12dp"
                 android:layout_weight="1"
+                android:clickable="false"
                 android:fontFamily="@font/lato_bold"
                 android:text="Editar perfil"
                 android:textAlignment="textStart"
@@ -96,7 +99,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout6.3"
+            android:id="@+id/prestamosRecientes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"

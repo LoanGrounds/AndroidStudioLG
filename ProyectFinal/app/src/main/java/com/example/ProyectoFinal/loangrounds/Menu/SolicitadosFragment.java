@@ -63,7 +63,7 @@ public class SolicitadosFragment extends Fragment {
                 actividadContenedora = (MainActivityInicio) getActivity();
 
                 actividadContenedora.setFragmentCadaSolicitado();
-                actividadContenedora.EnviarMensaje(position, prestamoList);
+                actividadContenedora.EnviarMensajeSolicitado(position, prestamoList);
 
 
 

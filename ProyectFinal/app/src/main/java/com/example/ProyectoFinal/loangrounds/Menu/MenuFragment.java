@@ -14,15 +14,17 @@ import android.widget.ListView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.MainActivity;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class MenuFragment extends Fragment {
-
+    FloatingActionButton fbtnCrearPrestamo;
     ListView listView;
     View layoutRhoot;
     List<Prestamo> prestamoList;
@@ -56,11 +58,25 @@ public class MenuFragment extends Fragment {
         prestamoList.add(new Prestamo(R.drawable.yo,"Damian cuk",1200));
         prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",7000));
 
+        ObtenerReferencia();
 
-        listView = (ListView) layoutRhoot.findViewById(R.id.listView);
+
         ListaAdaptora adapter= new ListaAdaptora(getActivity(),R.layout.my_list_item,prestamoList);
         listView.setAdapter(adapter);
 
+        SetearListners();
+
+        return layoutRhoot;
+
+    }
+
+    private void ObtenerReferencia() {
+        listView = (ListView) layoutRhoot.findViewById(R.id.listView);
+        fbtnCrearPrestamo=(FloatingActionButton) layoutRhoot.findViewById(R.id.fbtnCrearPrestamo);
+    }
+
+
+    public void SetearListners() {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -78,10 +94,21 @@ public class MenuFragment extends Fragment {
 
             }
         });
-        return layoutRhoot;
+        fbtnCrearPrestamo.setOnClickListener(fbtnCrearPrestamo_Click);
 
     }
 
+    View.OnClickListener fbtnCrearPrestamo_Click = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+
+            MainActivityInicio actividadContenedora;
+            actividadContenedora = (MainActivityInicio) getActivity();
+            actividadContenedora.setFragmentCrearPrestamo();
+
+        }
+    };
 
 
 }

@@ -12,6 +12,8 @@ import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaSolicitadoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.EditarPerfilFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.MenuFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.LupaFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment;
@@ -26,6 +28,8 @@ public class MainActivityInicio extends AppCompatActivity {
     SolicitadosFragment fragmentSolicitados;
     CadaPrestamoFragment fragmentCadaPrestamo;
     CadaSolicitadoFragment fragmentCadaSolicitado;
+    CrearPrestamoFragment fragmentCrearPrestamo;
+    EditarPerfilFragment fragmentEditarPerfil;
     private Object SupportFragmentManager;
 
 
@@ -64,6 +68,8 @@ public class MainActivityInicio extends AppCompatActivity {
         fragmentContacto = new ContactoFragment();
         fragmentCadaPrestamo= new CadaPrestamoFragment();
         fragmentCadaSolicitado=new CadaSolicitadoFragment();
+        fragmentCrearPrestamo=new CrearPrestamoFragment();
+        fragmentEditarPerfil=new EditarPerfilFragment();
     }
     public  void setFragmentMenu(){
 
@@ -91,6 +97,15 @@ public class MainActivityInicio extends AppCompatActivity {
 
     public  void setFragmentCadaSolicitado(){
         reemplazarFragmenbts(fragmentCadaSolicitado);
+
+    }
+
+    public  void setFragmentEditarPerfil(){
+        reemplazarFragmenbts(fragmentEditarPerfil);
+
+    }
+    public  void setFragmentCrearPrestamo(){
+        reemplazarFragmenbts(fragmentCrearPrestamo);
 
     }
 

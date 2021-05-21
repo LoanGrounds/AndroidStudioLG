@@ -14,11 +14,13 @@ import android.widget.Adapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.LupaAdapter;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivity;
+import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.ArrayList;
@@ -73,7 +75,15 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
         lupaAdapter= new LupaAdapter(getActivity(), prestamoList);
+
         recyclerView.setAdapter(lupaAdapter);
+      /*  lupaAdapter.setOnClickListener(v -> {
+            MainActivityInicio actividadContenedora;
+            actividadContenedora = (MainActivityInicio) getActivity();
+
+            actividadContenedora.setFragmentCadaPrestamo();
+
+        });*/
 
         return layoutRhoot;
     }
@@ -86,7 +96,10 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
     private void initListeners(){
 
         buscarPrestamo.setOnQueryTextListener(this);
+
     }
+
+
 
 
     @Override
