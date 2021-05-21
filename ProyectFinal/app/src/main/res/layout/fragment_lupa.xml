@@ -23,14 +23,32 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <SearchView
-
-            android:id="@+id/buscarPrestamo"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:iconifiedByDefault="false"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
 
-            android:queryHint="Buscar prestamo" />
+            <SearchView
+
+                android:id="@+id/buscarPrestamo"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search"
+
+                android:iconifiedByDefault="false"
+                android:queryHint="Buscar prestamo" />
+
+            <ImageView
+                android:id="@+id/imgFiltros"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/filtros" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout4"

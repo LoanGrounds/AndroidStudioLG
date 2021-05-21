@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
@@ -35,6 +36,7 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
     RecyclerView recyclerView;
     LupaAdapter lupaAdapter;
     SearchView buscarPrestamo;
+    ImageView filtros;
 
     ArrayList<Prestamo> prestamoList;
 
@@ -91,11 +93,21 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
     private void ObtenerReferencias() {
         recyclerView=(RecyclerView) layoutRhoot.findViewById(R.id.recyclerView);
         buscarPrestamo=(SearchView) layoutRhoot.findViewById(R.id.buscarPrestamo);
+        filtros=(ImageView) layoutRhoot.findViewById(R.id.imgFiltros);
     }
 
     private void initListeners(){
 
         buscarPrestamo.setOnQueryTextListener(this);
+        filtros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivityInicio actividadContenedora;
+                actividadContenedora = (MainActivityInicio) getActivity();
+                actividadContenedora.setFragmentFiltros();
+
+            }
+        });
 
     }
 

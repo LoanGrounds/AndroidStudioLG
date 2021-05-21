@@ -14,6 +14,7 @@ import com.example.ProyectoFinal.loangrounds.Menu.CadaSolicitadoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.EditarPerfilFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.FiltrosFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.MenuFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.LupaFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment;
@@ -30,6 +31,8 @@ public class MainActivityInicio extends AppCompatActivity {
     CadaSolicitadoFragment fragmentCadaSolicitado;
     CrearPrestamoFragment fragmentCrearPrestamo;
     EditarPerfilFragment fragmentEditarPerfil;
+    FiltrosFragment fragmentFiltros;
+
     private Object SupportFragmentManager;
 
 
@@ -70,6 +73,7 @@ public class MainActivityInicio extends AppCompatActivity {
         fragmentCadaSolicitado=new CadaSolicitadoFragment();
         fragmentCrearPrestamo=new CrearPrestamoFragment();
         fragmentEditarPerfil=new EditarPerfilFragment();
+        fragmentFiltros=new FiltrosFragment();
     }
     public  void setFragmentMenu(){
 
@@ -106,6 +110,10 @@ public class MainActivityInicio extends AppCompatActivity {
     }
     public  void setFragmentCrearPrestamo(){
         reemplazarFragmenbts(fragmentCrearPrestamo);
+
+    }
+    public  void setFragmentFiltros(){
+        reemplazarFragmenbts(fragmentFiltros);
 
     }
 

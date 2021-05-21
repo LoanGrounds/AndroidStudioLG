@@ -37,6 +37,7 @@ public class ContactoFragment extends Fragment {
         layoutRhoot = inflater.inflate(R.layout.fragment_contacto, container, false);
 
         ObtenerReferencias();
+        SetearListners();
         return layoutRhoot;
     }
 
@@ -49,22 +50,20 @@ public class ContactoFragment extends Fragment {
 
     public void SetearListners() {
 
-        editarPerfil.setOnClickListener(editarPerfil_Click);
 
+        editarPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivityInicio actividadContenedora;
+                actividadContenedora = (MainActivityInicio) getActivity();
+                actividadContenedora.setFragmentEditarPerfil();
+
+            }
+        });
 
     }
 
 
 
-    View.OnClickListener editarPerfil_Click = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
 
-
-            MainActivityInicio actividadContenedora;
-            actividadContenedora = (MainActivityInicio) getActivity();
-            actividadContenedora.setFragmentEditarPerfil();
-
-        }
-    };
 }
