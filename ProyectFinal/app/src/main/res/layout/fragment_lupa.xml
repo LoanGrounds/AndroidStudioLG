@@ -39,14 +39,14 @@
                 android:iconifiedByDefault="false"
                 android:queryHint="Buscar prestamo" />
 
-            <ImageView
-                android:id="@+id/imgFiltros"
-                android:layout_width="wrap_content"
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view2"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:src="@drawable/filtros" />
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="filter-animation.json"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_loop="true" />
 
         </LinearLayout>
 

@@ -12,13 +12,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder> implements View.OnClickListener{
+public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
     ArrayList<Prestamo> prestamos;
     ArrayList<Prestamo> listaOriginal;
     Context context;
@@ -40,7 +41,6 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder> im
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.mi_list_item2,parent, false);
-        view.setOnClickListener(this);
         return new ViewHolder(view);
     }
 
@@ -49,6 +49,7 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder> im
         holder.tvNombreApellido.setText(prestamos.get(position).getName());
         holder.precio1.setText(String.valueOf("$"+prestamos.get(position).getPrecio1()));
         holder.imgPrestamista.setImageDrawable(context.getResources().getDrawable(prestamos.get(position).getImage()));
+
     }
 
     public   void filtrar(String buscarPrestamo){
@@ -94,23 +95,20 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder> im
 
     }
 
-    @Override
-    public void onClick(View v) {
-        if (listener!=null){
-            listener.onClick(v);
-        }
 
-    }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvNombreApellido;
         TextView precio1;
         ImageView imgPrestamista;
+        LottieAnimationView animation_view;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvNombreApellido=itemView.findViewById(R.id.tvNombreApellido);
             precio1=itemView.findViewById(R.id.precio1);
             imgPrestamista=itemView.findViewById(R.id.imgPrestamista);
+
 
 
         }

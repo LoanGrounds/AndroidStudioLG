@@ -492,6 +492,23 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr lottieAnimationViewStyle
+attr lottie_autoPlay
+attr lottie_cacheComposition
+attr lottie_colorFilter
+attr lottie_enableMergePathsForKitKatAndAbove
+attr lottie_fallbackRes
+attr lottie_fileName
+attr lottie_imageAssetsFolder
+attr lottie_loop
+attr lottie_progress
+attr lottie_rawRes
+attr lottie_renderMode
+attr lottie_repeatCount
+attr lottie_repeatMode
+attr lottie_scale
+attr lottie_speed
+attr lottie_url
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
 attr materialAlertDialogTitleIconStyle
@@ -1360,12 +1377,13 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable et_style
+drawable favorite_like
+drawable favorite_unlike
 drawable filtros
 drawable home
 drawable ic_baseline_access_time_24
 drawable ic_baseline_add_circle_outline_24
 drawable ic_baseline_edit_24
-drawable ic_baseline_favorite_24
 drawable ic_baseline_filter_list_24
 drawable ic_baseline_fingerprint_24
 drawable ic_baseline_settings_24
@@ -1505,8 +1523,10 @@ id add
 id alertTitle
 id all
 id always
+id animation_view2
 id async
 id auto
+id automatic
 id barrier
 id beginning
 id blocking
@@ -1603,6 +1623,7 @@ id gone
 id group
 id group_divider
 id groups
+id hardware
 id hideable
 id home
 id homeAsUp
@@ -1617,7 +1638,6 @@ id image
 id imageView
 id imageView2
 id imageView3
-id imgFiltros
 id imgPrestamista
 id info
 id ingreseHuella
@@ -1646,6 +1666,7 @@ id loangrounds2
 id loangrounds3
 id loangrounds4
 id loangrounds5
+id lottie_layer_name
 id masked
 id media_actions
 id message
@@ -1707,6 +1728,8 @@ id progress_circular
 id progress_horizontal
 id radio
 id recyclerView
+id restart
+id reverse
 id right
 id right_icon
 id right_side
@@ -1743,6 +1766,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id software
 id spacer
 id split_action_bar
 id spread
@@ -2782,6 +2806,7 @@ styleable LinearConstraintLayout android_orientation
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
+styleable LottieAnimationView lottie_autoPlay lottie_cacheComposition lottie_colorFilter lottie_enableMergePathsForKitKatAndAbove lottie_fallbackRes lottie_fileName lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_renderMode lottie_repeatCount lottie_repeatMode lottie_scale lottie_speed lottie_url
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom android_checkable backgroundTint backgroundTintMode cornerRadius elevation icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth

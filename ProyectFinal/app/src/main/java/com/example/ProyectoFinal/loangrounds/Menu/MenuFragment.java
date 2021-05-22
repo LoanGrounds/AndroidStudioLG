@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivity;
@@ -28,7 +29,7 @@ public class MenuFragment extends Fragment {
     ListView listView;
     View layoutRhoot;
     List<Prestamo> prestamoList;
-
+    LottieAnimationView animation_view;
 
 
 
@@ -73,6 +74,7 @@ public class MenuFragment extends Fragment {
     private void ObtenerReferencia() {
         listView = (ListView) layoutRhoot.findViewById(R.id.listView);
         fbtnCrearPrestamo=(FloatingActionButton) layoutRhoot.findViewById(R.id.fbtnCrearPrestamo);
+
     }
 
 

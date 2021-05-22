@@ -17,6 +17,7 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.LupaAdapter;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
@@ -36,7 +37,7 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
     RecyclerView recyclerView;
     LupaAdapter lupaAdapter;
     SearchView buscarPrestamo;
-    ImageView filtros;
+    LottieAnimationView filtros;
 
     ArrayList<Prestamo> prestamoList;
 
@@ -93,7 +94,7 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
     private void ObtenerReferencias() {
         recyclerView=(RecyclerView) layoutRhoot.findViewById(R.id.recyclerView);
         buscarPrestamo=(SearchView) layoutRhoot.findViewById(R.id.buscarPrestamo);
-        filtros=(ImageView) layoutRhoot.findViewById(R.id.imgFiltros);
+        filtros=(LottieAnimationView) layoutRhoot.findViewById(R.id.animation_view2);
     }
 
     private void initListeners(){

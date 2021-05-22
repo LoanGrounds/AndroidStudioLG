@@ -44,12 +44,12 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\rectangle_2.xml"
     },
     {
-        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_inicio.xml.flat",
-        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main_inicio.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_star_24.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_star_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_inicio.xml.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main_inicio.xml"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -76,10 +76,6 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\botonfav.xml"
     },
     {
-        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_favorite_24.xml.flat",
-        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_favorite_24.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_crear_prestamo.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_crear_prestamo.xml"
     },
@@ -100,12 +96,12 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_et_style.xml.flat",
-        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\et_style.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_filtros.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_filtros.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_et_style.xml.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\et_style.xml"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_yo.jpg.flat",
@@ -130,6 +126,10 @@
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite_unlike.xml.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\favorite_unlike.xml"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_medium.xml.flat",
@@ -196,12 +196,12 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_edit_24.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_edit_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_send.png.flat",
@@ -220,6 +220,10 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_inicio__registrarse.xml"
     },
     {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite_like.xml.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\favorite_like.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
@@ -232,12 +236,12 @@
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_round_headset_mic_24.xml"
     },
     {
-        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_line_93.xml.flat",
-        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\line_93.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_filter_list_24.xml.flat",
         "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_filter_list_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_line_93.xml.flat",
+        "source": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\line_93.xml"
     },
     {
         "merged": "C:\\Users\\User\\OneDrive\\Escritorio\\programacion\\Dai\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_footer.xml.flat",

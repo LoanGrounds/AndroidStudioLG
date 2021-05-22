@@ -23,7 +23,9 @@
         android:theme="@style/Theme.LoanGrounds" >
         <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivity" />
         <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityInicio" />
-        <activity android:name="com.example.ProyectoFinal.loangrounds.MainActivityStart" >
+        <activity
+            android:name="com.example.ProyectoFinal.loangrounds.MainActivityStart"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
