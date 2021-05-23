@@ -1564,6 +1564,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id coraDislike
 id custom
 id customPanel
 id cut
@@ -1997,6 +1998,7 @@ mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw like
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

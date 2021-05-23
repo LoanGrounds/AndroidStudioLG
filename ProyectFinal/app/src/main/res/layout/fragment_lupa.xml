@@ -37,6 +37,7 @@
                 android:background="@drawable/search"
 
                 android:iconifiedByDefault="false"
+
                 android:queryHint="Buscar prestamo" />
 
             <com.airbnb.lottie.LottieAnimationView
