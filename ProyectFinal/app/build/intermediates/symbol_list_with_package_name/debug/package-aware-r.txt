@@ -1920,8 +1920,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_atencion_cliente
 layout fragment_cada_prestamo
 layout fragment_cada_solicitado
+layout fragment_configuracion
 layout fragment_contacto
 layout fragment_crear_prestamo
 layout fragment_editar_perfil
@@ -1931,6 +1933,7 @@ layout fragment_inicio__registrarse
 layout fragment_inicio_sesion
 layout fragment_lupa
 layout fragment_menu
+layout fragment_prestamos_recientes
 layout fragment_registro
 layout fragment_solicitados
 layout mi_list_item2

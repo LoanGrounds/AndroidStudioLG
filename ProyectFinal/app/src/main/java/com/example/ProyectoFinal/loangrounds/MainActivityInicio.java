@@ -9,14 +9,17 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.Menu.AtencionClienteFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaSolicitadoFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.ConfiguracionFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.EditarPerfilFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.FiltrosFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.MenuFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.LupaFragment;
+import com.example.ProyectoFinal.loangrounds.Menu.PrestamosRecientesFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment;
 
 import java.util.List;
@@ -32,6 +35,10 @@ public class MainActivityInicio extends AppCompatActivity {
     CrearPrestamoFragment fragmentCrearPrestamo;
     EditarPerfilFragment fragmentEditarPerfil;
     FiltrosFragment fragmentFiltros;
+    PrestamosRecientesFragment fragmentPrestamosRecientes;
+    ConfiguracionFragment fragmentConfiguracion;
+    AtencionClienteFragment fragmentAtencionCliente;
+
 
     private Object SupportFragmentManager;
 
@@ -74,6 +81,9 @@ public class MainActivityInicio extends AppCompatActivity {
         fragmentCrearPrestamo=new CrearPrestamoFragment();
         fragmentEditarPerfil=new EditarPerfilFragment();
         fragmentFiltros=new FiltrosFragment();
+        fragmentPrestamosRecientes= new PrestamosRecientesFragment();
+        fragmentConfiguracion= new ConfiguracionFragment();
+        fragmentAtencionCliente= new AtencionClienteFragment();
     }
     public  void setFragmentMenu(){
 
@@ -116,6 +126,20 @@ public class MainActivityInicio extends AppCompatActivity {
         reemplazarFragmenbts(fragmentFiltros);
 
     }
+    public  void setFragmentPrestamosRecientes(){
+        reemplazarFragmenbts(fragmentPrestamosRecientes);
+
+    }
+    public  void setFragmentConfiguracion(){
+        reemplazarFragmenbts(fragmentConfiguracion);
+
+    }
+    public  void setFragmentAtencionCliente(){
+        reemplazarFragmenbts(fragmentAtencionCliente);
+
+    }
+
+
 
 
     public void EnviarMensaje(int position,  List<Prestamo> prestamoList){

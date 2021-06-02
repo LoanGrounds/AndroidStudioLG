@@ -17,6 +17,9 @@ import com.example.ProyectoFinal.loangrounds.R;
 public class ContactoFragment extends Fragment {
     View layoutRhoot;
     LinearLayout editarPerfil;
+    LinearLayout prestamosRecientes;
+    LinearLayout configuracion;
+    LinearLayout atencionCliente;
 
     public ContactoFragment() {
         // Required empty public constructor
@@ -43,7 +46,9 @@ public class ContactoFragment extends Fragment {
 
     private void ObtenerReferencias() {
         editarPerfil=(LinearLayout) layoutRhoot.findViewById(R.id.editarPerfil);
-
+        prestamosRecientes=(LinearLayout) layoutRhoot.findViewById(R.id.prestamosRecientes);
+        configuracion=(LinearLayout) layoutRhoot.findViewById(R.id.configuracion);
+        atencionCliente=(LinearLayout) layoutRhoot.findViewById(R.id.atencionCliente);
 
     }
 
@@ -60,6 +65,34 @@ public class ContactoFragment extends Fragment {
 
             }
         });
+        prestamosRecientes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivityInicio actividadContenedora;
+                actividadContenedora = (MainActivityInicio) getActivity();
+                actividadContenedora.setFragmentPrestamosRecientes();
+
+            }
+        });
+        configuracion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivityInicio actividadContenedora;
+                actividadContenedora = (MainActivityInicio) getActivity();
+                actividadContenedora.setFragmentConfiguracion();
+
+            }
+        });
+        atencionCliente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivityInicio actividadContenedora;
+                actividadContenedora = (MainActivityInicio) getActivity();
+                actividadContenedora.setFragmentAtencionCliente();
+
+            }
+        });
+
 
     }
 
