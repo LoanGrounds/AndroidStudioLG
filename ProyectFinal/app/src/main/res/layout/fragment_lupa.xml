@@ -38,16 +38,16 @@
 
                 android:iconifiedByDefault="false"
 
-                android:queryHint="Buscar prestamo" />
+                android:queryHint="Buscar prestamo">
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/animation_view2"
+            </SearchView>
+
+            <ImageView
+                android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:lottie_autoPlay="true"
-                app:lottie_fileName="filter-animation.json"
-                app:lottie_imageAssetsFolder="assets"
-                app:lottie_loop="true" />
+                android:layout_weight="1"
+                android:src="@drawable/filtros" />
 
         </LinearLayout>
 

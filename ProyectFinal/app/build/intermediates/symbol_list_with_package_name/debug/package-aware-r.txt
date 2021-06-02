@@ -1523,7 +1523,6 @@ id add
 id alertTitle
 id all
 id always
-id animation_view2
 id async
 id auto
 id automatic
@@ -1639,6 +1638,7 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imageView4
 id imgPrestamista
 id info
 id ingreseHuella
