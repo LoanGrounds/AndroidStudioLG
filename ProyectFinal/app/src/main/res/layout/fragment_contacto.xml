@@ -78,7 +78,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/rectangle_3"
-            android:orientation="horizontal">
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:translationZ="60dp">
 
             <TextView
                 android:id="@+id/textView5"
