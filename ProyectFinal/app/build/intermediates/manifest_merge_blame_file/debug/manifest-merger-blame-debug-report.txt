@@ -19,7 +19,7 @@
 14        android:allowBackup="true"
 14-->C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5df47116837044e526e3d968340e6756\core-1.2.0\AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\d97de8d4da2daf41cae9a34bc8c4933b\core-1.2.0\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:extractNativeLibs="false"
 18        android:icon="@mipmap/ic_launcher"

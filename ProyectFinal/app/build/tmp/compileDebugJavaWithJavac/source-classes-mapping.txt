@@ -19,6 +19,9 @@ com/example/ProyectoFinal/loangrounds/Menu/EditarPerfilFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.EditarPerfilFragment
 com/example/ProyectoFinal/loangrounds/Menu/FiltrosFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.FiltrosFragment
+ com.example.ProyectoFinal.loangrounds.Menu.FiltrosFragment$1
+ com.example.ProyectoFinal.loangrounds.Menu.FiltrosFragment$2
+ com.example.ProyectoFinal.loangrounds.Menu.FiltrosFragment$3
 com/example/ProyectoFinal/loangrounds/Menu/AtencionClienteFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.AtencionClienteFragment
 com/example/ProyectoFinal/loangrounds/ListaRecomendados/ListaAdaptora.java
