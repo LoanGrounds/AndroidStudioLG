@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.RealizarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:fontFamily="@font/play"
+            android:gravity="center"
+            android:text="Confirmar"
+            android:textColor="#D417A4B7 "
+            android:textColorHint="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="257dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="72dp"
+            android:backgroundTint="#70BDD6"
+            android:fontFamily="@font/noto_sans_bold"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center|center_vertical"
+
+            android:text="Finalizar"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_conversion_absoluteHeight="52dp"
+            tools:layout_conversion_absoluteWidth="257dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.MetodoPagoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTarjetas2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="76dp"
+            android:background="@drawable/rectangle_3"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:translationZ="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutTarjetas"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="63dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center_horizontal"
+
+                android:text="Agrgar tarjeta"
+                android:textColor="#17A4B7"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitleMetodo"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:fontFamily="@font/play"
+            android:gravity="center"
+            android:text="Metodo de pago"
+            android:textColor="#D417A4B7 "
+            android:textColorHint="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Para continuar elija un metodo de pago"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleMetodo" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Sus tarjetas:"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTarjetas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/rectangle_3"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:translationZ="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.205"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/visa" />
+
+            <TextView
+                android:id="@+id/tvNumeroTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center_horizontal"
+
+                android:text="**** 7684"
+                android:textColor="#17A4B7"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

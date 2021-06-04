@@ -307,7 +307,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialiconsround/headset_mic/round_headset_mic_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/delete/baseline_delete_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -317,7 +317,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_round_headset_mic_24" />
+                            <entry key="color" value="99a58f" />
+                            <entry key="outputName" value="ic_baseline_delete_24" />
                             <entry key="sourceFile" value="C:\Users\User\OneDrive\Escritorio\programacion\Dai\AndroidStudioLG\ProyectFinal" />
                           </map>
                         </option>

@@ -7,10 +7,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.List;
@@ -28,6 +30,7 @@ public class CadaPrestamoFragment extends Fragment {
     TextView tvNombre;
     int intPos;
     List<Prestamo> prest;
+    Button btnSolicitar;
     View layoutRhoot;
     public CadaPrestamoFragment() {
         // Required empty public constructor
@@ -54,7 +57,7 @@ public class CadaPrestamoFragment extends Fragment {
     }
 
     private void SetearListners() {
-
+        btnSolicitar.setOnClickListener(btnSolicitar_Click);
     }
     private void inicializarDatos(){
         String nombre=prest.get(intPos).getName();
@@ -77,7 +80,21 @@ public class CadaPrestamoFragment extends Fragment {
         tvDiaTol=(TextView) layoutRhoot.findViewById(R.id.tvDiaTol);
         tvCantCuotas=(TextView) layoutRhoot.findViewById(R.id.tvCantCuotas);
         tvNombre=(TextView) layoutRhoot.findViewById(R.id.tvNombre);
+        btnSolicitar=(Button) layoutRhoot.findViewById(R.id.btnSolicitar);
     }
+
+    View.OnClickListener btnSolicitar_Click = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+
+
+            MainActivityInicio actividadContenedora;
+            actividadContenedora = (MainActivityInicio) getActivity();
+            actividadContenedora.setFragmentMetodoPago();
+
+        }
+    };
+
 
 
     public void enviarPosition(int position, List<Prestamo> prestamoList ){

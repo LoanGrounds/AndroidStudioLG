@@ -185,13 +185,12 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btnSiguiente"
+                android:id="@+id/btnSolicitar"
                 android:layout_width="257dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="40dp"
 
-                android:background="#00000000"
                 android:backgroundTint="#000000"
                 android:fontFamily="@font/noto_sans_bold"
                 android:gravity="center"

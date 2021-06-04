@@ -1449,6 +1449,7 @@ drawable filtros
 drawable home
 drawable ic_baseline_access_time_24
 drawable ic_baseline_add_circle_outline_24
+drawable ic_baseline_delete_24
 drawable ic_baseline_fingerprint_24
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
@@ -1504,6 +1505,7 @@ drawable thumb
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
+drawable visa
 drawable yo
 font lato_black
 font lato_bold
@@ -1601,6 +1603,7 @@ id btn6Meses
 id btn9Meses
 id btnAplicarFilt
 id btnCrearCuenta
+id btnFinalizar
 id btnHuela
 id btnIn
 id btnIniciarSesion
@@ -1609,6 +1612,7 @@ id btnRegistrarse
 id btnSig3
 id btnSiguiente
 id btnSiguiente2
+id btnSolicitar
 id buscarPrestamo
 id buttonPanel
 id cancel_action
@@ -1721,6 +1725,7 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView7
 id imgPrestamista
 id info
 id ingreseHuella
@@ -1739,6 +1744,8 @@ id linearLayout4
 id linearLayout5
 id linearLayout7
 id linearLayout8
+id linearLayoutTarjetas
+id linearLayoutTarjetas2
 id listMode
 id listView
 id list_item
@@ -1887,10 +1894,11 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView10
+id textView11
+id textView13
 id textView2
 id textView3
 id textView4
-id textView5
 id textView6
 id textView7
 id textView8
@@ -1919,6 +1927,7 @@ id tv1
 id tv4
 id tvCantCuotas
 id tvCantMeses
+id tvConfirmar
 id tvDiaTol
 id tvDinero
 id tvFechaActual
@@ -1929,9 +1938,11 @@ id tvMont
 id tvMsaje
 id tvNombre
 id tvNombreApellido
+id tvNumeroTarjeta
 id tvPlazotitle
 id tvPrecioMax
 id tvPrecioMin
+id tvTitleMetodo
 id unchecked
 id uniform
 id unlabeled
@@ -2036,7 +2047,9 @@ layout fragment_inicio__registrarse
 layout fragment_inicio_sesion
 layout fragment_lupa
 layout fragment_menu
+layout fragment_metodo_pago
 layout fragment_prestamos_recientes
+layout fragment_realizar
 layout fragment_registro
 layout fragment_solicitados
 layout mi_list_item2
