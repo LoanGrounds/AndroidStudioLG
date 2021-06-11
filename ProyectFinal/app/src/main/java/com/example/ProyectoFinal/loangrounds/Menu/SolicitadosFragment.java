@@ -11,8 +11,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
-import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
+import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ public class SolicitadosFragment extends Fragment {
 
     ListView listView;
     View layoutRhoot;
-    List<Prestamo> prestamoList;
+    List<PrestamoRecomendadoDTO> prestamoList;
     public SolicitadosFragment() {
         // Required empty public constructor
     }
@@ -42,10 +43,10 @@ public class SolicitadosFragment extends Fragment {
         // Inflate the layout for this fragment
         layoutRhoot= inflater.inflate(R.layout.fragment_solicitados, container, false);
         prestamoList= new ArrayList<>();
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Jose pedro",1500));
-        prestamoList.add(new Prestamo(R.drawable.yo,"Damian cuk",1200));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",7000));
+        prestamoList.add(new PrestamoRecomendadoDTO(4,1000,"Luka Portnoi",R.drawable.deck));
+        prestamoList.add(new PrestamoRecomendadoDTO(5,1500,"Fernando pedro",R.drawable.deck));
+        prestamoList.add(new PrestamoRecomendadoDTO(6,20000,"Gonzalo Turrezco",R.drawable.deck));
+        prestamoList.add(new PrestamoRecomendadoDTO(7,1000,"Matas Besmedrisnik",R.drawable.yo));
 
 
         listView = (ListView) layoutRhoot.findViewById(R.id.listView);

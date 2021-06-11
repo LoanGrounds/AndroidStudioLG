@@ -10,24 +10,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.Toast;
 
-import com.airbnb.lottie.LottieAnimationView;
-import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.LupaAdapter;
-import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
-import com.example.ProyectoFinal.loangrounds.MainActivity;
+import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
+import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 
 
 public class LupaFragment extends Fragment implements SearchView.OnQueryTextListener {
@@ -39,7 +31,7 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
     SearchView buscarPrestamo;
     ImageView filtros;
 
-    ArrayList<Prestamo> prestamoList;
+    ArrayList<PrestamoRecomendadoDTO> prestamoList;
 
     public LupaFragment() {
         // Required empty public constructor
@@ -59,13 +51,10 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
         // Inflate the layout for this fragment
         layoutRhoot = inflater.inflate(R.layout.fragment_lupa, container, false);
         prestamoList = new ArrayList<>();
-        prestamoList.add(new Prestamo(R.drawable.deck, "Luka Portnoi", 1000));
-        prestamoList.add(new Prestamo(R.drawable.deck, "Jose pedro", 1000));
-        prestamoList.add(new Prestamo(R.drawable.yo, "Damian cuk", 1000));
-        prestamoList.add(new Prestamo(R.drawable.deck, "Luka Portnoi", 1000));
-        prestamoList.add(new Prestamo(R.drawable.deck, "FDiego Poasdrtnoi", 1000));
-        prestamoList.add(new Prestamo(R.drawable.deck, "Maradona lupe", 1000));
-        prestamoList.add(new Prestamo(R.drawable.deck, "Tomy sinRottman", 1000));
+        prestamoList.add(new PrestamoRecomendadoDTO(4,1000,"Luka Portnoi",R.drawable.deck));
+        prestamoList.add(new PrestamoRecomendadoDTO(5,1500,"Fernando pedro",R.drawable.deck));
+        prestamoList.add(new PrestamoRecomendadoDTO(6,20000,"Gonzalo Turrezco",R.drawable.deck));
+        prestamoList.add(new PrestamoRecomendadoDTO(7,1000,"Matas Besmedrisnik",R.drawable.yo));
 
 
         ObtenerReferencias();

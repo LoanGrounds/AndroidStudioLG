@@ -3,9 +3,7 @@ package com.example.ProyectoFinal.loangrounds.Menu;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,24 +11,27 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
-import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
-import com.example.ProyectoFinal.loangrounds.MainActivity;
+import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
+import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
+import com.google.gson.Gson;
 
 
 public class MenuFragment extends Fragment {
     FloatingActionButton fbtnCrearPrestamo;
     ListView listView;
     View layoutRhoot;
-    List<Prestamo> prestamoList;
+    List<PrestamoRecomendadoDTO> prestamoList;
     LottieAnimationView animation_view;
-
+    ArrayList<PrestamoRecomendadoDTO> prestamoListApi=new ArrayList<>();
 
 
 
@@ -54,10 +55,10 @@ public class MenuFragment extends Fragment {
 
 
         prestamoList= new ArrayList<>();
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",1000));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Jose pedro",1500));
-        prestamoList.add(new Prestamo(R.drawable.yo,"Damian cuk",1200));
-        prestamoList.add(new Prestamo(R.drawable.deck,"Luka Portnoi",7000));
+        prestamoList.add(new PrestamoRecomendadoDTO(4,1000,"Luka Portnoi",R.drawable.deck));
+        prestamoList.add(new PrestamoRecomendadoDTO(5,1500,"Fernando pedro",R.drawable.deck));
+        prestamoList.add(new PrestamoRecomendadoDTO(6,20000,"Gonzalo Turrezco",R.drawable.deck));
+        prestamoList.add(new PrestamoRecomendadoDTO(7,1000,"Matas Besmedrisnik",R.drawable.yo));
 
         ObtenerReferencia();
 
@@ -66,6 +67,7 @@ public class MenuFragment extends Fragment {
         listView.setAdapter(adapter);
 
         SetearListners();
+
 
         return layoutRhoot;
 
@@ -112,5 +114,28 @@ public class MenuFragment extends Fragment {
         }
     };
 
+    private class PrestamoRecomendadoAsinc extends AsyncTaskBase {
+
+
+        public PrestamoRecomendadoAsinc(String b) {
+            super(b);
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            toastes.msj(getContext(),"Cargando por favor espero...");
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            if (s!=null){
+
+                prestamoListApi=new Gson().fromJson(s, prestamoListApi.getClass());
+
+
+            }}
+    }
 
 }

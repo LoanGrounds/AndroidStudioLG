@@ -11,8 +11,9 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
+import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.List;
@@ -29,7 +30,7 @@ public class CadaPrestamoFragment extends Fragment {
     TextView tvCantCuotas;
     TextView tvNombre;
     int intPos;
-    List<Prestamo> prest;
+    List<PrestamoRecomendadoDTO> prest;
     Button btnSolicitar;
     View layoutRhoot;
     public CadaPrestamoFragment() {
@@ -60,9 +61,9 @@ public class CadaPrestamoFragment extends Fragment {
         btnSolicitar.setOnClickListener(btnSolicitar_Click);
     }
     private void inicializarDatos(){
-        String nombre=prest.get(intPos).getName();
+        String nombre=prest.get(intPos).getUserName();
 
-        int diner=prest.get(intPos).getPrecio1();
+        int diner=prest.get(intPos).getMonto();
 
         tvDinero.setText("$"+String.valueOf(diner));
         double interes=(diner*0.12);
@@ -97,7 +98,7 @@ public class CadaPrestamoFragment extends Fragment {
 
 
 
-    public void enviarPosition(int position, List<Prestamo> prestamoList ){
+    public void enviarPosition(int position, List<PrestamoRecomendadoDTO> prestamoList ){
 
         prest = prestamoList;
         intPos = position;

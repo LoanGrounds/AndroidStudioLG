@@ -6,9 +6,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.widget.ListView;
 
-import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.Menu.AtencionClienteFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaSolicitadoFragment;
@@ -23,6 +22,7 @@ import com.example.ProyectoFinal.loangrounds.Menu.MetodoPagoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.PrestamosRecientesFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.RealizarFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment;
+import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 
 import java.util.List;
 
@@ -157,10 +157,10 @@ public class MainActivityInicio extends AppCompatActivity {
 
 
 
-    public void EnviarMensaje(int position,  List<Prestamo> prestamoList){
+    public void EnviarMensaje(int position,  List<PrestamoRecomendadoDTO> prestamoList){
         fragmentCadaPrestamo.enviarPosition(position, prestamoList);
     }
-    public void EnviarMensajeSolicitado(int position,  List<Prestamo> prestamoList){
+    public void EnviarMensajeSolicitado(int position,  List<PrestamoRecomendadoDTO> prestamoList){
         fragmentCadaSolicitado.enviarPosition(position, prestamoList);
     }
 

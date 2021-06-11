@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,19 +12,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.List;
 
-public class ListaAdaptora extends ArrayAdapter<Prestamo> {
+public class ListaAdaptora extends ArrayAdapter<PrestamoRecomendadoDTO> {
     Context mCtx;
     int resource;
-    List<Prestamo> ListaPrestamos;
+    List<PrestamoRecomendadoDTO> ListaPrestamos;
     LupaAdapter lupaAdapter;
 
 
-    public ListaAdaptora(Context mCtx, int resource, List<Prestamo> ListaPrestamos){
+    public ListaAdaptora(Context mCtx, int resource, List<PrestamoRecomendadoDTO> ListaPrestamos){
         super(mCtx,resource,ListaPrestamos);
         this.mCtx=mCtx;
         this.resource=resource;
@@ -44,10 +43,10 @@ public class ListaAdaptora extends ArrayAdapter<Prestamo> {
         final int[] cont = {0};
 
 
-        Prestamo prestamo=ListaPrestamos.get(position);
-        tvNombreApellido.setText(prestamo.getName());
-        precio1.setText(String.valueOf("$"+prestamo.getPrecio1()));
-        imgPrestamista.setImageDrawable(mCtx.getResources().getDrawable(prestamo.getImage()));
+        PrestamoRecomendadoDTO prestamo=ListaPrestamos.get(position);
+        tvNombreApellido.setText(prestamo.UserName);
+        precio1.setText(String.valueOf("$"+prestamo.Monto));
+        imgPrestamista.setImageDrawable(mCtx.getResources().getDrawable(prestamo.URLFoto));
         final boolean[] like = {false};
         coraDislike.setOnClickListener(new View.OnClickListener() {
             @Override

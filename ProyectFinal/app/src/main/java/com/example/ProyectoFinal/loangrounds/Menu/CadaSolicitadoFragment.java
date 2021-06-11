@@ -8,7 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.ProyectoFinal.loangrounds.ListaRecomendados.Prestamo;
+import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
+import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.List;
@@ -17,7 +18,7 @@ import java.util.List;
 public class CadaSolicitadoFragment extends Fragment {
 
     int intPos;
-    List<Prestamo> prest;
+    List<PrestamoRecomendadoDTO> prest;
     View layoutRhoot;
 
     public CadaSolicitadoFragment() {
@@ -54,7 +55,7 @@ public class CadaSolicitadoFragment extends Fragment {
     private void SetearListners() {
     }
 
-    public void enviarPosition(int position, List<Prestamo> prestamoList ){
+    public void enviarPosition(int position, List<PrestamoRecomendadoDTO> prestamoList ){
 
         prest = prestamoList;
         intPos = position;

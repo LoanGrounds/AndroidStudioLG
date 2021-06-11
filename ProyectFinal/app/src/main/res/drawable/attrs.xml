@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <resources>
+        <declare-styleable android:name="RangeSeekBar">
+            <attr android:name="absoluteMinValue" android:format="integer|float"/>
+            <attr android:name="absoluteMaxValue" android:format="integer|float"/>
+            <attr android:name="singleThumb" android:format="boolean"/>
+        </declare-styleable>
+
+    </resources>
+</selector>

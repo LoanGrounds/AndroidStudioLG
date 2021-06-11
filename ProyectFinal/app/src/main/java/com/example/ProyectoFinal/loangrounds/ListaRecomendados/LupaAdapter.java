@@ -1,7 +1,6 @@
 package com.example.ProyectoFinal.loangrounds.ListaRecomendados;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
+import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
 
 import java.util.ArrayList;
@@ -20,14 +21,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
-    ArrayList<Prestamo> prestamos;
-    ArrayList<Prestamo> listaOriginal;
+    ArrayList<PrestamoRecomendadoDTO> prestamos;
+    ArrayList<PrestamoRecomendadoDTO> listaOriginal;
     Context context;
     private View.OnClickListener listener;
 
     int resource;
 
-    public LupaAdapter(Context context, ArrayList<Prestamo> prestamos){
+    public LupaAdapter(Context context, ArrayList<PrestamoRecomendadoDTO> prestamos){
 
         this.context=context;
         this.prestamos=prestamos;
@@ -46,9 +47,9 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.tvNombreApellido.setText(prestamos.get(position).getName());
-        holder.precio1.setText(String.valueOf("$"+prestamos.get(position).getPrecio1()));
-        holder.imgPrestamista.setImageDrawable(context.getResources().getDrawable(prestamos.get(position).getImage()));
+        holder.tvNombreApellido.setText(prestamos.get(position).UserName);
+        holder.precio1.setText(String.valueOf("$"+prestamos.get(position).Monto));
+        holder.imgPrestamista.setImageDrawable(context.getResources().getDrawable(prestamos.get(position).URLFoto));
 
     }
 
@@ -61,16 +62,16 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
         else {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
-                List <Prestamo> collects =  prestamos.stream()
-                        .filter(i -> i.getName().toLowerCase().contains(buscarPrestamo.toLowerCase()))
+                List <PrestamoRecomendadoDTO> collects =  prestamos.stream()
+                        .filter(i -> i.UserName.toLowerCase().contains(buscarPrestamo.toLowerCase()))
                         .collect(Collectors.toList());
                 prestamos.clear();
                 prestamos.addAll(collects);
             }
             else{
-                for (Prestamo c: listaOriginal) {
+                for (PrestamoRecomendadoDTO c: listaOriginal) {
 
-                    if (c.getName().toLowerCase().contains(buscarPrestamo.toLowerCase())){
+                    if (c.UserName.toLowerCase().contains(buscarPrestamo.toLowerCase())){
                         prestamos.add(c);
 
                     }
