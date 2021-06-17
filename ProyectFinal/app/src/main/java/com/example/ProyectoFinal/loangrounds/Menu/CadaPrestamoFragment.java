@@ -61,9 +61,9 @@ public class CadaPrestamoFragment extends Fragment {
         btnSolicitar.setOnClickListener(btnSolicitar_Click);
     }
     private void inicializarDatos(){
-        String nombre=prest.get(intPos).getUserName();
+        String nombre=prest.get(intPos).UserName;
 
-        int diner=prest.get(intPos).getMonto();
+        int diner=prest.get(intPos).Monto;
 
         tvDinero.setText("$"+String.valueOf(diner));
         double interes=(diner*0.12);

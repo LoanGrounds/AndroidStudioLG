@@ -13,13 +13,13 @@ public class MainActivityStart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_start);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                final Intent mainIntent = new Intent(MainActivityStart.this, MainActivity.class);
-                MainActivityStart.this.startActivity(mainIntent);
-                MainActivityStart.this.finish();
-            }
-        }, 1850);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    final Intent mainIntent = new Intent(MainActivityStart.this, MainActivity.class);
+                    MainActivityStart.this.startActivity(mainIntent);
+                    MainActivityStart.this.finish();
+                }
+            }, 1850);
     }
 }
