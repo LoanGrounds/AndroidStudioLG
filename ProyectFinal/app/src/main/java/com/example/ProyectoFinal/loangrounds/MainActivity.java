@@ -14,6 +14,8 @@ import android.widget.Button;
 import com.example.ProyectoFinal.loangrounds.Registro.InicioSesionFragment;
 import com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment;
 import com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment;
+import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
+import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         crearFragments();
         reemplazarFragmenbts(fragmentSesionRegistro,false);
 

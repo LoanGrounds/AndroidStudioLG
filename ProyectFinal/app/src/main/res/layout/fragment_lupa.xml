@@ -31,7 +31,7 @@
 
             <SearchView
 
-                android:id="@+id/buscarPrestamo"
+                android:id="@+id/searchBuscarPrestamo"
                 android:layout_width="302dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/search"

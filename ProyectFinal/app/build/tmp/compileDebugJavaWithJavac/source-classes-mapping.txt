@@ -1,14 +1,25 @@
 com/example/ProyectoFinal/loangrounds/Menu/PrestamosRecientesFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.PrestamosRecientesFragment
+com/example/ProyectoFinal/loangrounds/AsyncTask/AsyncPostBase.java
+ com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncPostBase
 com/example/ProyectoFinal/loangrounds/AsyncTask/AsyncTaskBase.java
  com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase
+com/example/ProyectoFinal/loangrounds/Utilidades/ApiHelper.java
+ com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper
 com/example/ProyectoFinal/loangrounds/ListaRecomendados/LupaAdapter.java
  com.example.ProyectoFinal.loangrounds.ListaRecomendados.LupaAdapter
  com.example.ProyectoFinal.loangrounds.ListaRecomendados.LupaAdapter$ViewHolder
 com/example/ProyectoFinal/loangrounds/Menu/CrearPrestamoFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment
+ com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment$1
+ com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment$tareaCrearDetalle
+ com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment$tareaCrearPrestamo
+ com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment$tareaMisPrestamosPedidos
+ com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment$tareaMisPrestamosPrestados
 com/example/ProyectoFinal/loangrounds/Menu/EditarPerfilFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.EditarPerfilFragment
+com/example/ProyectoFinal/loangrounds/Utilidades/Session.java
+ com.example.ProyectoFinal.loangrounds.Utilidades.Session
 com/example/ProyectoFinal/loangrounds/Menu/FiltrosFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.FiltrosFragment
  com.example.ProyectoFinal.loangrounds.Menu.FiltrosFragment$1
@@ -27,16 +38,16 @@ com/example/ProyectoFinal/loangrounds/Registro/Inicio_RegistrarseFragment.java
  com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment
  com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment$1
  com.example.ProyectoFinal.loangrounds.Registro.Inicio_RegistrarseFragment$2
-com/example/ProyectoFinal/loangrounds/MainActivity.java
- com.example.ProyectoFinal.loangrounds.MainActivity
+com/example/ProyectoFinal/loangrounds/BuildConfig.java
+ com.example.ProyectoFinal.loangrounds.BuildConfig
 com/example/ProyectoFinal/loangrounds/Menu/ConfiguracionFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.ConfiguracionFragment
 com/example/ProyectoFinal/loangrounds/Menu/RealizarFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.RealizarFragment
-com/example/ProyectoFinal/loangrounds/Model/Departamentos.java
- com.example.ProyectoFinal.loangrounds.Model.Departamentos
 com/example/ProyectoFinal/loangrounds/Model/Usuario.java
  com.example.ProyectoFinal.loangrounds.Model.Usuario
+com/example/ProyectoFinal/loangrounds/Model/Departamentos.java
+ com.example.ProyectoFinal.loangrounds.Model.Departamentos
 com/example/ProyectoFinal/loangrounds/Utilidades/StreamHelper.java
  com.example.ProyectoFinal.loangrounds.Utilidades.StreamHelper
 com/example/ProyectoFinal/loangrounds/Model/Localidad.java
@@ -44,6 +55,7 @@ com/example/ProyectoFinal/loangrounds/Model/Localidad.java
 com/example/ProyectoFinal/loangrounds/Menu/CadaPrestamoFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment
  com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment$1
+ com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment$PrestamoObtenido
 com/example/ProyectoFinal/loangrounds/Menu/CadaSolicitadoFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.CadaSolicitadoFragment
 com/example/ProyectoFinal/loangrounds/Menu/ContactoFragment.java
@@ -52,18 +64,22 @@ com/example/ProyectoFinal/loangrounds/Menu/ContactoFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment$2
  com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment$3
  com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment$4
+ com.example.ProyectoFinal.loangrounds.Menu.ContactoFragment$VerUsuario
 com/example/ProyectoFinal/loangrounds/Model/DetallePrestamo.java
  com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo
 com/example/ProyectoFinal/loangrounds/Menu/MenuFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.MenuFragment
  com.example.ProyectoFinal.loangrounds.Menu.MenuFragment$1
  com.example.ProyectoFinal.loangrounds.Menu.MenuFragment$2
+ com.example.ProyectoFinal.loangrounds.Menu.MenuFragment$3
+ com.example.ProyectoFinal.loangrounds.Menu.MenuFragment$FiltrarPrestamosAsync
  com.example.ProyectoFinal.loangrounds.Menu.MenuFragment$PrestamoRecomendadoAsinc
-com/example/ProyectoFinal/loangrounds/Registro/RegistroFragment.java
- com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment
- com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment$1
+com/example/ProyectoFinal/loangrounds/Menu/VerificacionPrestamoFragment.java
+ com.example.ProyectoFinal.loangrounds.Menu.VerificacionPrestamoFragment
 com/example/ProyectoFinal/loangrounds/Model/Prestamo.java
  com.example.ProyectoFinal.loangrounds.Model.Prestamo
+com/example/ProyectoFinal/loangrounds/Model/VistaPreviaPrestamo.java
+ com.example.ProyectoFinal.loangrounds.Model.VistaPreviaPrestamo
 com/example/ProyectoFinal/loangrounds/MainActivityInicio.java
  com.example.ProyectoFinal.loangrounds.MainActivityInicio
 com/example/ProyectoFinal/loangrounds/Model/BusquedaFiltradaDTO.java
@@ -83,6 +99,8 @@ com/example/ProyectoFinal/loangrounds/Utilidades/toastes.java
  com.example.ProyectoFinal.loangrounds.Utilidades.toastes
 com/example/ProyectoFinal/loangrounds/Model/PrestamoRecomendadoDTO.java
  com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO
+com/example/ProyectoFinal/loangrounds/Utilidades/OutputStreamHelper.java
+ com.example.ProyectoFinal.loangrounds.Utilidades.OutputStreamHelper
 com/example/ProyectoFinal/loangrounds/Model/EstadoPrestamo.java
  com.example.ProyectoFinal.loangrounds.Model.EstadoPrestamo
 com/example/ProyectoFinal/loangrounds/Model/Faqs.java
@@ -90,6 +108,7 @@ com/example/ProyectoFinal/loangrounds/Model/Faqs.java
 com/example/ProyectoFinal/loangrounds/Registro/InicioSesionFragment.java
  com.example.ProyectoFinal.loangrounds.Registro.InicioSesionFragment
  com.example.ProyectoFinal.loangrounds.Registro.InicioSesionFragment$1
+ com.example.ProyectoFinal.loangrounds.Registro.InicioSesionFragment$Login
 com/example/ProyectoFinal/loangrounds/Utilidades/ValidacionesHelpers.java
  com.example.ProyectoFinal.loangrounds.Utilidades.ValidacionesHelpers
 com/example/ProyectoFinal/loangrounds/Menu/LupaFragment.java
@@ -101,5 +120,12 @@ com/example/ProyectoFinal/loangrounds/MainActivityStart.java
 com/example/ProyectoFinal/loangrounds/Menu/SolicitadosFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment
  com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment$1
-com/example/ProyectoFinal/loangrounds/BuildConfig.java
- com.example.ProyectoFinal.loangrounds.BuildConfig
+ com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment$PrestamosPedidosAsinc
+com/example/ProyectoFinal/loangrounds/Utilidades/AlertHelper.java
+ com.example.ProyectoFinal.loangrounds.Utilidades.AlertHelper
+com/example/ProyectoFinal/loangrounds/Registro/RegistroFragment.java
+ com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment
+ com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment$1
+ com.example.ProyectoFinal.loangrounds.Registro.RegistroFragment$RegistroUsuarioAsync
+com/example/ProyectoFinal/loangrounds/MainActivity.java
+ com.example.ProyectoFinal.loangrounds.MainActivity

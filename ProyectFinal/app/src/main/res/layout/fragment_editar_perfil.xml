@@ -67,10 +67,10 @@
                 android:inputType="textPersonName"
                 android:padding="10dip"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toTopOf="@+id/edtApelllido"
-                app:layout_constraintEnd_toEndOf="@+id/edtApelllido"
+                app:layout_constraintBottom_toTopOf="@+id/edtApellido"
+                app:layout_constraintEnd_toEndOf="@+id/edtApellido"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/edtApelllido" />
+                app:layout_constraintStart_toStartOf="@+id/edtApellido" />
 
             <TextView
                 android:id="@+id/textView"
@@ -94,10 +94,10 @@
                 android:inputType="textPersonName"
                 android:padding="10dip"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toTopOf="@+id/edtApelllido"
-                app:layout_constraintEnd_toEndOf="@+id/edtApelllido"
+                app:layout_constraintBottom_toTopOf="@+id/edtApellido"
+                app:layout_constraintEnd_toEndOf="@+id/edtApellido"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/edtApelllido" />
+                app:layout_constraintStart_toStartOf="@+id/edtApellido" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -121,10 +121,10 @@
                 android:inputType="textPersonName"
                 android:padding="10dip"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toTopOf="@+id/edtApelllido"
-                app:layout_constraintEnd_toEndOf="@+id/edtApelllido"
+                app:layout_constraintBottom_toTopOf="@+id/edtApellido"
+                app:layout_constraintEnd_toEndOf="@+id/edtApellido"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/edtApelllido" />
+                app:layout_constraintStart_toStartOf="@+id/edtApellido" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -148,10 +148,10 @@
                 android:inputType="textPersonName"
                 android:padding="10dip"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toTopOf="@+id/edtApelllido"
-                app:layout_constraintEnd_toEndOf="@+id/edtApelllido"
+                app:layout_constraintBottom_toTopOf="@+id/edtApellido"
+                app:layout_constraintEnd_toEndOf="@+id/edtApellido"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/edtApelllido" />
+                app:layout_constraintStart_toStartOf="@+id/edtApellido" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -175,10 +175,10 @@
                 android:inputType="textPersonName"
                 android:padding="10dip"
                 android:textStyle="normal"
-                app:layout_constraintBottom_toTopOf="@+id/edtApelllido"
-                app:layout_constraintEnd_toEndOf="@+id/edtApelllido"
+                app:layout_constraintBottom_toTopOf="@+id/edtApellido"
+                app:layout_constraintEnd_toEndOf="@+id/edtApellido"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/edtApelllido" />
+                app:layout_constraintStart_toStartOf="@+id/edtApellido" />
 
         </LinearLayout>
 

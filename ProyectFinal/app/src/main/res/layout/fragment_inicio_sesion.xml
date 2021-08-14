@@ -7,88 +7,109 @@
     android:layout_height="match_parent"
     tools:context=".Registro.InicioSesionFragment">
 
+    <ProgressBar
+        android:id="@+id/pgCargando2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/loangrounds"
-        android:layout_width="407dp"
-        android:layout_height="63dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="73dp"
-        android:layout_marginEnd="73dp"
-        android:fontFamily="@font/play"
-        android:gravity="center_horizontal|top"
-        android:text="LoanGrounds"
-        android:textColor="#D417A4B7 "
-        android:textColorHint="#FFFFFF"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/edtNombre"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clInicioSesion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
-
-    <EditText
-
-        android:id="@+id/edtNombre"
-        android:layout_width="316.88dp"
-        android:layout_height="47.98dp"
-        android:layout_marginBottom="24dp"
-        android:width="1dp"
-        android:background="@drawable/et_style"
-        android:ems="10"
-        android:fontFamily="@font/noto_sans"
-        android:foregroundGravity="center_vertical"
-        android:gravity="center_vertical"
-        android:hint="Ingrese correo"
-        android:inputType="textPersonName"
-        android:padding="10dip"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@+id/edtApelllido"
-        app:layout_constraintEnd_toEndOf="@+id/edtApelllido"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtApelllido" />
-
-    <EditText
-
-        android:id="@+id/edtApelllido"
-        android:layout_width="316.88dp"
-        android:layout_height="47.98dp"
-        android:layout_marginBottom="64dp"
-        android:background="@drawable/et_style"
-        android:ems="10"
-        android:fontFamily="@font/noto_sans"
-        android:foregroundGravity="center_vertical"
-        android:gravity="center_vertical"
-        android:hint="Ingrese contraseña"
-        android:inputType="textPersonName"
-        android:padding="10dip"
-        app:layout_constraintBottom_toTopOf="@+id/btnIn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnIn"
-        android:layout_width="257dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="228dp"
-        android:backgroundTint="#70BDD6"
-        android:fontFamily="@font/noto_sans_bold"
-        android:foregroundGravity="center_vertical"
-        android:gravity="center|center_vertical"
-        android:text="Iniciar sesión"
-
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:cornerRadius="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edtApelllido"
-        app:layout_constraintStart_toStartOf="@+id/edtApelllido"
-        tools:layout_conversion_absoluteHeight="52dp"
-        tools:layout_conversion_absoluteWidth="257dp" />
+        tools:context=".Registro.InicioSesionFragment">
 
 
+        <TextView
+            android:id="@+id/loangrounds"
+            android:layout_width="407dp"
+            android:layout_height="63dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/play"
+            android:gravity="center_horizontal|top"
+            android:text="LoanGrounds"
+            android:textColor="#D417A4B7 "
+            android:textColorHint="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+
+            android:id="@+id/edtNombreUsuario"
+            android:layout_width="316.88dp"
+            android:layout_height="47.98dp"
+            android:layout_marginTop="200dp"
+            android:width="1dp"
+            android:background="@drawable/et_style"
+            android:ems="10"
+            android:fontFamily="@font/noto_sans"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:hint="Ingrese correo"
+            android:inputType="textPersonName|textEmailSubject"
+            android:padding="10dip"
+            android:text="ramiro3@gmail.com"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/edtApellido"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edtApellido"
+            app:layout_constraintTop_toBottomOf="@+id/loangrounds" />
+
+        <EditText
+
+            android:id="@+id/edtApellido"
+            android:layout_width="316.88dp"
+            android:layout_height="47.98dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/et_style"
+            android:ems="10"
+            android:fontFamily="@font/noto_sans"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:hint="Ingrese contraseña"
+            android:inputType="textPersonName"
+            android:padding="10dip"
+            android:text="holahla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNombreUsuario" />
+
+        <Button
+            android:id="@+id/btnIn"
+            android:layout_width="257dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#70BDD6"
+            android:fontFamily="@font/noto_sans_bold"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center|center_vertical"
+
+            android:text="Iniciar sesión"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:cornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtApellido"
+            app:layout_constraintStart_toStartOf="@+id/edtApellido"
+            app:layout_constraintTop_toBottomOf="@+id/edtApellido"
+            tools:layout_conversion_absoluteHeight="52dp"
+            tools:layout_conversion_absoluteWidth="257dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

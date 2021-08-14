@@ -98,7 +98,7 @@ public class FiltrosFragment extends Fragment {
             public void onClick(View v) {
                 MainActivityInicio actividadContenedora;
                 actividadContenedora = (MainActivityInicio) getActivity();
-                actividadContenedora.setFragmentLupa();
+                actividadContenedora.setFragmentMenu();
 
             }
         });

@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
+import com.example.ProyectoFinal.loangrounds.Menu.VerificacionPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.Menu.AtencionClienteFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment;
@@ -42,6 +43,7 @@ public class MainActivityInicio extends AppCompatActivity {
     AtencionClienteFragment fragmentAtencionCliente;
     MetodoPagoFragment fragmentMetodoPago;
     RealizarFragment fragmentRealizar;
+    VerificacionPrestamoFragment fragmentVerificacionPrestamo;
 
 
     private Object SupportFragmentManager;
@@ -90,6 +92,7 @@ public class MainActivityInicio extends AppCompatActivity {
         fragmentAtencionCliente= new AtencionClienteFragment();
         fragmentMetodoPago= new MetodoPagoFragment();
         fragmentRealizar= new RealizarFragment();
+        fragmentVerificacionPrestamo=new VerificacionPrestamoFragment();
     }
     public  void setFragmentMenu(){
 
@@ -154,14 +157,18 @@ public class MainActivityInicio extends AppCompatActivity {
         reemplazarFragmenbts(fragmentRealizar);
 
     }
+    public  void setFragmentVerificacionPrestamo(){
+        reemplazarFragmenbts(fragmentVerificacionPrestamo);
 
-
-
-    public void EnviarMensaje(int position,  List<PrestamoRecomendadoDTO> prestamoList){
-        fragmentCadaPrestamo.enviarPosition(position, prestamoList);
     }
-    public void EnviarMensajeSolicitado(int position,  List<PrestamoRecomendadoDTO> prestamoList){
-        fragmentCadaSolicitado.enviarPosition(position, prestamoList);
+
+
+
+    public void EnviarMensaje(PrestamoRecomendadoDTO prestamoList){
+        fragmentCadaPrestamo.enviarPosition( prestamoList);
+    }
+    public void EnviarMensajeSolicitado(List<PrestamoRecomendadoDTO> prestamoList){
+        fragmentCadaSolicitado.enviarPosition(prestamoList);
     }
 
 

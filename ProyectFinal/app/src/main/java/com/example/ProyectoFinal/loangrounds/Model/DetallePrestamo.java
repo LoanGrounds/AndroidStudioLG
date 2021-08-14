@@ -4,10 +4,10 @@ import java.sql.Date;
 
 public class DetallePrestamo {
     private int Id, CantidadCuotas, DiasEntreCuotas, DiasTolerancia, IdEstadoPrestamo;
-    private Float Monto, InteresXCuota;
+    private double Monto, InteresXCuota;
     private Date FechaDeAcuerdo;
 
-    public DetallePrestamo(int id, int cantidadCuotas, int diasEntreCuotas, int diasTolerancia, int idEstadoPrestamo, Float monto, Float interesXCuota, Date fechaDeAcuerdo) {
+    public DetallePrestamo(int id, int cantidadCuotas, int diasEntreCuotas, int diasTolerancia, int idEstadoPrestamo, double monto, double interesXCuota, Date fechaDeAcuerdo) {
         Id = id;
         CantidadCuotas = cantidadCuotas;
         DiasEntreCuotas = diasEntreCuotas;
@@ -34,10 +34,10 @@ public class DetallePrestamo {
         return IdEstadoPrestamo;
     };
 
-    public Float getMonto() {
+    public double getMonto() {
         return Monto;
     };
-    public Float getInteresXCuota() {
+    public double getInteresXCuota() {
         return InteresXCuota;
     };
 

@@ -46,7 +46,7 @@ public class ListaAdaptora extends ArrayAdapter<PrestamoRecomendadoDTO> {
         PrestamoRecomendadoDTO prestamo=ListaPrestamos.get(position);
         tvNombreApellido.setText(prestamo.UserName);
         precio1.setText(String.valueOf("$"+prestamo.Monto));
-        imgPrestamista.setImageDrawable(mCtx.getResources().getDrawable(prestamo.URLFoto));
+        //imgPrestamista.setImageDrawable(mCtx.getResources().getDrawable(prestamo.URLFoto));
         final boolean[] like = {false};
         coraDislike.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.SearchView;
 
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.LupaAdapter;
-import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
@@ -82,7 +81,7 @@ public class LupaFragment extends Fragment implements SearchView.OnQueryTextList
 
     private void ObtenerReferencias() {
         recyclerView=(RecyclerView) layoutRhoot.findViewById(R.id.recyclerView);
-        buscarPrestamo=(SearchView) layoutRhoot.findViewById(R.id.buscarPrestamo);
+        buscarPrestamo=(SearchView) layoutRhoot.findViewById(R.id.searchBuscarPrestamo);
         filtros=(ImageView) layoutRhoot.findViewById(R.id.imageView4);
     }
 

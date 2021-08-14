@@ -17,7 +17,7 @@ import java.util.List;
 
 public class CadaSolicitadoFragment extends Fragment {
 
-    int intPos;
+
     List<PrestamoRecomendadoDTO> prest;
     View layoutRhoot;
 
@@ -55,10 +55,10 @@ public class CadaSolicitadoFragment extends Fragment {
     private void SetearListners() {
     }
 
-    public void enviarPosition(int position, List<PrestamoRecomendadoDTO> prestamoList ){
+    public void enviarPosition(List<PrestamoRecomendadoDTO> prestamoList ){
 
         prest = prestamoList;
-        intPos = position;
+
 
 
     }

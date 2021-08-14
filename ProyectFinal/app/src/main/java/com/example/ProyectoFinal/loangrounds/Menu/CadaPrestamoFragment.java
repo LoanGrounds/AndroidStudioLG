@@ -2,37 +2,44 @@ package com.example.ProyectoFinal.loangrounds.Menu;
 
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
+import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
+import com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo;
 import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
+import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
+import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
+import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
+import java.util.Arrays;
 import java.util.List;
 
 
 public class CadaPrestamoFragment extends Fragment {
 
-    TextView tv1;
-    TextView tvDinero;
-    TextView tvDiasEntreCuota;
-    SeekBar skbDinero;
-    TextView tvIntereses;
-    TextView tvDiaTol;
-    TextView tvCantCuotas;
-    TextView tvNombre;
-    int intPos;
-    List<PrestamoRecomendadoDTO> prest;
+    TextView tvIntereses,tvDinero,tvDiasEntreCuota,tvCantCuotas,tvNombre, tvDiaTol;
+    DetallePrestamo detalle;
+    PrestamoRecomendadoDTO prest;
     Button btnSolicitar;
     View layoutRhoot;
+    ProgressBar pgCargando3;
+    ConstraintLayout clCadaPrestamo;
     public CadaPrestamoFragment() {
         // Required empty public constructor
     }
@@ -48,7 +55,7 @@ public class CadaPrestamoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         layoutRhoot=inflater.inflate(R.layout.fragment_cada_prestamo, container, false);
         obtenerReferencias();
         inicializarDatos();
@@ -61,15 +68,12 @@ public class CadaPrestamoFragment extends Fragment {
         btnSolicitar.setOnClickListener(btnSolicitar_Click);
     }
     private void inicializarDatos(){
-        String nombre=prest.get(intPos).UserName;
-
-        int diner=prest.get(intPos).Monto;
-
+        String nombre=prest.UserName;
+        int diner=prest.Monto;
         tvDinero.setText("$"+String.valueOf(diner));
-        double interes=(diner*0.12);
-        tvIntereses.setText(String.valueOf(interes));
         tvNombre.setText(nombre);
-
+        PrestamoObtenido getDetalle = new PrestamoObtenido(prest.Id);
+        getDetalle.execute();
 
     }
 
@@ -82,6 +86,8 @@ public class CadaPrestamoFragment extends Fragment {
         tvCantCuotas=(TextView) layoutRhoot.findViewById(R.id.tvCantCuotas);
         tvNombre=(TextView) layoutRhoot.findViewById(R.id.tvNombre);
         btnSolicitar=(Button) layoutRhoot.findViewById(R.id.btnSolicitar);
+        clCadaPrestamo=(ConstraintLayout) layoutRhoot.findViewById(R.id.clCadaPrestamo);
+        pgCargando3=(ProgressBar) layoutRhoot.findViewById(R.id.pgCargando3);
     }
 
     View.OnClickListener btnSolicitar_Click = new View.OnClickListener() {
@@ -96,13 +102,45 @@ public class CadaPrestamoFragment extends Fragment {
         }
     };
 
-
-
-    public void enviarPosition(int position, List<PrestamoRecomendadoDTO> prestamoList ){
-
+    public void enviarPosition(PrestamoRecomendadoDTO prestamoList ){
         prest = prestamoList;
-        intPos = position;
+
+    }
+
+    private class PrestamoObtenido extends AsyncTaskBase {
 
 
+        public PrestamoObtenido(int id) {
+            super(ApiHelper.devolverUrlParaGet("Detalles","obtenerPorId",String.valueOf(id)));
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            toastes.msj(getContext(),"Cargando por favor espero...");
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            if (s!=null){
+                //Gson miGson = new Gson();
+                //Gson miGson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+                Gson miGson = new GsonBuilder()
+                        .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
+                        .create();
+                detalle = miGson.fromJson(s,DetallePrestamo.class);
+                if(detalle!=null){
+                    CustomLog.log(detalle.getFechaDeAcuerdo().toString());
+                    double interes=detalle.getInteresXCuota();
+                    tvIntereses.setText(String.valueOf(interes));
+                    tvCantCuotas.setText(String.valueOf(detalle.getCantidadCuotas()));
+                    tvDiasEntreCuota.setText(String.valueOf(detalle.getDiasEntreCuotas()));
+                    tvDiaTol.setText(String.valueOf(detalle.getDiasTolerancia()));
+                }
+            }
+            pgCargando3.setVisibility(View.GONE);
+            clCadaPrestamo.setVisibility(View.VISIBLE);
+        }
     }
 }

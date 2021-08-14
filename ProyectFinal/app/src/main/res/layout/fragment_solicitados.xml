@@ -6,36 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".Menu.SolicitadosFragment">
 
-    <!-- TODO: Update blank fragment layout -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="412dp"
+            android:layout_height="66dp"
+            android:background="#ededed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="#09D3ED"
+            app:tabSelectedTextColor="#09D3ED">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solicitados" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prestados" />
+
+        </com.google.android.material.tabs.TabLayout>
+
         <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/loangrounds3"
-                    android:layout_width="388dp"
-                    android:layout_height="129dp"
-                    android:fontFamily="@font/play"
-                    android:gravity="center"
-                    android:text="Solicitados"
-                    android:textColor="#D417A4B7 "
-                    android:textColorHint="#FFFFFF"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
 
                 <ListView
                     android:id="@+id/listView"
