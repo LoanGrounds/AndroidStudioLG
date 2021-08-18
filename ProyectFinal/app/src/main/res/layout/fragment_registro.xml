@@ -45,7 +45,7 @@
 
             <EditText
 
-                android:id="@+id/edtNombreUsuario"
+                android:id="@+id/edtNombre"
                 android:layout_width="316.88dp"
                 android:layout_height="47.98dp"
                 android:layout_gravity="center"
@@ -98,7 +98,7 @@
                 android:foregroundGravity="center_vertical"
                 android:gravity="center_vertical"
                 android:hint="Ingrese correo electronico"
-                android:inputType="textPersonName"
+                android:inputType="textEmailAddress"
                 android:padding="10dip"
                 app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -117,7 +117,7 @@
                 android:foregroundGravity="center_vertical"
                 android:gravity="center_vertical"
                 android:hint="Contraseña"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 android:padding="10dip"
                 app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -125,7 +125,7 @@
 
             <EditText
 
-                android:id="@+id/edtUserName"
+                android:id="@+id/edtCheckPassword"
                 android:layout_width="316.88dp"
                 android:layout_height="47.98dp"
                 android:layout_gravity="center"
@@ -136,7 +136,7 @@
                 android:foregroundGravity="center_vertical"
                 android:gravity="center_vertical"
                 android:hint="Contraseña"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 android:padding="10dip"
                 app:layout_constraintBottom_toTopOf="@+id/btnSiguiente"
                 app:layout_constraintEnd_toEndOf="parent"

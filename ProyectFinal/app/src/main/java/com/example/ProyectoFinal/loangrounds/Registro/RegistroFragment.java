@@ -1,5 +1,6 @@
 package com.example.ProyectoFinal.loangrounds.Registro;
 
+import android.graphics.ImageDecoder;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -16,10 +17,16 @@ import android.widget.LinearLayout;
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncPostBase;
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
 import com.example.ProyectoFinal.loangrounds.MainActivity;
+import com.example.ProyectoFinal.loangrounds.Model.Localidad;
+import com.example.ProyectoFinal.loangrounds.Model.Provincia;
 import com.example.ProyectoFinal.loangrounds.R;
+import com.example.ProyectoFinal.loangrounds.Utilidades.AlertHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
+import com.example.ProyectoFinal.loangrounds.Utilidades.ValidacionesHelpers;
 import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.util.Date;
 
@@ -32,6 +39,8 @@ public class RegistroFragment extends Fragment {
     LinearLayout item2;
     LinearLayout item3;
     LinearLayout item4;
+    Provincia[] listaProvincias;
+    Localidad[] listaLocalidades;
     int contador = 0;
 
 
@@ -58,12 +67,44 @@ public class RegistroFragment extends Fragment {
 
     }
 
+    public boolean esFormualarioValido(){
+        boolean aux = true;
+        String errores = "";
+        if(!ValidacionesHelpers.esContraFuerte(edtPassword)){
+            aux = false;
+            errores += "La contraseña ingresada no es lo suficientemente segura \n"; // se puede ir mostrando con color despues
+        }
+        if(!ValidacionesHelpers.esStringValido(edtTelefono)){
+            aux = false;
+            errores += "El telefono no es valido \n";
+        }
+        if(!ValidacionesHelpers.esStringValido(edtApellido)){
+            aux = false;
+            errores += "El apellido no es valido \n";
+        }
+        if(!ValidacionesHelpers.esStringValido(edtDireccion)){
+            aux = false;
+            errores += "la  direccion no es valida \n";
+        }
+        if(!ValidacionesHelpers.esStringValido(edtDni)){
+            aux = false;
+            errores += "El Dni no es valido \n";
+        }
+        if(!ValidacionesHelpers.esStringValido(edtNombre)){
+            aux = false;
+            errores += "El nombre no es valido \n";
+        }
+        // FALTAN EDIT TEXT PARA NOMBRE DE USUARIO,  OCUPACION, FECHA DE NACIMIENTO Y SEGURO ME OLIVDO DE ALGUNO
+        if(!aux) AlertHelper.mostrarAlertaError(getContext(), errores);
+        return aux;
+    }
+
 
 
     private void ObtenerReferencias() {
         btnSiguiente = (Button) layoutRhoot.findViewById(R.id.btnSiguiente);
         edtAlias = (EditText) layoutRhoot.findViewById(R.id.edtAlias);
-        edtEmail = (EditText) layoutRhoot.findViewById(R.id.edtNombreUsuario);
+        edtEmail = (EditText) layoutRhoot.findViewById(R.id.edtMail);
         edtCiudad = (EditText) layoutRhoot.findViewById(R.id.edtCiudad);
          edtCuit= (EditText) layoutRhoot.findViewById(R.id.edtCuit);
         edtCBU = (EditText) layoutRhoot.findViewById(R.id.edtCBU);
@@ -72,11 +113,14 @@ public class RegistroFragment extends Fragment {
         edtProv = (EditText) layoutRhoot.findViewById(R.id.edtProv);
         edtTelefono = (EditText) layoutRhoot.findViewById(R.id.edtTelefono);
         edtPassword = (EditText) layoutRhoot.findViewById(R.id.edtPassword);
-        edtNombre = (EditText) layoutRhoot.findViewById(R.id.edtNombreUsuario);
+        edtNombre = (EditText) layoutRhoot.findViewById(R.id.edtNombre);
         edtApellido = (EditText) layoutRhoot.findViewById(R.id.edtApellido);
-        edtUserName = (EditText) layoutRhoot.findViewById(R.id.edtUserName);
 
-
+       /* tareaGetLocalidades tarealocalidaes = new tareaGetLocalidades();
+        tarealocalidaes.execute();
+        tareaGetProvincias tareaProvs = new tareaGetProvincias();
+        tareaProvs.execute();
+        TENGO QUE BUSCAR COMO LLAMAR LOS DOS A LA VEZ*/
 
 
 
@@ -186,5 +230,63 @@ public class RegistroFragment extends Fragment {
             }
         }
 
+    }
+
+    private class tareaGetProvincias extends AsyncTaskBase {
+
+        public tareaGetProvincias() {
+            super(ApiHelper.devolverUrlParaGet("Varios", "Provincias", "Ver"));
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            //nada
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            if(!s.equals("")){
+                Gson miGson = new GsonBuilder()
+                        .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
+                        .create();
+                listaProvincias = miGson.fromJson(s,Provincia[].class);
+                //llenar dropdown
+
+            }
+            else{
+                CustomLog.log("me llego vacio");
+            }
+        }
+    }
+
+    private class tareaGetLocalidades extends AsyncTaskBase {
+
+        public tareaGetLocalidades() {
+            super(ApiHelper.devolverUrlParaGet("Varios", "Localidades", "Ver"));
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            //nada
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            if(!s.equals("")){
+                Gson miGson = new GsonBuilder()
+                        .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
+                        .create();
+                listaLocalidades = miGson.fromJson(s,Localidad[].class);
+                //llenar dropdown
+
+            }
+            else{
+                CustomLog.log("me llego vacio");
+            }
+        }
     }
 }

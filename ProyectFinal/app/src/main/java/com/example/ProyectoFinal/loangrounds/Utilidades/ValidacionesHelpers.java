@@ -50,6 +50,43 @@ public class ValidacionesHelpers {
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(emailStr);
         return matcher.find();
     }
+    public static boolean esContraFuerte(EditText et){
+        String contra = et.getText().toString().trim();
+        if(!esStringValido(contra)) return false;
+        return calculatePasswordStrength(contra) > 6; // abitrario
+    }
+
+    private static int calculatePasswordStrength(String password){
+
+        //total score of password
+        int iPasswordScore = 0;
+
+        if( password.length() < 8 )
+            return 0;
+        else if( password.length() >= 10 )
+            iPasswordScore += 2;
+        else
+            iPasswordScore += 1;
+
+        //if it contains one digit, add 2 to total score
+        if( password.matches("(?=.*[0-9]).*") )
+            iPasswordScore += 2;
+
+        //if it contains one lower case letter, add 2 to total score
+        if( password.matches("(?=.*[a-z]).*") )
+            iPasswordScore += 2;
+
+        //if it contains one upper case letter, add 2 to total score
+        if( password.matches("(?=.*[A-Z]).*") )
+            iPasswordScore += 2;
+
+        //if it contains one special character, add 2 to total score
+        if( password.matches("(?=.*[~!@#$%^&*()_-]).*") )
+            iPasswordScore += 2;
+
+        return iPasswordScore;
+
+    }
 
     public static boolean RG_check(RadioGroup rg){
         return rg.getCheckedRadioButtonId() != -1;
