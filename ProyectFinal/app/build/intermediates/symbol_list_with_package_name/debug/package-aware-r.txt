@@ -1683,12 +1683,14 @@ id edtAlias
 id edtApellido
 id edtCBU
 id edtCantidadAPrestar
+id edtCheckPassword
 id edtCiudad
 id edtCodPostal
 id edtCuit
 id edtDireccion
 id edtDni
 id edtMail
+id edtNombre
 id edtNombre2
 id edtNombre3
 id edtNombre4
@@ -1698,7 +1700,6 @@ id edtNombreUsuario
 id edtPassword
 id edtProv
 id edtTelefono
-id edtUserName
 id end
 id end_padder
 id enterAlways

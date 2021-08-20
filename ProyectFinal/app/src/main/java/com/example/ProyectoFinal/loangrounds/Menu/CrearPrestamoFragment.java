@@ -56,7 +56,7 @@ public class CrearPrestamoFragment extends Fragment {
         ObtenerReferencia();
         SetearListners();
 
-        DetallePrestamo detallePrestamo= new DetallePrestamo(0,7,60,5,6,3000,1000,  null );
+        DetallePrestamo detallePrestamo= new DetallePrestamo(0,7,60,5,6,8000,1000,  null );
         tareaCrearDetalle nuevoDetalle = new tareaCrearDetalle(detallePrestamo);
         nuevoDetalle.execute();
 

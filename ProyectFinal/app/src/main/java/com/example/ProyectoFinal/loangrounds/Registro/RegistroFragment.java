@@ -34,7 +34,7 @@ public class RegistroFragment extends Fragment {
 
     Button btnSiguiente;
     View layoutRhoot;
-    EditText edtUserName, edtEmail,edtApellido,edtPassword,edtTelefono,edtCiudad,edtNombre,edtProv,edtDireccion,edtDni,edtCBU,edtAlias,edtCuit;
+    EditText edtUserName, edtEmail,edtApellido,edtPassword,edtTelefono,edtCiudad,edtNombre,edtProv,edtDireccion,edtDni,edtCBU,edtAlias,edtCuit, edtCheckPassword;
     LinearLayout item1;
     LinearLayout item2;
     LinearLayout item3;
@@ -73,6 +73,10 @@ public class RegistroFragment extends Fragment {
         if(!ValidacionesHelpers.esContraFuerte(edtPassword)){
             aux = false;
             errores += "La contraseña ingresada no es lo suficientemente segura \n"; // se puede ir mostrando con color despues
+        }
+        if(!edtPassword.getText().toString().trim().equals(edtCheckPassword.getText().toString().trim())){
+            aux = false;
+            errores += "Las contraseñas no coinciden \n";
         }
         if(!ValidacionesHelpers.esStringValido(edtTelefono)){
             aux = false;
@@ -113,6 +117,7 @@ public class RegistroFragment extends Fragment {
         edtProv = (EditText) layoutRhoot.findViewById(R.id.edtProv);
         edtTelefono = (EditText) layoutRhoot.findViewById(R.id.edtTelefono);
         edtPassword = (EditText) layoutRhoot.findViewById(R.id.edtPassword);
+        edtCheckPassword  = (EditText) layoutRhoot.findViewById(R.id.edtCheckPassword);
         edtNombre = (EditText) layoutRhoot.findViewById(R.id.edtNombre);
         edtApellido = (EditText) layoutRhoot.findViewById(R.id.edtApellido);
 
@@ -203,13 +208,14 @@ public class RegistroFragment extends Fragment {
             setParams("DNI", edtDni.getText().toString().trim());
             setParams("IdLocalidad", 5);
             setParams("Telefono", edtTelefono.getText().toString().trim());
-            setParams("UserName", edtUserName.getText().toString().trim());
+            setParams("UserName", String.format("%s %s",edtNombre.getText().toString().trim(),edtApellido.getText().toString().trim()));
             setParams("CUIT", edtCuit.getText().toString().trim());
-            setParams("IdGeneros", 2);
+            setParams("IdGenero", 2);
             setParams("URLFoto", "");
             setParams("CantidadPrestamosExitosos", 0);
             setParams("Puntos", 0);
-            setParams("FechaCreación", new Date());
+            setParams("FechaNacimiento", "1999-08-20");
+            setParams("FechaCreacion","2021-10-25");
             setParams("Descripcion", "la mama de chino");
             setParams("Ocupacion", "el papa de chino");
 
@@ -224,7 +230,6 @@ public class RegistroFragment extends Fragment {
                 CustomLog.log(s);
                 MainActivity actividadContenedora;
                 actividadContenedora = (MainActivity) getActivity();
-                assert actividadContenedora != null;
                 actividadContenedora.setFragmentSesionRegistro();
 
             }

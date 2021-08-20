@@ -131,7 +131,6 @@ public class CadaPrestamoFragment extends Fragment {
                         .create();
                 detalle = miGson.fromJson(s,DetallePrestamo.class);
                 if(detalle!=null){
-                    CustomLog.log(detalle.getFechaDeAcuerdo().toString());
                     double interes=detalle.getInteresXCuota();
                     tvIntereses.setText(String.valueOf(interes));
                     tvCantCuotas.setText(String.valueOf(detalle.getCantidadCuotas()));
