@@ -122,6 +122,8 @@ com/example/ProyectoFinal/loangrounds/MainActivityStart.java
 com/example/ProyectoFinal/loangrounds/Menu/SolicitadosFragment.java
  com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment
  com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment$1
+ com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment$2
+ com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment$3
  com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment$tareaMisPrestamosPrestados
 com/example/ProyectoFinal/loangrounds/Utilidades/AlertHelper.java
  com.example.ProyectoFinal.loangrounds.Utilidades.AlertHelper

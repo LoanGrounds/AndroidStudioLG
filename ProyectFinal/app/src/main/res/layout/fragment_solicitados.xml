@@ -7,64 +7,59 @@
     tools:context=".Menu.SolicitadosFragment">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="412dp"
+        android:layout_height="66dp"
+        android:background="#ededed"
+        app:tabIndicatorColor="#09D3ED"
+        app:tabSelectedTextColor="#09D3ED">
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="412dp"
-            android:layout_height="66dp"
-            android:background="#ededed"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tabIndicatorColor="#09D3ED"
-            app:tabSelectedTextColor="#09D3ED">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabSolicitados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solicitados" />
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Solicitados"
-                />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabPrestados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prestados" />
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Prestados" />
+    </com.google.android.material.tabs.TabLayout>
 
-        </com.google.android.material.tabs.TabLayout>
+    <ListView
+        android:id="@+id/listViewPrestados"
+        android:layout_width="412dp"
+        android:layout_height="596dp"
+        android:layout_gravity="center"
+        android:divider="#00000000"
+        android:dividerHeight="20dp"
+        android:focusableInTouchMode="false"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        tools:visibility="invisible">
 
-        <ListView
-            android:id="@+id/listViewPrestados"
-            android:layout_width="412dp"
-            android:layout_height="596dp"
-            android:layout_gravity="center"
-            android:divider="#00000000"
-            android:dividerHeight="20dp"
-            android:focusableInTouchMode="false"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+    </ListView>
 
-
-        <ListView
-            android:id="@+id/listViewSolicitados"
-            android:layout_width="412dp"
-            android:layout_height="500dp"
-            android:layout_gravity="center"
-            android:divider="#00000000"
-            android:dividerHeight="20dp"
-            android:paddingTop="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-            tools:visibility="invisible" />
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ListView
+        android:id="@+id/listViewSolicitados"
+        android:layout_width="412dp"
+        android:layout_height="596dp"
+        android:layout_gravity="center"
+        android:divider="#00000000"
+        android:dividerHeight="20dp"
+        android:focusableInTouchMode="false"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
 </FrameLayout>

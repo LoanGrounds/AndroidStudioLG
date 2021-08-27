@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
+import android.widget.TableLayout;
+import android.widget.Toast;
 
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptadoraPrestados;
@@ -25,6 +27,8 @@ import com.example.ProyectoFinal.loangrounds.R;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabItem;
+import com.google.android.material.tabs.TabLayout;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -34,10 +38,13 @@ import java.util.List;
 
 public class SolicitadosFragment extends Fragment {
 
-    ListView listView;
+    ListView listView,listViewSolicitados;
     View layoutRhoot;
     List<VistaPreviaPrestamo> prestamoList;
     VistaPreviaPrestamo[] resultado;
+    TabLayout tab;
+    TabItem tabPrestados;
+    TabItem tabSolicitados;
 
     public SolicitadosFragment() {
         // Required empty public constructor
@@ -93,11 +100,48 @@ public class SolicitadosFragment extends Fragment {
     }*/
     private void ObtenerReferencia() {
         listView = (ListView) layoutRhoot.findViewById(R.id.listViewPrestados);
-
+        tabSolicitados = (TabItem) layoutRhoot.findViewById(R.id.tabSolicitados);
+        tabPrestados= (TabItem) layoutRhoot.findViewById(R.id.tabPrestados);
+        listViewSolicitados = (ListView) layoutRhoot.findViewById(R.id.listViewSolicitados);
+        tab = (TabLayout) layoutRhoot.findViewById(R.id.tabLayout);
 
     }
 
     public void SetearListners() {
+
+
+        tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                if (tab)
+            }
+            //https://developer.android.com/guide/navigation/navigation-swipe-view-2#java
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
+        tabPrestados.setTab(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listViewSolicitados.setVisibility(View.INVISIBLE);
+                listView.setVisibility(View.VISIBLE);}
+        });
+
+        tabSolicitados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listView.setVisibility(View.INVISIBLE);
+                listViewSolicitados.setVisibility(View.VISIBLE);
+            }
+        });
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
