@@ -992,6 +992,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color verde
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -1641,6 +1642,7 @@ id chip3
 id chip_group
 id chronometer
 id clCadaPrestamo
+id clCard
 id clInicioSesion
 id clMenu
 id clear_text
@@ -1735,7 +1737,6 @@ id icon_group
 id ifRoom
 id imBtnCont
 id imBtnHouse
-id imBtnLupa
 id imBtnSol
 id imFotoUsuario
 id image
@@ -1746,7 +1747,6 @@ id imageButton4
 id imageView
 id imageView2
 id imageView3
-id imageView4
 id imgPrestamista
 id info
 id ingreseHuella
@@ -1761,7 +1761,6 @@ id line3
 id linearLayout
 id linearLayout2
 id linearLayout3
-id linearLayout4
 id linearLayout5
 id linearLayout7
 id linearLayout8
@@ -1769,11 +1768,12 @@ id linearLayoutTarjetas
 id linearLayoutTarjetas2
 id listMode
 id listView
+id listViewPrestados
+id listViewSolicitados
 id list_item
 id loangrounds
 id loangrounds2
 id loangrounds3
-id loangrounds4
 id loangrounds5
 id loangrounds6
 id loangrounds7
@@ -1844,7 +1844,6 @@ id prestamosRecientes
 id progress_circular
 id progress_horizontal
 id radio
-id recyclerView
 id restart
 id reverse
 id right
@@ -1860,7 +1859,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView2
 id scrollable
 id searchBuscarPrestamo
 id search_badge
@@ -2083,7 +2081,6 @@ layout fragment_filtros
 layout fragment_footer
 layout fragment_inicio__registrarse
 layout fragment_inicio_sesion
-layout fragment_lupa
 layout fragment_menu
 layout fragment_metodo_pago
 layout fragment_prestamos_recientes

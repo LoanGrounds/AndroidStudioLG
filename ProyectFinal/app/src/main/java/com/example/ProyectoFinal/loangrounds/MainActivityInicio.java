@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 
 import com.example.ProyectoFinal.loangrounds.Menu.VerificacionPrestamoFragment;
-import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.Menu.AtencionClienteFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaSolicitadoFragment;
@@ -18,7 +17,6 @@ import com.example.ProyectoFinal.loangrounds.Menu.CrearPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.EditarPerfilFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.FiltrosFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.MenuFragment;
-import com.example.ProyectoFinal.loangrounds.Menu.LupaFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.MetodoPagoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.PrestamosRecientesFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.RealizarFragment;
@@ -31,7 +29,6 @@ public class MainActivityInicio extends AppCompatActivity {
 
     ContactoFragment fragmentContacto;
     MenuFragment fragmentMenu;
-    LupaFragment fragmentLupa;
     SolicitadosFragment fragmentSolicitados;
     CadaPrestamoFragment fragmentCadaPrestamo;
     CadaSolicitadoFragment fragmentCadaSolicitado;
@@ -79,7 +76,6 @@ public class MainActivityInicio extends AppCompatActivity {
 
     private void crearFragments() {
         fragmentMenu = new MenuFragment();
-        fragmentLupa = new LupaFragment();
         fragmentSolicitados = new SolicitadosFragment();
         fragmentContacto = new ContactoFragment();
         fragmentCadaPrestamo= new CadaPrestamoFragment();
@@ -100,9 +96,7 @@ public class MainActivityInicio extends AppCompatActivity {
 
     }
 
-    public  void setFragmentLupa(){
-        reemplazarFragmenbts(fragmentLupa);
-    }
+
 
     public  void setFragmentSolicitados(){
         reemplazarFragmenbts(fragmentSolicitados);

@@ -15,10 +15,12 @@ import android.widget.ProgressBar;
 import android.widget.SearchView;
 
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
+import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptadoraPrestados;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
+import com.example.ProyectoFinal.loangrounds.Model.VistaPreviaPrestamo;
 import com.example.ProyectoFinal.loangrounds.R;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
@@ -34,8 +36,8 @@ public class SolicitadosFragment extends Fragment {
 
     ListView listView;
     View layoutRhoot;
-    List<PrestamoRecomendadoDTO> prestamoList;
-    PrestamoRecomendadoDTO[] resultado;
+    List<VistaPreviaPrestamo> prestamoList;
+    VistaPreviaPrestamo[] resultado;
 
     public SolicitadosFragment() {
         // Required empty public constructor
@@ -55,13 +57,13 @@ public class SolicitadosFragment extends Fragment {
 
         layoutRhoot= inflater.inflate(R.layout.fragment_solicitados, container, false);
         ObtenerReferencia();
-        PrestamosPedidosAsinc tareaPedidos = new PrestamosPedidosAsinc();
+        tareaMisPrestamosPrestados tareaPedidos = new tareaMisPrestamosPrestados();
         tareaPedidos.execute();
         SetearListners();
         return layoutRhoot;
     }
 
-    private class PrestamosPedidosAsinc extends AsyncTaskBase {
+    /*private class PrestamosPedidosAsinc extends AsyncTaskBase {
 
 
         public PrestamosPedidosAsinc() {
@@ -79,8 +81,8 @@ public class SolicitadosFragment extends Fragment {
             super.onPostExecute(s);
             if (s!=null){
                 Gson miGson = new Gson();
-                resultado = miGson.fromJson(s,PrestamoRecomendadoDTO[].class);
-                ListaAdaptora nuevoAdapter = new ListaAdaptora(getActivity(),R.layout.my_list_item_listview, Arrays.asList(resultado.clone()));
+                resultado = miGson.fromJson(s,VistaPreviaPrestamo[].class);
+                ListaAdaptadoraPrestados nuevoAdapter = new ListaAdaptadoraPrestados(getActivity(),R.layout.my_list_item_listview, Arrays.asList(resultado.clone()));
                 listView.setAdapter(nuevoAdapter);
 
 
@@ -88,9 +90,9 @@ public class SolicitadosFragment extends Fragment {
 
 
         }
-    }
+    }*/
     private void ObtenerReferencia() {
-        listView = (ListView) layoutRhoot.findViewById(R.id.listView);
+        listView = (ListView) layoutRhoot.findViewById(R.id.listViewPrestados);
 
 
     }
@@ -101,17 +103,44 @@ public class SolicitadosFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 
-                PrestamoRecomendadoDTO pestamoSolici = resultado[position] ;
+                VistaPreviaPrestamo pestamoSolici = resultado[position] ;
 
 
                 MainActivityInicio actividadContenedora;
                 actividadContenedora = (MainActivityInicio) getActivity();
 
                 actividadContenedora.setFragmentCadaPrestamo();
-                actividadContenedora.EnviarMensaje(pestamoSolici);
+
 
 
 
             }
         });}
+
+
+
+    private  class tareaMisPrestamosPrestados extends AsyncTaskBase{
+
+        public tareaMisPrestamosPrestados() {
+            super(ApiHelper.devolverUrlParaGet("Prestamos","misPrestamosPrestados"));
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            Gson miGson = new Gson();
+            VistaPreviaPrestamo[] misPrestamos = miGson.fromJson(s,VistaPreviaPrestamo[].class);
+            ListaAdaptadoraPrestados nuevoAdapter = new ListaAdaptadoraPrestados(getActivity(),R.layout.my_list_item_listview, Arrays.asList(misPrestamos.clone()));
+            listView.setAdapter(nuevoAdapter);
+            //llenar un list view ponele
+        }
+    }
+
 }
+
+

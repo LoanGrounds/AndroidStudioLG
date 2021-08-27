@@ -25,7 +25,8 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Solicitados" />
+                android:text="Solicitados"
+                />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
@@ -34,30 +35,36 @@
 
         </com.google.android.material.tabs.TabLayout>
 
-        <ScrollView
-            android:id="@+id/scrollView2"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <ListView
+            android:id="@+id/listViewPrestados"
+            android:layout_width="412dp"
+            android:layout_height="596dp"
+            android:layout_gravity="center"
+            android:divider="#00000000"
+            android:dividerHeight="20dp"
+            android:focusableInTouchMode="false"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
-                <ListView
-                    android:id="@+id/listView"
-                    android:layout_width="match_parent"
-                    android:layout_height="1067dp"
-                    android:layout_gravity="center"
-                    android:divider="#00000000"
-                    android:dividerHeight="20dp" />
+        <ListView
+            android:id="@+id/listViewSolicitados"
+            android:layout_width="412dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            android:divider="#00000000"
+            android:dividerHeight="20dp"
+            android:paddingTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            tools:visibility="invisible" />
 
-            </LinearLayout>
-        </ScrollView>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

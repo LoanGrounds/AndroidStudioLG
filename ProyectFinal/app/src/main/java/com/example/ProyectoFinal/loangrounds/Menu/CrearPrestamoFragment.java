@@ -128,7 +128,7 @@ public class CrearPrestamoFragment extends Fragment {
             setParams("CantidadCuotas",nuevoDetalle.getCantidadCuotas());
             setParams("DiasEntreCuotas",nuevoDetalle.getDiasEntreCuotas());
             setParams("DiasTolerancia",nuevoDetalle.getDiasTolerancia());
-            setParams("IdEstadoDePrestamo",1);
+            setParams("IdEstadoDePrestamo",5);
             setParams("Monto",nuevoDetalle.getMonto());
             setParams("InteresXCuota",nuevoDetalle.getInteresXCuota());
             setParams("FechaDeAcuerdo", (Date) null);

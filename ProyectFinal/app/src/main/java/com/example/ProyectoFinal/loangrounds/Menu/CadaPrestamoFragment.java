@@ -107,7 +107,7 @@ public class CadaPrestamoFragment extends Fragment {
 
     }
 
-    private class PrestamoObtenido extends AsyncTaskBase {
+    public class PrestamoObtenido extends AsyncTaskBase {
 
 
         public PrestamoObtenido(int id) {

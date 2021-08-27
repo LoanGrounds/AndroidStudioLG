@@ -13,7 +13,7 @@ import com.example.ProyectoFinal.loangrounds.R;
 
 
 public class Footer extends Fragment {
-    ImageButton imBtnHouse, imBtnLupa, imBtnSol, imBtnCont;
+    ImageButton imBtnHouse, imBtnSol, imBtnCont;
     View layoutRhoot;
 
 
@@ -40,7 +40,6 @@ public class Footer extends Fragment {
     }
     private void SetearListners() {
         imBtnHouse.setOnClickListener(imBtnHouse_Click);
-        imBtnLupa.setOnClickListener(imBtnLupa_Click);
         imBtnSol.setOnClickListener(imBtnSol_Click);
         imBtnCont.setOnClickListener(imBtnCont_Click);
     }
@@ -54,14 +53,6 @@ public class Footer extends Fragment {
     };
 
 
-    View.OnClickListener imBtnLupa_Click = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            MainActivityInicio actividadContenedora;
-            actividadContenedora=(MainActivityInicio) getActivity();
-            actividadContenedora.setFragmentLupa();
-        }
-    };
 
 
     View.OnClickListener imBtnSol_Click = new View.OnClickListener() {
@@ -83,7 +74,6 @@ public class Footer extends Fragment {
 
     private void ObtenerReferencias(){
         imBtnHouse = (ImageButton)layoutRhoot.findViewById(R.id.imBtnHouse);
-        imBtnLupa = (ImageButton)layoutRhoot.findViewById(R.id.imBtnLupa);
         imBtnSol= (ImageButton) layoutRhoot.findViewById(R.id.imBtnSol);
         imBtnCont= (ImageButton) layoutRhoot.findViewById(R.id.imBtnCont);
     }
