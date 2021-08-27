@@ -110,37 +110,8 @@ public class SolicitadosFragment extends Fragment {
     public void SetearListners() {
 
 
-        tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                if (tab)
-            }
-            //https://developer.android.com/guide/navigation/navigation-swipe-view-2#java
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
 
-            }
 
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-
-        tabPrestados.setTab(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listViewSolicitados.setVisibility(View.INVISIBLE);
-                listView.setVisibility(View.VISIBLE);}
-        });
-
-        tabSolicitados.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listView.setVisibility(View.INVISIBLE);
-                listViewSolicitados.setVisibility(View.VISIBLE);
-            }
-        });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
