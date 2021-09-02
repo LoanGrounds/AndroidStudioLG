@@ -33,6 +33,7 @@ import java.util.Date;
 public class RegistroFragment extends Fragment {
 
     Button btnSiguiente;
+    MainActivity main;
     View layoutRhoot;
     EditText edtUserName, edtEmail,edtApellido,edtPassword,edtTelefono,edtCiudad,edtNombre,edtProv,edtDireccion,edtDni,edtCBU,edtAlias,edtCuit, edtCheckPassword;
     LinearLayout item1;
@@ -106,6 +107,7 @@ public class RegistroFragment extends Fragment {
 
 
     private void ObtenerReferencias() {
+        main = (MainActivity) getActivity();
         btnSiguiente = (Button) layoutRhoot.findViewById(R.id.btnSiguiente);
         edtAlias = (EditText) layoutRhoot.findViewById(R.id.edtAlias);
         edtEmail = (EditText) layoutRhoot.findViewById(R.id.edtMail);
@@ -121,11 +123,11 @@ public class RegistroFragment extends Fragment {
         edtNombre = (EditText) layoutRhoot.findViewById(R.id.edtNombre);
         edtApellido = (EditText) layoutRhoot.findViewById(R.id.edtApellido);
 
-       /* tareaGetLocalidades tarealocalidaes = new tareaGetLocalidades();
+        tareaGetLocalidades tarealocalidaes = new tareaGetLocalidades();
         tarealocalidaes.execute();
         tareaGetProvincias tareaProvs = new tareaGetProvincias();
-        tareaProvs.execute();
-        TENGO QUE BUSCAR COMO LLAMAR LOS DOS A LA VEZ*/
+        main.StartAsyncTaskInParallel(tareaProvs);
+
 
 
 

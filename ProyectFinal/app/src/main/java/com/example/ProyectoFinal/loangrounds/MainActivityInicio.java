@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.TargetApi;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 
 import com.example.ProyectoFinal.loangrounds.Menu.VerificacionPrestamoFragment;
@@ -44,6 +47,14 @@ public class MainActivityInicio extends AppCompatActivity {
 
 
     private Object SupportFragmentManager;
+
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    public void StartAsyncTaskInParallel(AsyncTask task) {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+            task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        else
+            task.execute();
+    }
 
 
     @Override

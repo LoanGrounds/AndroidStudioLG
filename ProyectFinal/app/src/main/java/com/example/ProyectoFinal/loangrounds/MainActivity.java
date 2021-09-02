@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
         crearFragments();
         reemplazarFragmenbts(fragmentSesionRegistro,false);
 
+    }
+
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    public void StartAsyncTaskInParallel(AsyncTask task) {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+            task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+        else
+            task.execute();
     }
 
 

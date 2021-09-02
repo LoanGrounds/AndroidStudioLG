@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncPostBase;
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
 import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo;
@@ -23,6 +24,7 @@ import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
+import com.example.ProyectoFinal.loangrounds.Utilidades.Session;
 import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -35,6 +37,7 @@ public class CadaPrestamoFragment extends Fragment {
 
     TextView tvIntereses,tvDinero,tvDiasEntreCuota,tvCantCuotas,tvNombre, tvDiaTol;
     DetallePrestamo detalle;
+    MainActivityInicio actividadContenedora;
     PrestamoRecomendadoDTO prest;
     Button btnSolicitar;
     View layoutRhoot;
@@ -79,6 +82,7 @@ public class CadaPrestamoFragment extends Fragment {
 
 
     private void obtenerReferencias() {
+        actividadContenedora = (MainActivityInicio) getActivity();
         tvDinero= (TextView) layoutRhoot.findViewById(R.id.tvDinero);
         tvDiasEntreCuota=(TextView) layoutRhoot.findViewById(R.id.tvCantMeses);
         tvIntereses=(TextView) layoutRhoot.findViewById(R.id.tvInteres);
@@ -93,12 +97,11 @@ public class CadaPrestamoFragment extends Fragment {
     View.OnClickListener btnSolicitar_Click = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-
-
-            MainActivityInicio actividadContenedora;
-            actividadContenedora = (MainActivityInicio) getActivity();
-            actividadContenedora.setFragmentMetodoPago();
-
+            solicitarPrestamoTarea solicitar = new solicitarPrestamoTarea();
+            cambiarPrestamo cambiar = new cambiarPrestamo(Session.currentUser.getId());
+            solicitar.execute();
+            actividadContenedora.StartAsyncTaskInParallel(cambiar);
+            // NO SE QUE MAS HACER ACA DESPUES DE QUE SE SOLICITA
         }
     };
 
@@ -107,7 +110,7 @@ public class CadaPrestamoFragment extends Fragment {
 
     }
 
-    public class PrestamoObtenido extends AsyncTaskBase {
+    private class PrestamoObtenido extends AsyncTaskBase {
 
 
         public PrestamoObtenido(int id) {
@@ -140,6 +143,47 @@ public class CadaPrestamoFragment extends Fragment {
             }
             pgCargando3.setVisibility(View.GONE);
             clCadaPrestamo.setVisibility(View.VISIBLE);
+        }
+    }
+
+    private class solicitarPrestamoTarea extends AsyncPostBase{
+
+        public solicitarPrestamoTarea() {
+            super(ApiHelper.devolverUrlParaGet("Detalles", "Update"));
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            setParams("IdEstadoPrestamo", 2); // cambia el estado a solicitado
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            //ENVIAR NOTIFICACION AL PRESTAMISTA QUE FUE SOLICITADO. lUEGO SI ACEPTA ENTONCES SE DEFINE
+            // LA FECAH DE ACUERDO
+        }
+    }
+
+    private class cambiarPrestamo extends AsyncPostBase{
+        private int idPrestatario;
+
+        public cambiarPrestamo(int idPrestatario) {
+            super(ApiHelper.devolverUrlParaGet("Prestamos", "Update"));
+            this.idPrestatario = idPrestatario;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            setParams("IdUsuarioPrestador", idPrestatario); // cambia el estado a solicitado
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            // AVISAR AL PRESTATARIO QUE SE SOLICITO CON EXITO
         }
     }
 }
