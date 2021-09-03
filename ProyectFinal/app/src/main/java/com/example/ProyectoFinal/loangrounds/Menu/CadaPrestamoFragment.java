@@ -148,13 +148,12 @@ public class CadaPrestamoFragment extends Fragment {
     private class solicitarPrestamoTarea extends AsyncPostBase{
 
         public solicitarPrestamoTarea() {
-            super(ApiHelper.devolverUrlParaGet("Detalles", "update"));
+            super(RequestMethods.PUT,ApiHelper.devolverUrlParaGet("Detalles", "update"));
         }
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            setRequesMethod(RequestMethods.PUT);
             setParams("Id", detalle.getId());
             setParams("IdEstadoDePrestamo", 1); // cambia el estado a solicitado}
         }
@@ -172,14 +171,13 @@ public class CadaPrestamoFragment extends Fragment {
         private final int idPrestatario;
 
         public cambiarPrestamo(int idPrestatario) {
-            super(ApiHelper.devolverUrlParaGet("Prestamos", "update"));
+            super(RequestMethods.PUT,ApiHelper.devolverUrlParaGet("Prestamos", "update"));
             this.idPrestatario = idPrestatario;
         }
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            setRequesMethod(RequestMethods.PUT);
             setParams("Id", prest.Id);
             setParams("IdUsuarioPrestador", idPrestatario); // cambia el estado a solicitado
         }

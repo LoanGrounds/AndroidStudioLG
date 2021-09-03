@@ -27,13 +27,14 @@ public class AsyncPostBase extends AsyncTask<Void,Void,String> {
         DELETE
     }
     private  String requestMethod;
-    public void setRequesMethod(RequestMethods method){
+    private void setRequesMethod(RequestMethods method){
         requestMethod = method.toString();
     }
     protected JSONObject jsonParam = new JSONObject(); //in the child class you fill this value with the body params
     protected String URL;
 
-    public AsyncPostBase(String url) {
+    public AsyncPostBase(RequestMethods method,String url) {
+        setRequesMethod(method);
         this.URL = url;
     }
 

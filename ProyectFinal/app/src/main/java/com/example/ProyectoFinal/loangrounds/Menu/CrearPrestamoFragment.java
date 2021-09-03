@@ -93,7 +93,7 @@ public class CrearPrestamoFragment extends Fragment {
 
         private int idDetalle, idUsuario;
         public tareaCrearPrestamo(int idUsuario, int idDetalle) {
-            super(ApiHelper.devolverUrlParaGet("Prestamos", "nuevo"));
+            super(RequestMethods.POST,ApiHelper.devolverUrlParaGet("Prestamos", "nuevo"));
             this.idDetalle = idDetalle;
             this.idUsuario = idUsuario;
         }
@@ -101,7 +101,6 @@ public class CrearPrestamoFragment extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            setRequesMethod(RequestMethods.POST);
             setParams("IdDetallePrestamo", idDetalle);
             setParams("IdUsuarioPrestamista", idUsuario);
         }
@@ -117,7 +116,7 @@ public class CrearPrestamoFragment extends Fragment {
     private class tareaCrearDetalle extends AsyncPostBase{
         private DetallePrestamo nuevoDetalle;
         public tareaCrearDetalle(DetallePrestamo detalle) {
-            super(ApiHelper.devolverUrlParaGet("Prestamos", "nuevoDetalle"));
+            super(RequestMethods.POST,ApiHelper.devolverUrlParaGet("Prestamos", "nuevoDetalle"));
             nuevoDetalle = detalle;
         }
 
@@ -126,7 +125,6 @@ public class CrearPrestamoFragment extends Fragment {
         protected void onPreExecute() {
             super.onPreExecute();
             //CARGANDO POR FAVOR ESPERE BLA VLA
-            setRequesMethod(RequestMethods.POST);
             setParams("CantidadCuotas",nuevoDetalle.getCantidadCuotas());
             setParams("DiasEntreCuotas",nuevoDetalle.getDiasEntreCuotas());
             setParams("DiasTolerancia",nuevoDetalle.getDiasTolerancia());

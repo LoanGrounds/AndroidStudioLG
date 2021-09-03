@@ -192,13 +192,12 @@ public class RegistroFragment extends Fragment {
 
 
         public RegistroUsuarioAsync() {
-            super(ApiHelper.devolverUrlParaGet("Usuarios", "signup"));
+            super(RequestMethods.POST,ApiHelper.devolverUrlParaGet("Usuarios", "signup"));
         }
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            setRequesMethod(RequestMethods.POST);
             toastes.msj(getContext(), "Cargando por favor espero...");
             setParams("Nombre", edtNombre.getText().toString().trim());
             setParams("Apellido",edtApellido.getText().toString().trim());

@@ -93,14 +93,13 @@ public class InicioSesionFragment extends Fragment {
         private final String mail;
         private final String password;
         public Login(String mail, String password){
-            super(ApiHelper.devolverUrlParaGet("Usuarios","login"));
+            super(RequestMethods.POST,ApiHelper.devolverUrlParaGet("Usuarios","login"));
             this.mail = mail;
             this.password = password;
         }
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            setRequesMethod(RequestMethods.POST);
             this.setParams("Mail",mail);
             this.setParams("Password",password);
         }
