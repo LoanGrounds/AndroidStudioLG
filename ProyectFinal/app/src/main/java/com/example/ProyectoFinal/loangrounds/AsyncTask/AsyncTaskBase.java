@@ -1,5 +1,6 @@
 package com.example.ProyectoFinal.loangrounds.AsyncTask;
 
+import android.app.AlertDialog;
 import android.os.AsyncTask;
 
 import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
@@ -87,6 +88,7 @@ public class    AsyncTaskBase extends AsyncTask<Void, Void ,String> {
                 response = StreamHelper.returnJsonAsString(con.getInputStream());
             } else {
                 CustomLog.log("error when connecting to the api");
+                
             }
             con.disconnect();
         } catch (Exception ex) {

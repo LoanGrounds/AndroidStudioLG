@@ -40,7 +40,7 @@ public class MenuFragment extends Fragment {
     FloatingActionButton fbtnCrearPrestamo;
     ListView listView;
     View layoutRhoot;
-    LupaAdapter lupaAdapter;
+
     ProgressBar pgCargando;
     ConstraintLayout clMenu;
 
