@@ -88,7 +88,7 @@ public class    AsyncTaskBase extends AsyncTask<Void, Void ,String> {
                 response = StreamHelper.returnJsonAsString(con.getInputStream());
             } else {
                 CustomLog.log("error when connecting to the api");
-                
+                //https://www.youtube.com/watch?v=ZYwxmsPRo-Q
             }
             con.disconnect();
         } catch (Exception ex) {
