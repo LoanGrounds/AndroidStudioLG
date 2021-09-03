@@ -1,354 +1,354 @@
 [
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_barritaseek.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\barritaseek.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_menu.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_menu.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_lato_black.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\lato_black.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\rubik.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_inicio__registrarse.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_inicio__registrarse.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botonesplazos.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\botonesplazos.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_verificacion_prestamo.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_verificacion_prestamo.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\card.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_play_bold.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\play_bold.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_inicio__registrarse.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_inicio__registrarse.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mask.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\mask.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_my_list_item.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\my_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_light.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\rubik_light.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_menu.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_menu.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_my_list_item_listview.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\my_list_item_listview.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_user.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\user.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_realizar.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_realizar.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_money.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\money.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_switch_configuracion.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\switch_configuracion.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_noto_sans.ttf.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\noto_sans.ttf"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_titillium_web_bold.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\titillium_web_bold.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_switch_configuracion.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\switch_configuracion.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_footer.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_footer.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_inicio.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main_inicio.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_configuracion.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_configuracion.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_medium.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\rubik_medium.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_prestamos_recientes.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_prestamos_recientes.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_play.ttf.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\play.ttf"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_metodo_pago.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_metodo_pago.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logonombre2.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\logonombre2.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_lato_black.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\lato_black.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cada_prestamo.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_cada_prestamo.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_crear_prestamo.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_crear_prestamo.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_titillium_web_black.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\titillium_web_black.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_solicitados.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_solicitados.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_circle_outline_24.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_add_circle_outline_24.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_atencion_cliente.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_atencion_cliente.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_visa.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\visa.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_noto_sans.ttf.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\noto_sans.ttf"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_substract.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\substract.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_inicio.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main_inicio.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_minprice.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\minprice.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_et_style.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\et_style.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_start.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main_start.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_close_24.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_close_24.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_solicitados.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_solicitados.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle_5.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\rectangle_5.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\search.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\rubik.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_mi_list_item2.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\mi_list_item2.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite_unlike.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\favorite_unlike.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_barritaseek.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\barritaseek.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_filtros.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\filtros.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cada_prestamo.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_cada_prestamo.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_noto_sans_bold.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\noto_sans_bold.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cada_solicitado.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_cada_solicitado.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_atencion_cliente.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_atencion_cliente.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thumb.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\thumb.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_mi_list_item2.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\mi_list_item2.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_et_style.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\et_style.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_play_bold.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\play_bold.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_editar_perfil.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_editar_perfil.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_round_headset_mic_24.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_round_headset_mic_24.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_medium.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\rubik_medium.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botonesplazos.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\botonesplazos.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_my_list_item_listview.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\my_list_item_listview.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logonombre.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\logonombre.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lupa.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\lupa.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_footer.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_footer.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_deck.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\deck.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_fingerprint_24.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_fingerprint_24.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_attrs.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\attrs.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_filtros.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_filtros.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_send.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\send.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_inicio_sesion.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_inicio_sesion.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_settings_24.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_attrs.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\attrs.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_send.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\send.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\search.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_deck.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\deck.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\raw_filteranimation.json.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\raw\\filteranimation.json"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logonombre.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\logonombre.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lupa.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\lupa.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\logo.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_round_headset_mic_24.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_round_headset_mic_24.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_inicio_sesion.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_inicio_sesion.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_edit_24.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_edit_24.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_user.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\user.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_substract.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\substract.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_titillium_web_bold.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\titillium_web_bold.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_visa.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\visa.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_circle_outline_24.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_add_circle_outline_24.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_lato_bold.ttf.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\lato_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite_unlike.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\favorite_unlike.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vector_configuracion_menor.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\vector_configuracion_menor.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle_5.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\rectangle_5.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mask.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\mask.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_noto_sans_bold.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\noto_sans_bold.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_yo.jpg.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\yo.jpg"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\card.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_thumb.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\thumb.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_titillium_web_black.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\titillium_web_black.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_verificacion_prestamo.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_verificacion_prestamo.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_my_list_item.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\my_list_item.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logonombre2.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\logonombre2.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle_2.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\rectangle_2.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle_2.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\rectangle_2.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_contacto.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_contacto.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loan.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\loan.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_filtros.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_filtros.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loan.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\loan.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_metodo_pago.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_metodo_pago.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_fingerprint_24.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_fingerprint_24.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_settings_24.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_configuracion.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_configuracion.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_light.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\rubik_light.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_minprice.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\minprice.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\raw_like.json.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\raw\\like.json"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle_3.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\rectangle_3.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_realizar.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_realizar.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_registro.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_money.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\money.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_registro.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_registro.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_crear_prestamo.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_crear_prestamo.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_start.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\activity_main_start.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\raw_like.json.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\raw\\like.json"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_close_24.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_close_24.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_edit_24.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\ic_baseline_edit_24.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_contacto.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_contacto.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_prestamos_recientes.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_prestamos_recientes.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rectangle_3.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\rectangle_3.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_filtros.png.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\filtros.png"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_lato_bold.ttf.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\lato_bold.ttf"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_yo.jpg.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\yo.jpg"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\raw_sonido_correcto_prestamo.mp3.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\raw\\sonido_correcto_prestamo.mp3"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_editar_perfil.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_editar_perfil.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vector_configuracion_menor.xml.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\drawable\\vector_configuracion_menor.xml"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cada_solicitado.xml.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\layout\\fragment_cada_solicitado.xml"
     },
     {
-        "merged": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\font_play.ttf.flat",
-        "source": "C:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\font\\play.ttf"
+        "merged": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     }
 ]

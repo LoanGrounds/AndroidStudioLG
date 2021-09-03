@@ -1,7 +1,7 @@
-#Fri Aug 27 11:08:02 ART 2021
-base.0=C\:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+#Fri Sep 03 11:26:44 ART 2021
+base.0=C\:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\45072211\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.1=C\:\\Users\\45072211\\Music\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex

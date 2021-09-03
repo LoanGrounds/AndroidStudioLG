@@ -198,6 +198,7 @@ public class RegistroFragment extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            setRequesMethod(RequestMethods.POST);
             toastes.msj(getContext(), "Cargando por favor espero...");
             setParams("Nombre", edtNombre.getText().toString().trim());
             setParams("Apellido",edtApellido.getText().toString().trim());

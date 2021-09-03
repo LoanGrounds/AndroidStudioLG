@@ -45,12 +45,13 @@ public class EditarPerfilFragment extends Fragment {
     private class tareaEditarPerfil extends AsyncPostBase{
 
         public tareaEditarPerfil() {
-            super(ApiHelper.devolverUrlParaGet("Usuarios", "Upadte"));
+            super(ApiHelper.devolverUrlParaGet("Usuarios", "upadte"));
         }
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            setRequesMethod(RequestMethods.PUT);
             setParams("fechaNacimiento", "24-04-2003");
             // Dependiendo de que cambio vas llenando params
         }

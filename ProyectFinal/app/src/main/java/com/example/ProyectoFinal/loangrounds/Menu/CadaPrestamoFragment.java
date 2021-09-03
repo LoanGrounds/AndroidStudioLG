@@ -1,5 +1,6 @@
 package com.example.ProyectoFinal.loangrounds.Menu;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -75,7 +76,7 @@ public class CadaPrestamoFragment extends Fragment {
         int diner=prest.Monto;
         tvDinero.setText("$"+String.valueOf(diner));
         tvNombre.setText(nombre);
-        PrestamoObtenido getDetalle = new PrestamoObtenido(prest.Id);
+        PrestamoObtenido getDetalle = new PrestamoObtenido(prest.IdDetalle);
         getDetalle.execute();
 
     }
@@ -127,8 +128,6 @@ public class CadaPrestamoFragment extends Fragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             if (s!=null){
-                //Gson miGson = new Gson();
-                //Gson miGson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
                 Gson miGson = new GsonBuilder()
                         .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
                         .create();
@@ -149,13 +148,15 @@ public class CadaPrestamoFragment extends Fragment {
     private class solicitarPrestamoTarea extends AsyncPostBase{
 
         public solicitarPrestamoTarea() {
-            super(ApiHelper.devolverUrlParaGet("Detalles", "Update"));
+            super(ApiHelper.devolverUrlParaGet("Detalles", "update"));
         }
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            setParams("IdEstadoPrestamo", 2); // cambia el estado a solicitado
+            setRequesMethod(RequestMethods.PUT);
+            setParams("Id", detalle.getId());
+            setParams("IdEstadoDePrestamo", 1); // cambia el estado a solicitado}
         }
 
         @Override
@@ -166,17 +167,20 @@ public class CadaPrestamoFragment extends Fragment {
         }
     }
 
+    @SuppressLint("StaticFieldLeak")
     private class cambiarPrestamo extends AsyncPostBase{
-        private int idPrestatario;
+        private final int idPrestatario;
 
         public cambiarPrestamo(int idPrestatario) {
-            super(ApiHelper.devolverUrlParaGet("Prestamos", "Update"));
+            super(ApiHelper.devolverUrlParaGet("Prestamos", "update"));
             this.idPrestatario = idPrestatario;
         }
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            setRequesMethod(RequestMethods.PUT);
+            setParams("Id", prest.Id);
             setParams("IdUsuarioPrestador", idPrestatario); // cambia el estado a solicitado
         }
 

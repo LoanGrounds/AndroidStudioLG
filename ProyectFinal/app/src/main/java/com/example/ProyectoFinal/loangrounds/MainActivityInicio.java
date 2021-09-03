@@ -10,6 +10,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 
+import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncPostBase;
 import com.example.ProyectoFinal.loangrounds.Menu.VerificacionPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.AtencionClienteFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment;
@@ -49,11 +50,8 @@ public class MainActivityInicio extends AppCompatActivity {
     private Object SupportFragmentManager;
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public void StartAsyncTaskInParallel(AsyncTask task) {
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-            task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-        else
-            task.execute();
+    public void StartAsyncTaskInParallel(AsyncPostBase task) {
+        task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
     }
 
 

@@ -36,7 +36,7 @@ import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
 import com.google.gson.Gson;
 
 
-public class MenuFragment extends Fragment implements SearchView.OnQueryTextListener {
+public class MenuFragment extends Fragment {
     FloatingActionButton fbtnCrearPrestamo;
     ListView listView;
     View layoutRhoot;
@@ -167,8 +167,7 @@ public class MenuFragment extends Fragment implements SearchView.OnQueryTextList
                 resultado = miGson.fromJson(s,PrestamoRecomendadoDTO[].class);
                 ListaAdaptora nuevoAdapter = new ListaAdaptora(getActivity(),R.layout.my_list_item_listview, Arrays.asList(resultado.clone()));
                 listView.setAdapter(nuevoAdapter);
-                listView.setTextFilterEnabled(true);
-                setupSearchView();
+
             }
 
             pgCargando.setVisibility(View.GONE);
@@ -220,31 +219,7 @@ public class MenuFragment extends Fragment implements SearchView.OnQueryTextList
         }
     }
 
-    private void setupSearchView()
-    {
-        buscarPrestamo.setIconifiedByDefault(false);
-        buscarPrestamo.setOnQueryTextListener(this);
-        buscarPrestamo.setSubmitButtonEnabled(true);
-        buscarPrestamo.setQueryHint("Search Here");
-    }
 
-    @Override
-    public boolean onQueryTextChange(String newText)
-    {
 
-        if (TextUtils.isEmpty(newText)) {
-            listView.clearTextFilter();
-        } else {
-
-            listView.setFilterText(newText);
-        }
-        return true;
-    }
-
-    @Override
-    public boolean onQueryTextSubmit(String query)
-    {
-        return false;
-    }
 
 }

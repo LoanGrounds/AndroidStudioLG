@@ -65,6 +65,28 @@ public class ListaAdaptadoraPrestados extends ArrayAdapter<VistaPreviaPrestamo> 
 
         tvNombreApellido.setText(prestamo.getPrestamista());
 
+
+        switch (prestamo.getEstado()){
+            case "Negociando" :
+                tvNombreApellido.setText("Solictado");
+                clCard.setBackgroundColor(getContext().getColor(R.color.rojo));
+                break;
+            case "Activo" :
+                break;
+
+            case "Demorado" :
+                break;
+            case "Caducado" :
+                tvNombreApellido.setText("Caducado");
+                break;
+            case "Disponible" :
+                tvNombreApellido.setText("Disponible");
+                clCard.setBackgroundColor(getContext().getColor(R.color.verde));
+                break;
+            default:
+                break;
+        }
+
         if(prestamo.getEstado().equals("Negociando")  ){
             tvNombreApellido.setText("Solictado");
         }else if (prestamo.getEstado().equals("Activo") ){

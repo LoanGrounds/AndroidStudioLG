@@ -56,9 +56,6 @@ public class CrearPrestamoFragment extends Fragment {
         ObtenerReferencia();
         SetearListners();
 
-        DetallePrestamo detallePrestamo= new DetallePrestamo(0,7,60,5,6,8000,1000,  null );
-        tareaCrearDetalle nuevoDetalle = new tareaCrearDetalle(detallePrestamo);
-        nuevoDetalle.execute();
 
         return  layoutRhoot;
     }
@@ -74,6 +71,9 @@ public class CrearPrestamoFragment extends Fragment {
         btnCrear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                DetallePrestamo detallePrestamo= new DetallePrestamo(0,7,60,5,6,8000,1000,  null );
+                tareaCrearDetalle nuevoDetalle = new tareaCrearDetalle(detallePrestamo);
+                nuevoDetalle.execute();
                 MainActivityInicio actividadContenedora;
                 actividadContenedora = (MainActivityInicio) getActivity();
                 actividadContenedora.setFragmentVerificacionPrestamo();
@@ -101,6 +101,7 @@ public class CrearPrestamoFragment extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            setRequesMethod(RequestMethods.POST);
             setParams("IdDetallePrestamo", idDetalle);
             setParams("IdUsuarioPrestamista", idUsuario);
         }
@@ -125,6 +126,7 @@ public class CrearPrestamoFragment extends Fragment {
         protected void onPreExecute() {
             super.onPreExecute();
             //CARGANDO POR FAVOR ESPERE BLA VLA
+            setRequesMethod(RequestMethods.POST);
             setParams("CantidadCuotas",nuevoDetalle.getCantidadCuotas());
             setParams("DiasEntreCuotas",nuevoDetalle.getDiasEntreCuotas());
             setParams("DiasTolerancia",nuevoDetalle.getDiasTolerancia());

@@ -100,6 +100,7 @@ public class InicioSesionFragment extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            setRequesMethod(RequestMethods.POST);
             this.setParams("Mail",mail);
             this.setParams("Password",password);
         }

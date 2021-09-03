@@ -21,6 +21,15 @@ import java.util.Date;
 
 //THIS CLASS IS INTENDED TO BE INHERITED
 public class AsyncPostBase extends AsyncTask<Void,Void,String> {
+    protected enum RequestMethods{
+        POST,
+        PUT,
+        DELETE
+    }
+    private  String requestMethod;
+    public void setRequesMethod(RequestMethods method){
+        requestMethod = method.toString();
+    }
     protected JSONObject jsonParam = new JSONObject(); //in the child class you fill this value with the body params
     protected String URL;
 
@@ -83,7 +92,7 @@ public class AsyncPostBase extends AsyncTask<Void,Void,String> {
             URL url = new URL(URL);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setDoOutput(true);
-            connection.setRequestMethod("POST");
+            connection.setRequestMethod(requestMethod);
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setRequestProperty("Accept", "application/json");
             if (Session.currentUser != null)
