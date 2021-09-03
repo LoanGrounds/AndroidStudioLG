@@ -131,7 +131,7 @@ public class CrearPrestamoFragment extends Fragment {
             setParams("IdEstadoDePrestamo",5);
             setParams("Monto",nuevoDetalle.getMonto());
             setParams("InteresXCuota",nuevoDetalle.getInteresXCuota());
-            setParams("FechaDeAcuerdo", (Date) null);
+            setParams("FechaDeAcuerdo");
         }
 
         @Override

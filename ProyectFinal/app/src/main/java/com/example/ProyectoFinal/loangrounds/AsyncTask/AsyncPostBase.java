@@ -1,8 +1,8 @@
 package com.example.ProyectoFinal.loangrounds.AsyncTask;
 
-import android.annotation.TargetApi;
+
 import android.os.AsyncTask;
-import android.os.Build;
+
 
 import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
 import com.example.ProyectoFinal.loangrounds.Utilidades.OutputStreamHelper;
@@ -10,11 +10,6 @@ import com.example.ProyectoFinal.loangrounds.Utilidades.Session;
 import com.example.ProyectoFinal.loangrounds.Utilidades.StreamHelper;
 
 import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Date;
@@ -73,6 +68,13 @@ public class AsyncPostBase extends AsyncTask<Void,Void,String> {
     public void setParams(String key, double value) {
         try {
             jsonParam.put(key, value);
+        } catch (Exception e) {
+            //CustomLog.logException(e);
+        }
+    }
+    public void setParams(String key){
+        try {
+            jsonParam.put(key, null);
         } catch (Exception e) {
             //CustomLog.logException(e);
         }

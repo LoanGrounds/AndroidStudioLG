@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.Date;
 
 //Este es para get!!!!!
-public class    AsyncTaskBase extends AsyncTask<Void, Void ,String> {
+public class  AsyncTaskBase extends AsyncTask<Void, Void ,String> {
 
     private String url;
     protected JSONObject jsonParam = new JSONObject(); //in the child class you fill this value with the body params
@@ -27,6 +27,14 @@ public class    AsyncTaskBase extends AsyncTask<Void, Void ,String> {
     public void setParams(String key, String value) {
         try {
             jsonParam.put(key, value);
+        } catch (Exception e) {
+            //CustomLog.logException(e);
+        }
+    }
+
+    public void setParams(String key){
+        try {
+            jsonParam.put(key, null);
         } catch (Exception e) {
             //CustomLog.logException(e);
         }
