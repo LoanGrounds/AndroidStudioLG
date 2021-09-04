@@ -1,7 +1,9 @@
 package com.example.ProyectoFinal.loangrounds.AsyncTask;
 
+import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.os.AsyncTask;
+import android.os.Build;
 
 import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
 import com.example.ProyectoFinal.loangrounds.Utilidades.OutputStreamHelper;
@@ -24,6 +26,11 @@ public class  AsyncTaskBase extends AsyncTask<Void, Void ,String> {
         this.url = url;
     }
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    public void StartAsyncTaskInParallel(AsyncTask<Void, Void, String> task) {
+        task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+    }
+
     public void setParams(String key, String value) {
         try {
             jsonParam.put(key, value);
@@ -39,6 +46,7 @@ public class  AsyncTaskBase extends AsyncTask<Void, Void ,String> {
             //CustomLog.logException(e);
         }
     }
+
 
     public void setParams(String key, int value) {
         try {

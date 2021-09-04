@@ -126,7 +126,7 @@ public class RegistroFragment extends Fragment {
         tareaGetLocalidades tarealocalidaes = new tareaGetLocalidades();
         tarealocalidaes.execute();
         tareaGetProvincias tareaProvs = new tareaGetProvincias();
-        main.StartAsyncTaskInParallel(tareaProvs);
+        tarealocalidaes.StartAsyncTaskInParallel(tareaProvs);
 
 
 

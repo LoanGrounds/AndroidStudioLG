@@ -101,7 +101,7 @@ public class CadaPrestamoFragment extends Fragment {
             solicitarPrestamoTarea solicitar = new solicitarPrestamoTarea();
             cambiarPrestamo cambiar = new cambiarPrestamo(Session.currentUser.getId());
             solicitar.execute();
-            actividadContenedora.StartAsyncTaskInParallel(cambiar);
+            solicitar.StartAsyncTaskInParallel(cambiar);
             // NO SE QUE MAS HACER ACA DESPUES DE QUE SE SOLICITA
         }
     };

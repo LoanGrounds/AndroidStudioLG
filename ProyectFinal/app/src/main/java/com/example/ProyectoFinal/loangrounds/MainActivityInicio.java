@@ -49,10 +49,7 @@ public class MainActivityInicio extends AppCompatActivity {
 
     private Object SupportFragmentManager;
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public void StartAsyncTaskInParallel(AsyncPostBase task) {
-        task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-    }
+
 
 
     @Override
