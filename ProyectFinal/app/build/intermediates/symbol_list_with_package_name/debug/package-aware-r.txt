@@ -45,6 +45,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array cantidad_cuotas
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -1609,10 +1610,11 @@ id btn12Meses
 id btn18Meses
 id btn1Mes
 id btn3meses
-id btn3meses3
 id btn6Meses
 id btn9Meses
+id btnAceptar
 id btnAplicarFilt
+id btnCancelarPrestamo
 id btnCrearCuenta
 id btnCrearPrestamo
 id btnFiltros
@@ -1621,11 +1623,11 @@ id btnHuela
 id btnIn
 id btnIniciarSesion
 id btnOmitir
+id btnRechazar
 id btnRegistrarse
 id btnSig3
 id btnSiguiente
 id btnSiguiente2
-id btnSolicitar
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1679,7 +1681,6 @@ id dimensions
 id direct
 id disableHome
 id dropdown_menu
-id editTextDate2
 id edit_query
 id editarPerfil
 id edtAlias
@@ -1690,6 +1691,7 @@ id edtCheckPassword
 id edtCiudad
 id edtCodPostal
 id edtCuit
+id edtDiasEntreCuotas
 id edtDireccion
 id edtDni
 id edtMail
@@ -1770,7 +1772,6 @@ id linearLayoutTarjetas2
 id listMode
 id listView
 id listViewPrestados
-id listViewSolicitados
 id list_item
 id loangrounds
 id loangrounds2
@@ -1878,6 +1879,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id skbInteres
 id skbMax
 id skbMin
 id skipCollapsed
@@ -1889,6 +1891,7 @@ id snap
 id snapMargins
 id software
 id spacer
+id spinnerDropDown
 id split_action_bar
 id spread
 id spread_inside
@@ -1982,6 +1985,7 @@ id tvPlazotitle
 id tvPrecioMax
 id tvPrecioMin
 id tvTitleMetodo
+id tv_Interes
 id unchecked
 id uniform
 id unlabeled

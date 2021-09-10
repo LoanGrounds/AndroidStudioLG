@@ -12,6 +12,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <Spinner
+            android:id="@+id/spinnerDropDown"
+            android:layout_width="370dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/edtCantidadAPrestar"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
         <TextView
             android:id="@+id/loangrounds5"
             android:layout_width="388dp"
@@ -32,6 +43,7 @@
             android:layout_width="372dp"
             android:layout_height="20dp"
             android:text="¿Cuanto desea prestar?"
+            android:textSize="17dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.476"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,84 +51,33 @@
 
 
         <TextView
-            android:id="@+id/btn1Mes"
-            android:layout_width="120dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/botonesplazos"
-            android:fontFamily="@font/rubik_medium"
-            android:gravity="center"
-            android:text="Un pago"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-        <TextView
-            android:id="@+id/btn3meses"
-            android:layout_width="120dp"
-            android:layout_height="46dp"
-            android:background="@drawable/botonesplazos"
-            android:fontFamily="@font/rubik_medium"
-            android:gravity="center"
-            android:text="3 cuotas"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btn1Mes"
-            app:layout_constraintTop_toTopOf="@+id/btn1Mes" />
-
-        <TextView
-            android:id="@+id/btn3meses3"
-            android:layout_width="120dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/botonesplazos"
-            android:fontFamily="@font/rubik_medium"
-            android:gravity="center"
-            android:text="6 cuotas"
-            app:layout_constraintStart_toStartOf="@+id/btn1Mes"
-            app:layout_constraintTop_toBottomOf="@+id/btn1Mes" />
-
-        <TextView
-            android:id="@+id/btn18Meses"
-            android:layout_width="120dp"
-            android:layout_height="46dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="56dp"
-            android:background="@drawable/botonesplazos"
-            android:fontFamily="@font/rubik_medium"
-            android:gravity="center"
-            android:text="12 cuotas"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/btn3meses"
-            app:layout_constraintTop_toBottomOf="@+id/btn3meses" />
-
-        <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Fecha de caducidad"
-            app:layout_constraintStart_toStartOf="@+id/edtCantidadAPrestar"
-            app:layout_constraintTop_toBottomOf="@+id/btn3meses3" />
+            android:layout_marginTop="30dp"
+            android:text="Dias entre coutas"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerDropDown" />
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="30dp"
             android:text="Interes del prestamo"
-            app:layout_constraintStart_toStartOf="@+id/edtCantidadAPrestar"
-            app:layout_constraintTop_toBottomOf="@+id/editTextDate2" />
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/edtDiasEntreCuotas" />
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:text="Cantidad de cuotas"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.029"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
             app:layout_constraintTop_toBottomOf="@+id/edtCantidadAPrestar" />
 
         <EditText
@@ -126,58 +87,63 @@
             android:layout_height="43dp"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
             android:width="1dp"
             android:background="@drawable/et_style"
             android:ems="10"
             android:fontFamily="@font/noto_sans"
             android:foregroundGravity="center_vertical"
             android:gravity="center_vertical"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:padding="10dip"
-            android:paddingLeft="10dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <EditText
-            android:id="@+id/editTextDate2"
+            android:id="@+id/edtDiasEntreCuotas"
             android:layout_width="370dp"
             android:layout_height="43dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/et_style"
             android:ems="10"
-            android:inputType="date"
+            android:inputType="number"
             app:layout_constraintStart_toStartOf="@+id/edtCantidadAPrestar"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
         <SeekBar
-            android:id="@+id/skbMin"
+            android:id="@+id/skbInteres"
             style="@android:style/Widget.Material.SeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
             android:defaultFocusHighlightEnabled="false"
             android:duplicateParentState="false"
             android:indeterminate="false"
+            android:max="15"
+            android:min="5"
             android:paddingTop="20dp"
-            android:progress="3"
             android:progressTint="@color/teal_200"
             android:progressTintMode="src_in"
             android:thumb="@drawable/thumb"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/tvPrecioMin"
-            app:layout_constraintTop_toBottomOf="@+id/tvPrecioMin" />
+            app:layout_constraintStart_toStartOf="@+id/tvInteres"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Interes" />
 
         <TextView
-            android:id="@+id/tvPrecioMin"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/tv_Interes"
+            android:layout_width="370dp"
+            android:layout_height="43dp"
             android:layout_gravity="right"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/minprice"
             android:fontFamily="@font/rubik_medium"
             android:gravity="center_vertical"
             android:paddingStart="16dp"
             android:text="$1000"
-            app:layout_constraintStart_toStartOf="@+id/editTextDate2"
+            app:layout_constraintStart_toStartOf="@+id/edtDiasEntreCuotas"
             app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
         <Button
@@ -198,6 +164,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/skbMin"
+            app:layout_constraintVertical_bias="0.0"
             tools:layout_conversion_absoluteHeight="52dp"
             tools:layout_conversion_absoluteWidth="257dp" />
 

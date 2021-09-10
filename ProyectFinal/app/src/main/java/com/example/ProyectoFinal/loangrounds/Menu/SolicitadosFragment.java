@@ -37,7 +37,7 @@ import java.util.List;
 
 
 public class SolicitadosFragment extends Fragment {
-
+    MainActivityInicio actividadContenedora;
     ListView listView,listViewSolicitados;
     View layoutRhoot;
     List<VistaPreviaPrestamo> prestamoList;
@@ -99,36 +99,24 @@ public class SolicitadosFragment extends Fragment {
         }
     }*/
     private void ObtenerReferencia() {
-        listView = (ListView) layoutRhoot.findViewById(R.id.listViewPrestados);
-        tabSolicitados = (TabItem) layoutRhoot.findViewById(R.id.tabSolicitados);
-        tabPrestados= (TabItem) layoutRhoot.findViewById(R.id.tabPrestados);
-        listViewSolicitados = (ListView) layoutRhoot.findViewById(R.id.listViewSolicitados);
-        tab = (TabLayout) layoutRhoot.findViewById(R.id.tabLayout);
+
+        actividadContenedora = (MainActivityInicio) getActivity();
+        if(layoutRhoot != null){
+            listView = (ListView) layoutRhoot.findViewById(R.id.listViewPrestados);
+            tabSolicitados = (TabItem) layoutRhoot.findViewById(R.id.tabSolicitados);
+            tabPrestados= (TabItem) layoutRhoot.findViewById(R.id.tabPrestados);
+            tab = (TabLayout) layoutRhoot.findViewById(R.id.tabLayout);
+        }
+
 
     }
 
     public void SetearListners() {
-
-
-
-
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
                 VistaPreviaPrestamo pestamoSolici = resultado[position] ;
-
-
-                MainActivityInicio actividadContenedora;
-                actividadContenedora = (MainActivityInicio) getActivity();
-
-                actividadContenedora.setFragmentCadaPrestamo();
-
-
-
-
+                actividadContenedora.setFragmentCadaSolicitado(pestamoSolici);
             }
         });}
 
@@ -149,8 +137,8 @@ public class SolicitadosFragment extends Fragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             Gson miGson = new Gson();
-            VistaPreviaPrestamo[] misPrestamos = miGson.fromJson(s,VistaPreviaPrestamo[].class);
-            ListaAdaptadoraPrestados nuevoAdapter = new ListaAdaptadoraPrestados(getActivity(),R.layout.my_list_item_listview, Arrays.asList(misPrestamos.clone()));
+             resultado = miGson.fromJson(s,VistaPreviaPrestamo[].class);
+            ListaAdaptadoraPrestados nuevoAdapter = new ListaAdaptadoraPrestados(getActivity(),R.layout.my_list_item_listview, Arrays.asList(resultado.clone()));
             listView.setAdapter(nuevoAdapter);
             //llenar un list view ponele
         }

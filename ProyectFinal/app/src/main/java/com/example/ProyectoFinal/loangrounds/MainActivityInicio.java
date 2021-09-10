@@ -25,7 +25,9 @@ import com.example.ProyectoFinal.loangrounds.Menu.MetodoPagoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.PrestamosRecientesFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.RealizarFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.SolicitadosFragment;
+import com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo;
 import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
+import com.example.ProyectoFinal.loangrounds.Model.VistaPreviaPrestamo;
 
 import java.util.List;
 
@@ -118,9 +120,13 @@ public class MainActivityInicio extends AppCompatActivity {
 
     }
 
+    public  void setFragmentCadaSolicitado(VistaPreviaPrestamo prestamo){
+        fragmentCadaSolicitado.setDetalle(prestamo);
+        reemplazarFragmenbts(fragmentCadaSolicitado);
+    }
+
     public  void setFragmentCadaSolicitado(){
         reemplazarFragmenbts(fragmentCadaSolicitado);
-
     }
 
     public  void setFragmentEditarPerfil(){

@@ -6,32 +6,24 @@ import android.os.Bundle;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncPostBase;
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
-import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo;
-import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.R;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
-import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
 import com.example.ProyectoFinal.loangrounds.Utilidades.Session;
 import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
-import java.util.Arrays;
-import java.util.List;
 
 
 public class CadaPrestamoFragment extends Fragment {
@@ -90,7 +82,7 @@ public class CadaPrestamoFragment extends Fragment {
         tvDiaTol=(TextView) layoutRhoot.findViewById(R.id.tvDiaTol);
         tvCantCuotas=(TextView) layoutRhoot.findViewById(R.id.tvCantCuotas);
         tvNombre=(TextView) layoutRhoot.findViewById(R.id.tvNombre);
-        btnSolicitar=(Button) layoutRhoot.findViewById(R.id.btnSolicitar);
+        btnSolicitar=(Button) layoutRhoot.findViewById(R.id.btnCancelarPrestamo);
         clCadaPrestamo=(ConstraintLayout) layoutRhoot.findViewById(R.id.clCadaPrestamo);
         pgCargando3=(ProgressBar) layoutRhoot.findViewById(R.id.pgCargando3);
     }

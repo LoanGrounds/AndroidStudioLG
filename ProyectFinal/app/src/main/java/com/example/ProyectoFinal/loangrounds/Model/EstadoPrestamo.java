@@ -1,6 +1,8 @@
 package com.example.ProyectoFinal.loangrounds.Model;
 
 import java.sql.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 public class EstadoPrestamo {
 

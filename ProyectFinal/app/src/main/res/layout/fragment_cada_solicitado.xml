@@ -9,14 +9,14 @@
     <!-- TODO: Update blank fragment layout -->
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="635dp"
         android:layout_gravity="center"
         app:cardCornerRadius="14dp">
 
         <LinearLayout
             android:id="@+id/constraintLayout2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center|center_horizontal"
             android:background="@drawable/mask"
             android:foregroundGravity="center"
@@ -180,24 +180,71 @@
                     android:textColor="#797979"
                     android:textSize="18sp" />
 
+
             </LinearLayout>
 
-            <Button
-                android:id="@+id/btnSiguiente"
-                android:layout_width="257dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="40dp"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                android:background="#00000000"
-                android:backgroundTint="#000000"
-                android:fontFamily="@font/noto_sans_bold"
-                android:gravity="center"
-                android:text="Solicitar"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                app:cornerRadius="50dp"
-                app:shapeAppearance="@style/TextAppearance.Compat.Notification.Info.Media" />
+                <Button
+                    android:id="@+id/btnCancelarPrestamo"
+                    android:layout_width="257dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="36dp"
+                    android:backgroundTint="#000000"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:gravity="center"
+                    android:text="Eliminar Prestamo"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:visibility="invisible"
+                    app:cornerRadius="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearance="@style/TextAppearance.Compat.Notification.Info.Media" />
+
+                <Button
+                    android:id="@+id/btnRechazar"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginStart="36dp"
+                    android:backgroundTint="#000000"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:gravity="center"
+                    android:text="Rechazar"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    app:cornerRadius="50dp"
+                    app:layout_constraintStart_toEndOf="@+id/btnAceptar"
+                    app:layout_constraintTop_toTopOf="@+id/btnAceptar"
+                    app:shapeAppearance="@style/TextAppearance.Compat.Notification.Info.Media" />
+
+                <Button
+                    android:id="@+id/btnAceptar"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="#000000"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:gravity="center"
+                    android:text="Aceptar"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    app:cornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearance="@style/TextAppearance.Compat.Notification.Info.Media" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </LinearLayout>

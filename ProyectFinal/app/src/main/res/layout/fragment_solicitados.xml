@@ -46,20 +46,4 @@
 
     </ListView>
 
-    <ListView
-        android:id="@+id/listViewSolicitados"
-        android:layout_width="412dp"
-        android:layout_height="596dp"
-        android:layout_gravity="center"
-        android:divider="#00000000"
-        android:dividerHeight="20dp"
-        android:focusableInTouchMode="false"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
-
 </FrameLayout>

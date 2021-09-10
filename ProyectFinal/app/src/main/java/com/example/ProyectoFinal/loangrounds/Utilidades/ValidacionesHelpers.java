@@ -3,6 +3,8 @@ package com.example.ProyectoFinal.loangrounds.Utilidades;
 
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
+
 import java.util.Random;
 
 import java.util.regex.Matcher;
@@ -22,6 +24,14 @@ public class ValidacionesHelpers {
     }
     public static boolean esStringValido(String texto, int min){
         return esStringValido(texto,min,maxCaracteres);
+    }
+
+    public static boolean esNumeroValido(EditText e){
+        return Integer.parseInt(e.getText().toString().trim()) > 0;
+    }
+
+    public static boolean esNumeroValido(SeekBar s){
+        return s.getProgress() > 0;
     }
 
     public static boolean esStringValido(String texto){
