@@ -213,8 +213,7 @@ public class MenuFragment extends Fragment {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            Gson migson = new Gson();
-            BusquedaFiltradaDTO[] resultado =  migson.fromJson(s,BusquedaFiltradaDTO[].class);
+            BusquedaFiltradaDTO[] resultado = BusquedaFiltradaDTO.fromJsonToAray(s);
             // hacer lo que haya que hacer
         }
     }

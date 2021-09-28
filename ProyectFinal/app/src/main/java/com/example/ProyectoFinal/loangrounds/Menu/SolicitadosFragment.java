@@ -136,8 +136,8 @@ public class SolicitadosFragment extends Fragment {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            Gson miGson = new Gson();
-             resultado = miGson.fromJson(s,VistaPreviaPrestamo[].class);
+
+             resultado = VistaPreviaPrestamo.fromJsonToArray(s);
             ListaAdaptadoraPrestados nuevoAdapter = new ListaAdaptadoraPrestados(getActivity(),R.layout.my_list_item_listview, Arrays.asList(resultado.clone()));
             listView.setAdapter(nuevoAdapter);
             //llenar un list view ponele

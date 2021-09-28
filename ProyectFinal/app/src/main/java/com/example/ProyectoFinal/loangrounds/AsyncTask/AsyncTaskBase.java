@@ -14,6 +14,7 @@ import org.json.JSONObject;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.Date;
 
 //Este es para get!!!!!
@@ -56,7 +57,7 @@ public class  AsyncTaskBase extends AsyncTask<Void, Void ,String> {
         }
     }
 
-    public void setParams(String key, Date value) {
+    public void setParams(String key, LocalDate value) {
         try {
             jsonParam.put(key, value);
         } catch (Exception e) {

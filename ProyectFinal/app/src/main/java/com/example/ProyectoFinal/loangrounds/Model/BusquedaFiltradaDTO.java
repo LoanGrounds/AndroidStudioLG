@@ -1,5 +1,8 @@
 package com.example.ProyectoFinal.loangrounds.Model;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 public class BusquedaFiltradaDTO {
     private int Id, CantidadCuotas, DiasEntreCuotas, DiasTolerancia;
     private String UserName;
@@ -41,5 +44,10 @@ public class BusquedaFiltradaDTO {
 
     public Float getMonto() {
         return Monto;
+    }
+
+    public static BusquedaFiltradaDTO[] fromJsonToAray(String json){
+        Gson miGson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create();
+        return miGson.fromJson(json, BusquedaFiltradaDTO[].class);
     }
 }

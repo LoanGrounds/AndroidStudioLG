@@ -255,10 +255,7 @@ public class RegistroFragment extends Fragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             if(!s.equals("")){
-                Gson miGson = new GsonBuilder()
-                        .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
-                        .create();
-                listaProvincias = miGson.fromJson(s,Provincia[].class);
+                listaProvincias = Provincia.fromJsonToArray(s);
                 //llenar dropdown
 
             }
@@ -284,10 +281,7 @@ public class RegistroFragment extends Fragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             if(!s.equals("")){
-                Gson miGson = new GsonBuilder()
-                        .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
-                        .create();
-                listaLocalidades = miGson.fromJson(s,Localidad[].class);
+                listaLocalidades = Localidad.fromJsonToArray(s);
                 //llenar dropdown
 
             }

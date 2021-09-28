@@ -87,15 +87,12 @@ public class CadaPrestamoFragment extends Fragment {
         pgCargando3=(ProgressBar) layoutRhoot.findViewById(R.id.pgCargando3);
     }
 
-    View.OnClickListener btnSolicitar_Click = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
+    View.OnClickListener btnSolicitar_Click = v ->{
             solicitarPrestamoTarea solicitar = new solicitarPrestamoTarea();
             cambiarPrestamo cambiar = new cambiarPrestamo(Session.currentUser.getId());
             solicitar.execute();
             solicitar.StartAsyncTaskInParallel(cambiar);
             // NO SE QUE MAS HACER ACA DESPUES DE QUE SE SOLICITA
-        }
     };
 
     public void enviarPosition(PrestamoRecomendadoDTO prestamoList ){
@@ -120,10 +117,7 @@ public class CadaPrestamoFragment extends Fragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             if (s!=null){
-                Gson miGson = new GsonBuilder()
-                        .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
-                        .create();
-                detalle = miGson.fromJson(s,DetallePrestamo.class);
+                detalle = DetallePrestamo.fromjson(s);
                 if(detalle!=null){
                     double interes=detalle.getInteresXCuota();
                     tvIntereses.setText(String.valueOf(interes));

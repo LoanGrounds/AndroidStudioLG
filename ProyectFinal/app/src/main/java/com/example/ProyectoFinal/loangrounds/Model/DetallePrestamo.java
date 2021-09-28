@@ -1,13 +1,15 @@
 package com.example.ProyectoFinal.loangrounds.Model;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class DetallePrestamo {
     private int Id, CantidadCuotas, DiasEntreCuotas, DiasTolerancia, IdEstadoPrestamo;
     private double Monto, InteresXCuota;
-    private Date FechaDeAcuerdo;
+    private LocalDate FechaDeAcuerdo;
 
-    public DetallePrestamo(int id, int cantidadCuotas, int diasEntreCuotas, int diasTolerancia, int idEstadoPrestamo, double monto, double interesXCuota, Date fechaDeAcuerdo) {
+    public DetallePrestamo(int id, int cantidadCuotas, int diasEntreCuotas, int diasTolerancia, int idEstadoPrestamo, double monto, double interesXCuota, LocalDate fechaDeAcuerdo) {
         Id = id;
         CantidadCuotas = cantidadCuotas;
         DiasEntreCuotas = diasEntreCuotas;
@@ -41,10 +43,20 @@ public class DetallePrestamo {
         return InteresXCuota;
     };
 
-    public Date getFechaDeAcuerdo() {
+    public LocalDate getFechaDeAcuerdo() {
         return FechaDeAcuerdo;
     }
 
+
+    public static DetallePrestamo fromjson(String json){
+        Gson miGson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create();
+        return miGson.fromJson(json, DetallePrestamo.class);
+    }
+
+    public static DetallePrestamo[] fromjsonToArray(String json){
+        Gson miGson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create();
+        return miGson.fromJson(json, DetallePrestamo[].class);
+    }
 
 
 

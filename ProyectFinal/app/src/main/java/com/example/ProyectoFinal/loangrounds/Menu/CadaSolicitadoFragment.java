@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncPostBase;
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
+import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskGetDetalle;
 import com.example.ProyectoFinal.loangrounds.MainActivity;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo;
@@ -25,6 +26,7 @@ import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.time.LocalDate;
 import java.util.List;
 
 
@@ -32,8 +34,10 @@ public class CadaSolicitadoFragment extends Fragment {
 
     TextView tvIntereses,tvDinero,tvDiasEntreCuota,tvCantCuotas,tvNombre, tvDiaTol;
     VistaPreviaPrestamo prestamo;
+    DetallePrestamo detalle;
     MainActivityInicio main;
     Button btn_acpetar, btn_cancelar, btn_notificar, btn_borrarPrestamo;
+
     public void setDetalle(VistaPreviaPrestamo v){
         prestamo = v;
     }
@@ -80,36 +84,42 @@ public class CadaSolicitadoFragment extends Fragment {
             tvNombre = (TextView) layoutRhoot.findViewById(R.id.tvNombre);
             if (prestamo != null) {
                 tvNombre.setText(prestamo.getPrestamista());
+
+                switch (prestamo.getEstado()){
+                    case "Solicitado":
+                        btn_acpetar.setVisibility(View.VISIBLE);
+                        btn_cancelar.setVisibility(View.VISIBLE);
+                        btn_borrarPrestamo.setVisibility(View.INVISIBLE);
+                        break;
+                    case "Activo":
+                        btn_acpetar.setVisibility(View.INVISIBLE);
+                        btn_cancelar.setVisibility(View.INVISIBLE);
+                        btn_borrarPrestamo.setVisibility(View.INVISIBLE);
+                        break;
+                    case "Demorado":
+                        btn_acpetar.setVisibility(View.INVISIBLE);
+                        btn_cancelar.setVisibility(View.INVISIBLE);
+                        btn_borrarPrestamo.setVisibility(View.INVISIBLE);
+                        break;
+                    case "Caducado":
+                        btn_acpetar.setVisibility(View.INVISIBLE);
+                        btn_cancelar.setVisibility(View.INVISIBLE);
+                        btn_borrarPrestamo.setVisibility(View.INVISIBLE);
+                        break;
+                    case "En espera": //no me acuerdo bien el nombre
+                        //decir que esta esperando para que confirme que ya pago el prestamo
+                        // en caso de que sea el que presta
+                        break;
+                    default:
+                        btn_acpetar.setVisibility(View.INVISIBLE);
+                        btn_cancelar.setVisibility(View.INVISIBLE);
+                        btn_borrarPrestamo.setVisibility(View.VISIBLE);
+
+                }
             }
         }
 
-        switch (prestamo.getEstado()){
-            case "Solicitado":
-                btn_acpetar.setVisibility(View.VISIBLE);
-                btn_cancelar.setVisibility(View.VISIBLE);
-                btn_borrarPrestamo.setVisibility(View.INVISIBLE);
-                break;
-            case "Activo":
-                btn_acpetar.setVisibility(View.INVISIBLE);
-                btn_cancelar.setVisibility(View.INVISIBLE);
-                btn_borrarPrestamo.setVisibility(View.INVISIBLE);
-                break;
-            case "Demorado":
-                btn_acpetar.setVisibility(View.INVISIBLE);
-                btn_cancelar.setVisibility(View.INVISIBLE);
-                btn_borrarPrestamo.setVisibility(View.INVISIBLE);
-                break;
-            case "Caducado":
-                btn_acpetar.setVisibility(View.INVISIBLE);
-                btn_cancelar.setVisibility(View.INVISIBLE);
-                btn_borrarPrestamo.setVisibility(View.INVISIBLE);
-                break;
-            default:
-                btn_acpetar.setVisibility(View.INVISIBLE);
-                btn_cancelar.setVisibility(View.INVISIBLE);
-                btn_borrarPrestamo.setVisibility(View.VISIBLE);
 
-        }
     }
 
     private void inicializarDatos() {
@@ -147,7 +157,7 @@ public class CadaSolicitadoFragment extends Fragment {
             setParams("Id", IdDetalle);
             if(acepto){
                 setParams("IdEstadoDePrestamo", 2); // cambia el estado a Activo
-                setParams("FechaDeAcuerdo", "2021-05-24"); // fecha random
+                setParams("FechaDeAcuerdo", LocalDate.now().plusDays(detalle.getDiasEntreCuotas())); // DIA DE HOY MAS LOS DIAS DE LA PRIMER CUOTA
             }
             else{
                 setParams("IdEstadoDePrestamo", 5);//Lo vuelve a poner disponible
@@ -236,7 +246,6 @@ public class CadaSolicitadoFragment extends Fragment {
     };
 
     private class AsyncTaskGetDetalle  extends AsyncTaskBase {
-        private DetallePrestamo detalle;
         public AsyncTaskGetDetalle() {
             super(ApiHelper.devolverUrlParaGet("Detalles", "obtenerPorId", String.valueOf(prestamo.getIdDetallePrestamo())));
         }
@@ -245,10 +254,7 @@ public class CadaSolicitadoFragment extends Fragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             if(!s.equals("")){
-                Gson miGson = new GsonBuilder()
-                        .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
-                        .create();
-                detalle  = miGson.fromJson(s,DetallePrestamo.class);
+                detalle  = DetallePrestamo.fromjson(s);
                 if(detalle!= null){
                     double interes=detalle.getInteresXCuota();
                     tvIntereses.setText(String.valueOf(interes));

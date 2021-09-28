@@ -5,6 +5,9 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 
+import com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo;
+
+import java.time.LocalDate;
 import java.util.Random;
 
 import java.util.regex.Matcher;
@@ -102,6 +105,10 @@ public class ValidacionesHelpers {
         return rg.getCheckedRadioButtonId() != -1;
     }
 
+
+    public static boolean caducoElPrestamo(DetallePrestamo detalle){
+        return LocalDate.now().isAfter(detalle.getFechaDeAcuerdo());
+    }
 
 
 }

@@ -109,10 +109,7 @@ public class InicioSesionFragment extends Fragment {
             super.onPostExecute(s);
             if(s.equals("")){/*pgCargando2.setVisibility(View.INVISIBLE) ;clInicionSesion.setVisibility(View.VISIBLE);*/ AlertHelper.mostrarAlertaError(getContext(), "Usuario o contraseña incorrectas ") ;  }
             else {
-                Gson miGson = new GsonBuilder()
-                    .setDateFormat("yyyy-MM-dd'T'HH:mm:ss")
-                    .create();
-                Session.currentUser = miGson.fromJson(s,Usuario.class);
+                Session.currentUser = Usuario.fromJson(s);
                 CustomLog.log(s);
                 MainActivity actividadContenedora;
                 actividadContenedora = (MainActivity) getActivity();

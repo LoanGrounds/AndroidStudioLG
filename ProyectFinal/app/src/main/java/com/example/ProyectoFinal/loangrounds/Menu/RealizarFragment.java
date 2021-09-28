@@ -10,11 +10,6 @@ import android.view.ViewGroup;
 
 import com.example.ProyectoFinal.loangrounds.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link RealizarFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class RealizarFragment extends Fragment {
 
 

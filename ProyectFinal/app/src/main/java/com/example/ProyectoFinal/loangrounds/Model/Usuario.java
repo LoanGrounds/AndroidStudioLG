@@ -2,18 +2,21 @@ package com.example.ProyectoFinal.loangrounds.Model;
 
 import androidx.annotation.NonNull;
 
-import java.sql.Date;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.time.LocalDate;
 
 public class Usuario {
 
 
     private String UserName, Password, Nombre, Apellido,Telefono, Mail, Direccion, Dni, CBU, CBUAlias, CUIT, Descripcion, Ocupacion, URLFoto, NombreGenero, NombreLocalidad , ApiKey ;
     private int Id, Puntos, CantidadPrestamosExitosos, IdGenero, IdLocalidad ;
-    private Date FechaNacimiento, FechaCreacion;
+    private LocalDate FechaNacimiento, FechaCreacion;
 
 
 
-    public Usuario(String userName, String password, String nombre, String apellido, String telefono, String mail, String direccion, String dni, String cbu, String cbuAlias, String cuit, String descripcion, String ocupacion, String urlFoto, String nombreGenero, String nombreLocalidad, String ApiKey, int id, int puntos, int cantidadPrestamosExitosos, int idGenero, int idLocalidad, Date fechaNacimiento, Date fechaCreacion) {
+    public Usuario(String userName, String password, String nombre, String apellido, String telefono, String mail, String direccion, String dni, String cbu, String cbuAlias, String cuit, String descripcion, String ocupacion, String urlFoto, String nombreGenero, String nombreLocalidad, String ApiKey, int id, int puntos, int cantidadPrestamosExitosos, int idGenero, int idLocalidad, LocalDate fechaNacimiento, LocalDate fechaCreacion) {
         UserName = userName;
         Password = password;
         Nombre = nombre;
@@ -113,10 +116,10 @@ public class Usuario {
         return IdLocalidad;
     }
 
-    public Date getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return FechaNacimiento;
     }
-    public Date getFechaCreacion() {
+    public LocalDate getFechaCreacion() {
         return FechaCreacion;
     }
 
@@ -125,5 +128,16 @@ public class Usuario {
     public String toString() {
         return String.format("Username: %s \n Contra: %s \n Ocupacion: %s \n Desc: %s", this.getUserName(),
                 this.getPassword(), this.getOcupacion(), this.getDescripcion());
+    }
+
+
+    public static Usuario fromJson(String json){
+        Gson miGson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create();
+        return miGson.fromJson(json, Usuario.class);
+    }
+
+    public static Usuario[] fromJsonToArray(String json){
+        Gson miGson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create();
+        return miGson.fromJson(json, Usuario[].class);
     }
 }
