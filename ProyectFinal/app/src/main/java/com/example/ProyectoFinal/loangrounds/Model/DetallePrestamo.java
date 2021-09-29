@@ -58,6 +58,10 @@ public class DetallePrestamo {
         return miGson.fromJson(json, DetallePrestamo[].class);
     }
 
+    public LocalDate calcularPagoSiguiente(){
+        return LocalDate.now().plusDays(this.getDiasEntreCuotas());
+    }
+
 
 
 }

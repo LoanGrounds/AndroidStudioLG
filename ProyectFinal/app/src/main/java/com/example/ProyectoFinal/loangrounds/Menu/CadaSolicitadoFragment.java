@@ -13,20 +13,14 @@ import android.widget.TextView;
 
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncPostBase;
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
-import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskGetDetalle;
-import com.example.ProyectoFinal.loangrounds.MainActivity;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo;
-import com.example.ProyectoFinal.loangrounds.Model.Prestamo;
 import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.Model.VistaPreviaPrestamo;
 import com.example.ProyectoFinal.loangrounds.R;
 import com.example.ProyectoFinal.loangrounds.Utilidades.AlertHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
-import java.time.LocalDate;
 import java.util.List;
 
 
@@ -36,7 +30,7 @@ public class CadaSolicitadoFragment extends Fragment {
     VistaPreviaPrestamo prestamo;
     DetallePrestamo detalle;
     MainActivityInicio main;
-    Button btn_acpetar, btn_cancelar, btn_notificar, btn_borrarPrestamo;
+    Button btn_acpetar, btn_cancelar, btn_notificar, btn_borrarPrestamo ,btn_confirmar;
 
     public void setDetalle(VistaPreviaPrestamo v){
         prestamo = v;
@@ -116,6 +110,8 @@ public class CadaSolicitadoFragment extends Fragment {
                         btn_borrarPrestamo.setVisibility(View.VISIBLE);
 
                 }
+                AsyncTaskGetDetalle getDetalle = new AsyncTaskGetDetalle();
+                getDetalle.execute();
             }
         }
 
@@ -157,7 +153,7 @@ public class CadaSolicitadoFragment extends Fragment {
             setParams("Id", IdDetalle);
             if(acepto){
                 setParams("IdEstadoDePrestamo", 2); // cambia el estado a Activo
-                setParams("FechaDeAcuerdo", LocalDate.now().plusDays(detalle.getDiasEntreCuotas())); // DIA DE HOY MAS LOS DIAS DE LA PRIMER CUOTA
+                setParams("FechaDeAcuerdo",detalle.calcularPagoSiguiente()); // DIA DE HOY MAS LOS DIAS DE LA PRIMER CUOTA
             }
             else{
                 setParams("IdEstadoDePrestamo", 5);//Lo vuelve a poner disponible
@@ -169,7 +165,7 @@ public class CadaSolicitadoFragment extends Fragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             if(!acepto){
-                cambiarPrestamo reset = new cambiarPrestamo(27);
+                rechazarPrestamo reset = new rechazarPrestamo(27);
                 reset.execute();
                         //Necesito conseguir de donde viene el prestamo
             }
@@ -177,12 +173,34 @@ public class CadaSolicitadoFragment extends Fragment {
         }
     }
 
+    private class confirmarPago extends AsyncPostBase{
+        public confirmarPago(RequestMethods method) {
+            super(RequestMethods.PUT, ApiHelper.devolverUrlParaGet("Prestamos", "update"));
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            setParams("IdEstadoPrestamo",2);
+            setParams("FechaDeAcuerdo",detalle.calcularPagoSiguiente());
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            AsyncTaskGetDetalle refresh = new AsyncTaskGetDetalle();
+            refresh.execute();
+            // Cambiar la vista
+        }
+    }
+
+
 
     @SuppressLint("StaticFieldLeak")
-    private class cambiarPrestamo extends AsyncPostBase{
+    private class rechazarPrestamo extends AsyncPostBase{
         private final int idPrestamo;
 
-        public cambiarPrestamo(int idPrestamo) {
+        public rechazarPrestamo(int idPrestamo) {
             super(RequestMethods.PUT,ApiHelper.devolverUrlParaGet("Prestamos", "update"));
             this.idPrestamo = idPrestamo;
         }
@@ -197,7 +215,7 @@ public class CadaSolicitadoFragment extends Fragment {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            // AVISAR AL PRESTATARIO QUE SE SOLICITO CON EXITO
+
         }
     }
 
