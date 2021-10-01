@@ -28,8 +28,8 @@ public class AsyncPostBase extends AsyncTask<Void,Void,String> {
     private void setRequesMethod(RequestMethods method){
         requestMethod = method.toString();
     }
-    protected JSONObject jsonParam = new JSONObject(); //in the child class you fill this value with the body params
-    protected String URL;
+    private JSONObject jsonParam = new JSONObject(); //in the child class you fill this value with the body params
+    private String URL;
 
     public AsyncPostBase(RequestMethods method,String url) {
         setRequesMethod(method);

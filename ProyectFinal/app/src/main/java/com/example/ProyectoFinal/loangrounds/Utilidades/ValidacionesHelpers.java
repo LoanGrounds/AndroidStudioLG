@@ -8,6 +8,7 @@ import android.widget.SeekBar;
 import com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Random;
 
 import java.util.regex.Matcher;
@@ -107,7 +108,7 @@ public class ValidacionesHelpers {
 
 
     public static boolean caducoElPrestamo(DetallePrestamo detalle){
-        return LocalDate.now().isAfter(detalle.getFechaDeAcuerdo());
+        return LocalDateTime.now().isAfter(detalle.getFechaDeAcuerdo());
     }
 
 

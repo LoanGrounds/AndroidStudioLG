@@ -4,11 +4,11 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 public class VistaPreviaPrestamo {
-    private int idDetallePrestamo;
+    private int IdDetallePrestamo;
     private double Monto;
     private String prestamista, estado;
 
-    public int getIdDetallePrestamo() { return idDetallePrestamo; }
+    public int getIdDetallePrestamo() { return IdDetallePrestamo; }
 
     public double getMonto() { return Monto; }
 

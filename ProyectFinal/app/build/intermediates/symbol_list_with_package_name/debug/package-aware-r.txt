@@ -1685,6 +1685,7 @@ id edit_query
 id editarPerfil
 id edtAlias
 id edtApellido
+id edtApellidoUsuarioQueSolicito
 id edtCBU
 id edtCantidadAPrestar
 id edtCheckPassword
@@ -1696,12 +1697,16 @@ id edtDireccion
 id edtDni
 id edtMail
 id edtNombre
+id edtNombre10
+id edtNombre11
 id edtNombre2
 id edtNombre3
 id edtNombre4
 id edtNombre5
 id edtNombre6
+id edtNombre9
 id edtNombreUsuario
+id edtNombreUsuarioQueSolicito
 id edtPassword
 id edtProv
 id edtTelefono
@@ -1751,6 +1756,7 @@ id imageView
 id imageView2
 id imageView3
 id imgPrestamista
+id imgPrestamista2
 id info
 id ingreseHuella
 id invisible
@@ -1934,7 +1940,12 @@ id textView12
 id textView13
 id textView14
 id textView15
+id textView18
+id textView19
 id textView2
+id textView20
+id textView21
+id textView22
 id textView3
 id textView4
 id textView5
@@ -1964,6 +1975,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tv1
 id tv4
+id tvCalificacion
 id tvCantCuotas
 id tvCantMeses
 id tvConfirmar
@@ -2141,6 +2153,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout perfil_del_usuario_que_solicito
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

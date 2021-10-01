@@ -20,6 +20,7 @@ import com.example.ProyectoFinal.loangrounds.Model.VistaPreviaPrestamo;
 import com.example.ProyectoFinal.loangrounds.R;
 import com.example.ProyectoFinal.loangrounds.Utilidades.AlertHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
+import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
 
 import java.util.List;
 
@@ -36,7 +37,7 @@ public class CadaSolicitadoFragment extends Fragment {
         prestamo = v;
     }
 
-    List<PrestamoRecomendadoDTO> prest;
+
     View layoutRhoot;
 
     public CadaSolicitadoFragment() {
@@ -78,12 +79,16 @@ public class CadaSolicitadoFragment extends Fragment {
             tvNombre = (TextView) layoutRhoot.findViewById(R.id.tvNombre);
             if (prestamo != null) {
                 tvNombre.setText(prestamo.getPrestamista());
+                AsyncTaskGetDetalle getDetalle = new AsyncTaskGetDetalle();
+                getDetalle.execute();
+
 
                 switch (prestamo.getEstado()){
                     case "Solicitado":
                         btn_acpetar.setVisibility(View.VISIBLE);
                         btn_cancelar.setVisibility(View.VISIBLE);
                         btn_borrarPrestamo.setVisibility(View.INVISIBLE);
+
                         break;
                     case "Activo":
                         btn_acpetar.setVisibility(View.INVISIBLE);
@@ -104,14 +109,18 @@ public class CadaSolicitadoFragment extends Fragment {
                         //decir que esta esperando para que confirme que ya pago el prestamo
                         // en caso de que sea el que presta
                         break;
-                    default:
+                    case "Disponible":
                         btn_acpetar.setVisibility(View.INVISIBLE);
                         btn_cancelar.setVisibility(View.INVISIBLE);
                         btn_borrarPrestamo.setVisibility(View.VISIBLE);
+                        break;
+                    /*default:
+                        btn_acpetar.setVisibility(View.INVISIBLE);
+                        btn_cancelar.setVisibility(View.INVISIBLE);
+                        btn_borrarPrestamo.setVisibility(View.VISIBLE);*/
 
                 }
-                AsyncTaskGetDetalle getDetalle = new AsyncTaskGetDetalle();
-                getDetalle.execute();
+
             }
         }
 
@@ -119,20 +128,13 @@ public class CadaSolicitadoFragment extends Fragment {
     }
 
     private void inicializarDatos() {
+
     }
 
     private void SetearListners() {
         btn_borrarPrestamo.setOnClickListener(btn_borrar_click);
         btn_cancelar.setOnClickListener(btn_cancelar_click);
         btn_acpetar.setOnClickListener(btn_aceptar_click);
-
-    }
-
-    public void enviarPosition(List<PrestamoRecomendadoDTO> prestamoList ){
-
-        prest = prestamoList;
-
-
 
     }
 
@@ -153,7 +155,7 @@ public class CadaSolicitadoFragment extends Fragment {
             setParams("Id", IdDetalle);
             if(acepto){
                 setParams("IdEstadoDePrestamo", 2); // cambia el estado a Activo
-                setParams("FechaDeAcuerdo",detalle.calcularPagoSiguiente()); // DIA DE HOY MAS LOS DIAS DE LA PRIMER CUOTA
+                setParams("FechaDeAcuerdo","2003-09-12"); // DIA DE HOY MAS LOS DIAS DE LA PRIMER CUOTA
             }
             else{
                 setParams("IdEstadoDePrestamo", 5);//Lo vuelve a poner disponible
@@ -182,7 +184,7 @@ public class CadaSolicitadoFragment extends Fragment {
         protected void onPreExecute() {
             super.onPreExecute();
             setParams("IdEstadoPrestamo",2);
-            setParams("FechaDeAcuerdo",detalle.calcularPagoSiguiente());
+            setParams("FechaDeAcuerdo");
         }
 
         @Override
@@ -271,10 +273,11 @@ public class CadaSolicitadoFragment extends Fragment {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+
             if(!s.equals("")){
                 detalle  = DetallePrestamo.fromjson(s);
                 if(detalle!= null){
-                    double interes=detalle.getInteresXCuota();
+                    double interes = detalle.getInteresXCuota();
                     tvIntereses.setText(String.valueOf(interes));
                     tvCantCuotas.setText(String.valueOf(detalle.getCantidadCuotas()));
                     tvDiasEntreCuota.setText(String.valueOf(detalle.getDiasEntreCuotas()));

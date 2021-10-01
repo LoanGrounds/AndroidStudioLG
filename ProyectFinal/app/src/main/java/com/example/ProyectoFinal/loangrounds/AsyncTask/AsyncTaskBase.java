@@ -21,7 +21,7 @@ import java.util.Date;
 public class  AsyncTaskBase extends AsyncTask<Void, Void ,String> {
 
     private String url;
-    protected JSONObject jsonParam = new JSONObject(); //in the child class you fill this value with the body params
+    private JSONObject jsonParam = new JSONObject(); //in the child class you fill this value with the body params
 
     public AsyncTaskBase(String url) {
         this.url = url;

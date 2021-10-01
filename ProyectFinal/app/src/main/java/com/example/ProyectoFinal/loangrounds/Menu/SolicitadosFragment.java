@@ -25,6 +25,7 @@ import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.Model.VistaPreviaPrestamo;
 import com.example.ProyectoFinal.loangrounds.R;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
+import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
 import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabItem;
@@ -116,7 +117,10 @@ public class SolicitadosFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 VistaPreviaPrestamo pestamoSolici = resultado[position] ;
+                CustomLog.logObject(resultado);
                 actividadContenedora.setFragmentCadaSolicitado(pestamoSolici);
+                actividadContenedora.setFragmentCadaSolicitado();
+
             }
         });}
 
@@ -137,7 +141,9 @@ public class SolicitadosFragment extends Fragment {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-             resultado = VistaPreviaPrestamo.fromJsonToArray(s);
+            Gson miGson = new Gson();
+            resultado = miGson.fromJson(s,VistaPreviaPrestamo[].class);
+            CustomLog.logObject("holaaa"+ resultado[0].getIdDetallePrestamo());
             ListaAdaptadoraPrestados nuevoAdapter = new ListaAdaptadoraPrestados(getActivity(),R.layout.my_list_item_listview, Arrays.asList(resultado.clone()));
             listView.setAdapter(nuevoAdapter);
             //llenar un list view ponele

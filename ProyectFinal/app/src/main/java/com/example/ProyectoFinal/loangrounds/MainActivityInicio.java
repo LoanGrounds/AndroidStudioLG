@@ -173,9 +173,7 @@ public class MainActivityInicio extends AppCompatActivity {
     public void EnviarMensaje(PrestamoRecomendadoDTO prestamoList){
         fragmentCadaPrestamo.enviarPosition( prestamoList);
     }
-    public void EnviarMensajeSolicitado(List<PrestamoRecomendadoDTO> prestamoList){
-        fragmentCadaSolicitado.enviarPosition(prestamoList);
-    }
+
 
 
 
