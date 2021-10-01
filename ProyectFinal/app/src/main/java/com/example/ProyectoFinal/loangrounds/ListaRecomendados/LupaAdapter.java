@@ -41,7 +41,7 @@ public class LupaAdapter extends RecyclerView.Adapter<LupaAdapter.ViewHolder>{
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.mi_list_item2,parent, false);
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.my_list_item_listview,parent, false);
         return new ViewHolder(view);
     }
 

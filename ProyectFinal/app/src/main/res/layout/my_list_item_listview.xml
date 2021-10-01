@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="381dp"
-    android:layout_height="129dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
 
-    android:backgroundTint="#D7FFFFFF"
     android:gravity="center|top">
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="361dp"
         android:layout_height="119dp"
-        android:background="#D7FFFFFF"
-        android:backgroundTint="#D7FFFFFF"
-        android:elevation="1dp"
-        android:focusable="auto"
-        android:scrollbars="vertical"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="1dp">
+        app:cardCornerRadius="11dp"
+        app:cardElevation="11dp"
+        app:cardUseCompatPadding="true">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,7 +27,7 @@
                 android:layout_width="124dp"
                 android:layout_height="wrap_content"
 
-                android:fontFamily="@font/rubik"
+                android:fontFamily="@font/poppins_medium"
                 android:gravity="top"
                 android:text="xxxxx"
                 android:textColor="#000000"
@@ -44,21 +39,10 @@
                 app:layout_constraintTop_toTopOf="@+id/tvMont"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/coraDislike"
-                android:layout_width="20dp"
-                android:layout_height="22dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.134"
-                app:srcCompat="@drawable/favorite_unlike" />
-
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imgPrestamista"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
                 android:layout_marginStart="16dp"
                 android:src="@drawable/deck"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -91,7 +75,7 @@
 
                 android:layout_marginStart="28dp"
                 android:layout_marginBottom="20dp"
-                android:fontFamily="@font/rubik"
+                android:fontFamily="sans-serif-light"
                 android:paddingRight="10dp"
                 android:text="Monto:"
                 android:textColor="#000000"
@@ -104,4 +88,4 @@
 
     </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+</LinearLayout>
