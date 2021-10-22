@@ -39,7 +39,6 @@ public class ListaAdaptora extends ArrayAdapter<PrestamoRecomendadoDTO> {
         TextView tvNombreApellido=view.findViewById(R.id.tvNombreApellido);
         TextView precio1=view.findViewById(R.id.precio1);
         ImageView imgPrestamista=view.findViewById(R.id.imgPrestamista);
-        LottieAnimationView coraDislike=view.findViewById(R.id.coraDislike);
         final int[] cont = {0};
 
 
@@ -47,37 +46,10 @@ public class ListaAdaptora extends ArrayAdapter<PrestamoRecomendadoDTO> {
         tvNombreApellido.setText(prestamo.UserName);
         precio1.setText(String.valueOf("$"+prestamo.Monto));
         //imgPrestamista.setImageDrawable(mCtx.getResources().getDrawable(prestamo.URLFoto));
-        final boolean[] like = {false};
-        coraDislike.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                like[0] =likeAnimation(coraDislike,R.raw.like, like[0]);
-
-
-                /*if (cont[0] ==0){
-                coraDislike.setBackgroundResource(R.drawable.favorite_like);
-                cont[0]++;
-                }else{
-                    coraDislike.setBackgroundResource(R.drawable.favorite_unlike);
-                    cont[0]--;
-                }*/
-            }
-        });
 
         return view;
     }
 
 
-    private boolean likeAnimation(LottieAnimationView imageView, int animation,Boolean like){
-        if (!like){
-            imageView.setAnimation(animation);
-            imageView.playAnimation();
-        }
-        else {
-            imageView.setImageResource(R.drawable.favorite_unlike);
-        }
 
-        return !like;
-    }
 }

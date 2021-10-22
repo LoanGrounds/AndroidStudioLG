@@ -75,6 +75,6 @@ public class Footer extends Fragment {
     private void ObtenerReferencias(){
         imBtnHouse = (ImageButton)layoutRhoot.findViewById(R.id.imBtnHouse);
         imBtnSol= (ImageButton) layoutRhoot.findViewById(R.id.imBtnSol);
-        imBtnCont= (ImageButton) layoutRhoot.findViewById(R.id.imBtnCont);
+        imBtnCont= (ImageButton) layoutRhoot.findViewById(R.id.imUser);
     }
 }
