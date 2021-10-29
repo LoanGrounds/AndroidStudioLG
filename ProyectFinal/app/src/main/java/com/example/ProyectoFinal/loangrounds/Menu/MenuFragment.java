@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
@@ -41,6 +42,7 @@ public class MenuFragment extends Fragment {
     ListView listView;
     View layoutRhoot;
 
+    TextView tvNombreUs;
     ProgressBar pgCargando;
     ConstraintLayout clMenu;
 
@@ -73,6 +75,7 @@ public class MenuFragment extends Fragment {
         layoutRhoot= inflater.inflate(R.layout.fragment_menu, container, false);
 
         ObtenerReferencia();
+        tvNombreUs.setText(Session.currentUser.getNombre());
 
 
 
@@ -94,6 +97,7 @@ public class MenuFragment extends Fragment {
         filtros=(ImageView) layoutRhoot.findViewById(R.id.btnFiltros);
         pgCargando=(ProgressBar) layoutRhoot.findViewById(R.id.pgCargando);
         clMenu=(ConstraintLayout) layoutRhoot.findViewById(R.id.clMenu);
+        tvNombreUs=(TextView) layoutRhoot.findViewById(R.id.tvNombreUs);
 
     }
 

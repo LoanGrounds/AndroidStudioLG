@@ -82,7 +82,7 @@ public class CadaPrestamoFragment extends Fragment {
         tvDiaTol=(TextView) layoutRhoot.findViewById(R.id.tvDiaTol);
         tvCantCuotas=(TextView) layoutRhoot.findViewById(R.id.tvCantCuotas);
         tvNombre=(TextView) layoutRhoot.findViewById(R.id.tvNombre);
-        btnSolicitar=(Button) layoutRhoot.findViewById(R.id.btnCancelarPrestamo);
+        btnSolicitar=(Button) layoutRhoot.findViewById(R.id.btnSolicitarPrestamo);
         clCadaPrestamo=(ConstraintLayout) layoutRhoot.findViewById(R.id.clCadaPrestamo);
         pgCargando3=(ProgressBar) layoutRhoot.findViewById(R.id.pgCargando3);
     }

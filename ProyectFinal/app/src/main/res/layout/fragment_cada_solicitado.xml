@@ -188,7 +188,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/btnCancelarPrestamo"
+                    android:id="@+id/btnSolicitarPrestamo"
                     android:layout_width="257dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"

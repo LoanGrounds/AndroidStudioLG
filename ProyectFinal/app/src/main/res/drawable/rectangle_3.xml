@@ -21,7 +21,7 @@
 
         <path
             android:pathData="M20 0H295C306.046 0 315 8.95431 315 20V40C315 51.0457 306.046 60 295 60H20C8.95431 60 0 51.0457 0 40V20C0 8.95431 8.95431 0 20 0Z"
-
+            android:strokeWidth="2"
             android:strokeColor="#17A4B7"
             />
 

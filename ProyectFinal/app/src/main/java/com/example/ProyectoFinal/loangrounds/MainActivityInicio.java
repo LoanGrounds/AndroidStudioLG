@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -168,7 +169,13 @@ public class MainActivityInicio extends AppCompatActivity {
 
     }
 
+    public void cambioActivity(){
+        Intent intent=new Intent(MainActivityInicio.this, MainActivity.class);
+        //  FragmentTransaction ft = this.getSupportFragmentManager().beginTransaction(); ft.remove(fragmentRegistro).commit();
 
+        startActivity(intent);
+        this.finish();
+    }
 
     public void EnviarMensaje(PrestamoRecomendadoDTO prestamoList){
         fragmentCadaPrestamo.enviarPosition( prestamoList);

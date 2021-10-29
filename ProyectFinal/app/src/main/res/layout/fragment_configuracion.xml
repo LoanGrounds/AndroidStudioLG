@@ -7,51 +7,10 @@
     tools:context=".Menu.ConfiguracionFragment" >
 
     <TextView
-        android:id="@+id/loangrounds7"
-        android:layout_width="376dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:fontFamily="@font/rubik_light"
-        android:text="Configuracion"
-        android:textColor="#000000 "
-        android:textColorHint="#FFFFFF"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loangrounds2" />
-
-    <TextView
-        android:id="@+id/loangrounds9"
-        android:layout_width="376dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:fontFamily="@font/rubik_light"
-        android:text="Configuracion"
-        android:textColor="#000000 "
-        android:textColorHint="#FFFFFF"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loangrounds2" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#ededed"
-        android:src="@drawable/vector_configuracion_menor"
-        tools:layout_editor_absoluteX="332dp"
-        tools:layout_editor_absoluteY="169dp" />
-
-    <TextView
         android:id="@+id/loangrounds2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/rubik_light"
         android:text="Configuracion"
         android:textColor="#000000 "
@@ -59,68 +18,22 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.312"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/loangrounds6"
-        android:layout_width="376dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:fontFamily="@font/rubik_light"
-        android:text="Configuracion"
-        android:textColor="#000000 "
-        android:textColorHint="#FFFFFF"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loangrounds2" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
+    <Button
+        android:id="@+id/btnCerrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#ededed"
-        android:src="@drawable/vector_configuracion_menor"
-        tools:layout_editor_absoluteX="332dp"
-        tools:layout_editor_absoluteY="116dp" />
-
-    <TextView
-        android:id="@+id/loangrounds3"
-        android:layout_width="376dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
-        android:fontFamily="@font/rubik_light"
-        android:text="Configuracion"
-        android:textColor="#000000 "
-        android:textColorHint="#FFFFFF"
-        android:textSize="23sp"
-        android:textStyle="bold"
+        android:text="Cerrar sesion"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loangrounds2" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#ededed"
-        android:src="@drawable/vector_configuracion_menor"
-        tools:layout_editor_absoluteX="332dp"
-        tools:layout_editor_absoluteY="306dp" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="62dp"
-        android:layout_height="36dp"
-        android:background="@drawable/switch_configuracion"
-        android:ellipsize="none"
-        android:scrollbarSize="7dp"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="232dp" />
+        app:layout_constraintTop_toBottomOf="@+id/loangrounds2"
+        app:layout_constraintVertical_bias="0.935"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

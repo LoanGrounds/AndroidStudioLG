@@ -15,14 +15,10 @@ import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncPostBase;
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncTaskBase;
 import com.example.ProyectoFinal.loangrounds.MainActivityInicio;
 import com.example.ProyectoFinal.loangrounds.Model.DetallePrestamo;
-import com.example.ProyectoFinal.loangrounds.Model.PrestamoRecomendadoDTO;
 import com.example.ProyectoFinal.loangrounds.Model.VistaPreviaPrestamo;
 import com.example.ProyectoFinal.loangrounds.R;
 import com.example.ProyectoFinal.loangrounds.Utilidades.AlertHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
-import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
-
-import java.util.List;
 
 
 public class CadaSolicitadoFragment extends Fragment {
@@ -75,7 +71,7 @@ public class CadaSolicitadoFragment extends Fragment {
             tvCantCuotas = (TextView) layoutRhoot.findViewById(R.id.tvCantCuotas);
             btn_acpetar = (Button) layoutRhoot.findViewById(R.id.btnAceptar);
             btn_cancelar = (Button) layoutRhoot.findViewById(R.id.btnRechazar);
-            btn_borrarPrestamo = (Button) layoutRhoot.findViewById(R.id.btnCancelarPrestamo);
+            btn_borrarPrestamo = (Button) layoutRhoot.findViewById(R.id.btnSolicitarPrestamo);
             tvNombre = (TextView) layoutRhoot.findViewById(R.id.tvNombre);
             if (prestamo != null) {
                 tvNombre.setText(prestamo.getPrestamista());

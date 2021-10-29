@@ -18,7 +18,9 @@ import com.example.ProyectoFinal.loangrounds.Utilidades.AlertHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.ApiHelper;
 import com.example.ProyectoFinal.loangrounds.Utilidades.CustomLog;
 import com.example.ProyectoFinal.loangrounds.Utilidades.Session;
+import com.example.ProyectoFinal.loangrounds.Utilidades.SharedPreferencesManager;
 import com.example.ProyectoFinal.loangrounds.Utilidades.toastes;
+import com.example.ProyectoFinal.loangrounds.entidades.Configuracion;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -111,6 +113,13 @@ public class InicioSesionFragment extends Fragment {
             else {
                 Session.currentUser = Usuario.fromJson(s);
                 CustomLog.log(s);
+                String Mail=edtEmail.getText().toString();
+                String Contraseña=edtPassword.getText().toString();
+                Configuracion configurar;
+                configurar      = SharedPreferencesManager.getConfiguracion(getContext());
+                configurar.setMail(Mail);
+                configurar.setContraseña(Contraseña);
+                SharedPreferencesManager.saveConfiguracion(getContext(), configurar);
                 MainActivity actividadContenedora;
                 actividadContenedora = (MainActivity) getActivity();
                 actividadContenedora.cambioActivity();

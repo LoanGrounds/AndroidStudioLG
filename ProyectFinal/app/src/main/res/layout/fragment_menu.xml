@@ -24,8 +24,10 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:context=".Menu.MenuFragment">
 
         <TextView
@@ -42,10 +44,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvNombre2"
+            android:id="@+id/tvNombreUs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:fontFamily="@font/poppins_light"
             android:text="Nombre!"
             android:textColor="#036AB8"
@@ -59,11 +61,11 @@
             android:layout_height="53dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/deck"
-            app:layout_constraintBottom_toBottomOf="@+id/tvNombre2"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNombreUs"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.953"
-            app:layout_constraintStart_toEndOf="@+id/tvNombre2"
-            app:layout_constraintTop_toTopOf="@+id/tvNombre2"
+            app:layout_constraintStart_toEndOf="@+id/tvNombreUs"
+            app:layout_constraintTop_toTopOf="@+id/tvNombreUs"
             app:layout_constraintVertical_bias="0.0" />
 
         <SearchView
@@ -72,8 +74,8 @@
             android:layout_width="302dp"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
             android:background="@drawable/search"
             android:iconifiedByDefault="false"
             android:queryHint="Buscar prestamo"
@@ -96,14 +98,14 @@
             android:id="@+id/textView23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="@font/poppins_light"
             android:gravity="clip_horizontal"
             android:text="Encuentra tu "
             android:textColor="#51C4D3"
-            android:textSize="50sp"
+            android:textSize="42sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintHorizontal_bias="0.288"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvHola" />
 
@@ -112,9 +114,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
+            android:paddingTop="-4dp"
             android:text="prestamo"
             android:textColor="#036AB8"
-            android:textSize="50sp"
+            android:textSize="38sp"
             app:layout_constraintEnd_toEndOf="@+id/textView23"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView23"
@@ -129,9 +132,10 @@
             android:dividerHeight="20dp"
             android:focusableInTouchMode="false"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchBuscarPrestamo">
 
         </ListView>
@@ -140,11 +144,9 @@
             android:id="@+id/constraintLayout5"
             android:layout_width="416dp"
             android:layout_height="733dp"
-            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:visibility="gone">
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/fbtnCrearPrestamo"
