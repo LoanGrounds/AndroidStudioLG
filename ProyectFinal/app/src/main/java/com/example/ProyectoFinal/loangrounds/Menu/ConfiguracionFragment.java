@@ -49,7 +49,7 @@ public class ConfiguracionFragment extends Fragment {
                              Bundle savedInstanceState) {
         layoutRhoot= inflater.inflate(R.layout.fragment_configuracion, container, false);
         ObtenerReferencia();
-
+        SetearListners();
         return layoutRhoot;
     }
 
@@ -65,9 +65,8 @@ public class ConfiguracionFragment extends Fragment {
 
                 
                 SharedPreferencesManager.clearConfiguracion(getContext());
-
-                MainActivity actividadContenedora;
-                actividadContenedora = (MainActivity) getActivity();
+                MainActivityInicio actividadContenedora;
+                actividadContenedora = (MainActivityInicio) getActivity();
                 actividadContenedora.cambioActivity();
             }
         });

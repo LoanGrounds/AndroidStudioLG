@@ -1682,6 +1682,7 @@ id editarPerfil
 id edtAlias
 id edtApellido
 id edtApellidoUsuarioQueSolicito
+id edtBuscador
 id edtCBU
 id edtCantidadAPrestar
 id edtCheckPassword

@@ -5,11 +5,14 @@ import android.os.Bundle;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -48,12 +51,10 @@ public class MenuFragment extends Fragment {
 
     SearchView buscarPrestamo;
     ImageView filtros;
-    ArrayList<PrestamoRecomendadoDTO> prestamoList;
-
-    LottieAnimationView animation_view;
+    EditText buscador;
     ArrayList<PrestamoRecomendadoDTO> prestamoListApi=new ArrayList<>();
     PrestamoRecomendadoDTO[] resultado;
-
+    ListaAdaptora nuevoAdapter;
 
 
     public MenuFragment() {
@@ -98,11 +99,34 @@ public class MenuFragment extends Fragment {
         pgCargando=(ProgressBar) layoutRhoot.findViewById(R.id.pgCargando);
         clMenu=(ConstraintLayout) layoutRhoot.findViewById(R.id.clMenu);
         tvNombreUs=(TextView) layoutRhoot.findViewById(R.id.tvNombreUs);
-
+        buscador=(EditText) layoutRhoot.findViewById(R.id.edtBuscador);
     }
 
 
+
     public void SetearListners() {
+
+
+        buscador.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                nuevoAdapter.getFilter().filter(s.toString());
+                //((ListaAdaptora)nuevoAdapter).getFilter().filter(s);
+                nuevoAdapter.notifyDataSetChanged();
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -169,7 +193,7 @@ public class MenuFragment extends Fragment {
             if (s!=null){
                 Gson miGson = new Gson();
                 resultado = miGson.fromJson(s,PrestamoRecomendadoDTO[].class);
-                ListaAdaptora nuevoAdapter = new ListaAdaptora(getActivity(),R.layout.my_list_item_listview, Arrays.asList(resultado.clone()));
+                 nuevoAdapter = new ListaAdaptora(getActivity(),R.layout.my_list_item_listview, Arrays.asList(resultado.clone()));
                 listView.setAdapter(nuevoAdapter);
 
             }

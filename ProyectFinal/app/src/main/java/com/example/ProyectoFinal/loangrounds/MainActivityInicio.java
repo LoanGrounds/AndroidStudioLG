@@ -10,8 +10,11 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.widget.Adapter;
+import android.widget.ListAdapter;
 
 import com.example.ProyectoFinal.loangrounds.AsyncTask.AsyncPostBase;
+import com.example.ProyectoFinal.loangrounds.ListaRecomendados.ListaAdaptora;
 import com.example.ProyectoFinal.loangrounds.Menu.VerificacionPrestamoFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.AtencionClienteFragment;
 import com.example.ProyectoFinal.loangrounds.Menu.CadaPrestamoFragment;
@@ -180,6 +183,11 @@ public class MainActivityInicio extends AppCompatActivity {
     public void EnviarMensaje(PrestamoRecomendadoDTO prestamoList){
         fragmentCadaPrestamo.enviarPosition( prestamoList);
     }
+
+    public void buscador(CharSequence s, ListaAdaptora nuevoAdapter){
+        nuevoAdapter.getFilter().filter(s);
+    }
+
 
 
 

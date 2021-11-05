@@ -81,7 +81,7 @@
             android:foregroundGravity="center_vertical"
             android:gravity="center_vertical"
             android:hint="Ingrese contraseña"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:padding="10dip"
             android:text="holahla"
             app:layout_constraintEnd_toEndOf="parent"

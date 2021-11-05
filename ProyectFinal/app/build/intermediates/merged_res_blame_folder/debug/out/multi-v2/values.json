@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\45753713\\Music\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\45753713\\Documents\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\45753713\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "4,1,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "128,17,318",
-                        "endLines": "9,1,11",
-                        "endColumns": "19,48,69",
-                        "endOffsets": "310,61,383"
-                    },
-                    "to": {
-                        "startLines": "2,859,871",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "150,54562,55785",
-                        "endLines": "7,859,871",
-                        "endColumns": "19,48,69",
-                        "endOffsets": "327,54606,55850"
-                    }
-                },
                 {
                     "source": "C:\\Users\\45753713\\.gradle\\caches\\transforms-2\\files-2.1\\dd5a17c1008fb18b92564321c063363b\\constraintlayout-1.1.3\\res\\values\\values.xml",
                     "from": {
@@ -42,26 +23,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\45753713\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "C:\\Users\\45753713\\Documents\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\preloaded_fonts.xml",
                     "from": {
-                        "startLines": "17,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "902,102",
-                        "endLines": "30,15",
-                        "endColumns": "12,12",
-                        "endOffsets": "1579,894"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "564"
                     },
                     "to": {
-                        "startLines": "3141,3452",
-                        "startColumns": "4,4",
-                        "startOffsets": "209981,231438",
-                        "endLines": "3154,3465",
-                        "endColumns": "12,12",
-                        "endOffsets": "210645,232215"
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "3849",
+                        "endLines": "34",
+                        "endColumns": "12",
+                        "endOffsets": "4344"
                     }
                 },
                 {
-                    "source": "C:\\Users\\45753713\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\font_certs.xml",
+                    "source": "C:\\Users\\45753713\\Documents\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\font_certs.xml",
                     "from": {
                         "startLines": "2,6,11",
                         "startColumns": "4,4,4",
@@ -99,6 +80,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\45753713\\Documents\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "17,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "902,102",
+                        "endLines": "30,15",
+                        "endColumns": "12,12",
+                        "endOffsets": "1579,894"
+                    },
+                    "to": {
+                        "startLines": "3141,3452",
+                        "startColumns": "4,4",
+                        "startOffsets": "209981,231438",
+                        "endLines": "3154,3465",
+                        "endColumns": "12,12",
+                        "endOffsets": "210645,232215"
+                    }
+                },
+                {
                     "source": "C:\\Users\\45753713\\.gradle\\caches\\transforms-2\\files-2.1\\d97de8d4da2daf41cae9a34bc8c4933b\\core-1.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,83,84,88,89,90,91,98,141,173,210",
@@ -118,6 +118,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\45753713\\Documents\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,14,9,2,3,4,11,5,6,10,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "293,502,377,57,105,153,458,201,247,417,336",
+                        "endColumns": "41,45,38,46,46,46,38,44,44,39,39",
+                        "endOffsets": "330,543,411,99,147,195,492,241,287,452,371"
+                    },
+                    "to": {
+                        "startLines": "264,277,321,356,357,358,361,370,371,374,375",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "16274,17206,20221,22498,22545,22592,22754,23375,23420,23586,23626",
+                        "endColumns": "41,45,38,46,46,46,38,44,44,39,39",
+                        "endOffsets": "16311,17247,20255,22540,22587,22634,22788,23415,23460,23621,23661"
+                    }
+                },
+                {
                     "source": "C:\\Users\\45753713\\.gradle\\caches\\transforms-2\\files-2.1\\423f9f9dc971bd43102dbf04bc1ad595\\jetified-lottie-3.6.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4",
@@ -134,23 +151,6 @@
                         "endLines": "197,769,6201",
                         "endColumns": "62,46,24",
                         "endOffsets": "12167,49207,401887"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\45753713\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "56",
-                        "endOffsets": "109"
-                    },
-                    "to": {
-                        "startLines": "324",
-                        "startColumns": "4",
-                        "startOffsets": "20395",
-                        "endColumns": "56",
-                        "endOffsets": "20447"
                     }
                 },
                 {
@@ -209,22 +209,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\45753713\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\preloaded_fonts.xml",
+                    "source": "C:\\Users\\45753713\\Documents\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\ic_launcher_background.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "57",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "564"
+                        "endColumns": "56",
+                        "endOffsets": "109"
                     },
                     "to": {
-                        "startLines": "22",
+                        "startLines": "324",
                         "startColumns": "4",
-                        "startOffsets": "3849",
-                        "endLines": "34",
-                        "endColumns": "12",
-                        "endOffsets": "4344"
+                        "startOffsets": "20395",
+                        "endColumns": "56",
+                        "endOffsets": "20447"
                     }
                 },
                 {
@@ -242,6 +240,25 @@
                         "startOffsets": "21821,45850,45903,45956,46009,220124,220300,220422,220684,220879",
                         "endColumns": "88,52,52,52,52,65,121,60,65,66",
                         "endOffsets": "21905,45898,45951,46004,46057,220185,220417,220478,220745,220941"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\45753713\\Documents\\GitHub\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,1,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "128,17,318",
+                        "endLines": "9,1,11",
+                        "endColumns": "19,48,69",
+                        "endOffsets": "310,61,383"
+                    },
+                    "to": {
+                        "startLines": "2,859,871",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "150,54562,55785",
+                        "endLines": "7,859,871",
+                        "endColumns": "19,48,69",
+                        "endOffsets": "327,54606,55850"
                     }
                 },
                 {
@@ -280,23 +297,6 @@
                         "endLines": "71,4534,5813,5902",
                         "endColumns": "60,12,24,24",
                         "endOffsets": "6161,303689,379914,385125"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\45753713\\Music\\AndroidStudioLG\\ProyectFinal\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "7,14,9,2,3,4,11,5,6,10,8",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "293,502,377,57,105,153,458,201,247,417,336",
-                        "endColumns": "41,45,38,46,46,46,38,44,44,39,39",
-                        "endOffsets": "330,543,411,99,147,195,492,241,287,452,371"
-                    },
-                    "to": {
-                        "startLines": "264,277,321,356,357,358,361,370,371,374,375",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "16274,17206,20221,22498,22545,22592,22754,23375,23420,23586,23626",
-                        "endColumns": "41,45,38,46,46,46,38,44,44,39,39",
-                        "endOffsets": "16311,17247,20255,22540,22587,22634,22788,23415,23460,23621,23661"
                     }
                 },
                 {
